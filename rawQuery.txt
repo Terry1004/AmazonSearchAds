@@ -1,6 +1,16 @@
 home theater system , 22.0, 8060,11
+Multi-channel box system home theater, 34.2, 8061, 11
+Samsung blueray home theater, 24.2, 8062, 11
+
 LED TV, 18.0, 8070,12
+Large screen LED TV, 19.8, 8071, 12
+Eye protection LED TV, 14.8, 8072, 12
+High resolution LED TV, 34.2, 8073, 12
+
 smart watch, 4.5, 8080,13
+Water proof smart watch, 12.3, 8081, 13
+Electronic smart watch, 13.2, 8082, 13
+fitness tracker smart watch, 23.1, 8083, 13
 
 Video Games, 6.8, 8090,14
 Xbox 360 video games,4.5,8091,14
@@ -36,8 +46,21 @@ Rotating office desk, 28.0, 8118,16
 Corner L Shaped office desk, 21.1, 8119,16
 
 lego city toy,6.5, 8120,17
+Lego city toy for children, 8.2, 8121, 17
+Lego toy dinosaur, 9.2, 8182, 17
+
 Camping Tent, 12.5, 8130,18
+High strength camping tent, 13.4, 8131, 18
+Water proof double layer camping tent, 14.2, 8132, 18
+UV protection camping tend, 17.2, 8132, 18
+Cosy camping tent, 12.3, 8133, 18
+
 bike, 8.5, 8140,19
+Carbon bike, 6.7, 8141, 19
+Light bike, 4.9, 8142, 19
+Mountain bike with flat tires, 5.9, 8143, 19
+Bike for girls, 2.3, 8144, 19
+Various speed bike, 12.3, 8145, 19
 
 Shaver, 5.5, 8150,20
 Philips Norelco Shaver, 6.4, 8151,20
@@ -49,9 +72,6 @@ Braun Washable Shaver, 6.5, 8156,20
 Panasonic Electric Razor, 7.0, 8157,20
 Remington Foil Shaver, 6.6, 8158,20
 Philips Body Trimmer, 5.0, 8159,20
-Gillette Fusion Proglide Styler, 7.5, 8160,20
-Razorba Back Hair Shaver, 8.1, 8161,20
-Remington Comfort Foil Shaver, 7.7, 8162,20
 
 Kids Bed, 12.0,8160,21
 Twin Loft Bed, 13.0, 8161,21
@@ -65,8 +85,15 @@ Metal Daybed Frame, 14.0, 8167,21
 Twin Bed Set, 18.0, 8169,21
 
 grill,24.0,8170,22
-tea maker, 2.5, 8180,23
+Electronic smoke free grill, 13.0, 8171, 22
+Small grill pan, 12.3, 8172, 22
 
+tea maker, 2.5, 8180,23
+Ancient tea maker, 4.5, 8181, 23
+classic tea maker, 6.5, 8182, 23
+British style tea maker, 6.8, 8183,23
+Automatic tea maker, 8.3, 8184, 23
+Tea maker with infuser, 9.2, 8185, 23
 
 Portable Bluetooth Speaker , 12.0, 8190,24
 Bluetooth Wireless Speaker, 13.0, 8191,24
@@ -80,6 +107,9 @@ Bluetooth Speaker ZENBRE Z3 10W , 20.0, 8198,24
 Ranking Hi-Fi Bluetooth Speaker , 21.0, 8199,24
 
 Lawn Mower, 25.8, 8200,25
+Electronic lawn mower, 34.2, 8201, 25
+Cordless Push Lawn Mower, 56.2, 8202, 25
+Variable speed automatic lawn mower, 24.3, 8203,25
 
 sports camera, 5.0, 8210,26
 4k wifi sports action camera, 7.5, 8211,26
@@ -101,9 +131,25 @@ Illuminating facial moisturizer cream, 9.8, 8225, 27
 Organic facial moisturizer lotion oil free, 5.7, 8226, 27
 Anti-aging facial organic serum, 10.2, 8227, 27
 Oil-free facial moisturizer cream, 12.2, 8228, 27
+Pore-perfecting facial moisturizer for normal to oil skin, 13.4, 8229, 27
 
-Snow Blower, 15.0, 8230,28
-sports camera, 5.0, 8240,29
+Snow blower, 15.0, 8230,28
+Electric snow blower, 15.6, 8231, 28
+Heavy duty snow blower, 23.8, 8232, 28
+Electronic snow blower with light in front, 24.3, 8234, 28
+
+sports camera, 13.5, 8240,29
+vibration resist sports camera, 20.3, 8241, 29
+Water proof sports camera, 24.3, 8242, 29
+Wifi sports camera, 13.2, 8283, 29
+Wide angle sports camera, 17.2, 8244, 29
+
 Shampoo, 3.0, 8250,30
+Reduce hair loss shampoo, 4.5, 8251, 30
+voluminizing shampoo, 6.7, 8252, 30
+strengthen hair shampoo, 6.8, 8253, 30
+Shampoo for damaged hair, 7.8, 8254, 30
+Three-in-one functional shampoo, 8.9,8255, 30
+
 
 
