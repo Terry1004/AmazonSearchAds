@@ -12,6 +12,8 @@ if socket.gethostname() == 'ymhuang':
 # you may type 'import socket' followed by 'socket.gethostname()' in you python shell in terminal to get the device name
 elif socket.gethostname() == '<your_device_name>':
     CONFIG_PATH = os.path.join(os.path.abspath(os.path.dirname(__file__)), '../scrapy_yrwang.cfg')
+else:
+    raise ValueError('Wrong socket name')
 
 def read_config():
     """ Read the configuration file using built-in configparser and return the parsed config 
