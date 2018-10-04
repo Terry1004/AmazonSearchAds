@@ -7,7 +7,7 @@
 
 import scrapy
 
-class AdCrawled(scrapy.Item):
+class Ad(scrapy.Item):
     # Attribute from feed
     adId = scrapy.Field()
     campaignId = scrapy.Field()
