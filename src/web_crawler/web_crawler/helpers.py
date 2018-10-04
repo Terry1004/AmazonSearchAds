@@ -10,7 +10,7 @@ if socket.gethostname() == 'ymhuang':
     CONFIG_PATH = os.path.join(os.path.abspath(os.path.dirname(__file__)), '../scrapy_ymhuang.cfg')
 # replace the following <your_device_name> with your device name
 # you may type 'import socket' followed by 'socket.gethostname()' in you python shell in terminal to get the device name
-elif socket.gethostname() == '<your_device_name>':
+elif socket.gethostname() == 'Yirans-MacBook-Pro.local':
     CONFIG_PATH = os.path.join(os.path.abspath(os.path.dirname(__file__)), '../scrapy_yrwang.cfg')
 else:
     raise ValueError('Wrong socket name')

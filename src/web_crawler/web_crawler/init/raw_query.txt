@@ -23,7 +23,7 @@ PlayStation 4 video games,6.3,8097,14
 Nintendo Wii video games,4.7,8098,14
 Nintendo DS video games,5.3,8099,14
 
-Outdoor Furniture, 22,5,8100,15
+Outdoor Furniture, 22.5,8100,15
 all weather outdoor furniture, 17, 8101,15
 ikea outdoor furniture, 18, 8102,15
 outdoor furniture covers, 17, 8103,15

@@ -19,21 +19,26 @@ class Proxy:
         fields = string.strip().split(',')
         if len(fields) != 5:
             self.logger.debug(f'line {string} has incorrect number of fields in proxy list file: {len(fields)}')
-        self.ip = fields[0]
-        self.num1 = fields[1]
-        self.num2 = fields[2]
-        self.username = fields[3]
-        self.password = fields[4]
+        else:
+            self.ip = fields[0]
+            self.http_port = fields[1]
+            self.socket_port = fields[2]
+            self.username = fields[3]
+            self.password = fields[4]
     
     def __repr__(self):
         """ Return the string representing the fields of proxy, separated by new lines """
         res_list = []
         res_list.append(f'ip: {self.ip}')
-        res_list.append(f'num1: {self.num1}')
-        res_list.append(f'num2: {self.num2}')
+        res_list.append(f'num1: {self.http_port}')
+        res_list.append(f'num2: {self.socket_port}')
         res_list.append(f'username: {self.username}')
         res_list.append(f'password: {self.password}')
         return '\n'.join(res_list)
+    
+    def get_address(self):
+        """ Return the proxy server address """
+        return f'http://{self.username}:{self.password}@{self.ip}:{self.http_port}'
 
 
 def init_proxy():
