@@ -19,11 +19,12 @@ class Proxy:
         fields = string.strip().split(',')
         if len(fields) != 5:
             self.logger.debug(f'line {string} has incorrect number of fields in proxy list file: {len(fields)}')
-        self.ip = fields[0]
-        self.num1 = fields[1]
-        self.num2 = fields[2]
-        self.username = fields[3]
-        self.password = fields[4]
+        else:
+            self.ip = fields[0]
+            self.num1 = fields[1]
+            self.num2 = fields[2]
+            self.username = fields[3]
+            self.password = fields[4]
     
     def __repr__(self):
         """ Return the string representing the fields of proxy, separated by new lines """
