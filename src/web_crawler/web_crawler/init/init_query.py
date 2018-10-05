@@ -16,7 +16,7 @@ class Query:
         self.logger = logger
         fields = string.strip().split(',')
         if len(fields) != 4:
-            self.logger.debug(f'line {string} has incorrect number of fields in proxy list file: {len(fields)}')
+            self.logger.critical(f'line {string} has incorrect number of fields in proxy list file: {len(fields)}')
         else:
             self.query = fields[0]
             self.bid_price = fields[1]
@@ -41,11 +41,9 @@ def init_query():
     """
     config, logger = helpers.setup_config_logger(LOGGER_NAME)
     file_path = config['init_files']['query_file']
-    query_list = []
     with open(file_path) as f:
         for line in f:
             # ignore empty line
             if line == '\n':
                 continue
-            query_list.append(Query(line, logger))
-    return query_list
+            yield Query(line, logger)
