@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96fb84ad-e718-4aa0-9d51-b24cb10263ad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/select_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/select_path.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/spiders/amazon_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/web_crawler/web_crawler/spiders/amazon_spider.py" afterDir="false" />
     </list>
@@ -105,7 +106,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/web_crawler/web_crawler/spiders/amazon_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
+            <state relative-caret-position="-1113">
               <caret line="24" column="76" selection-start-line="24" selection-start-column="76" selection-end-line="24" selection-end-column="76" />
               <folding>
                 <element signature="e#55#68#0" expanded="true" />
@@ -279,7 +280,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24248926" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -397,7 +397,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/web_crawler/web_crawler/spiders/amazon_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
+        <state relative-caret-position="-1113">
           <caret line="24" column="76" selection-start-line="24" selection-start-column="76" selection-end-line="24" selection-end-column="76" />
           <folding>
             <element signature="e#55#68#0" expanded="true" />
