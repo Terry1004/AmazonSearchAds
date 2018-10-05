@@ -114,7 +114,13 @@ class AmazonSpider(scrapy.Spider):
             An Ad object with all fields loaded
         """
         self.load_default_fields(loader)
-        pass
+        self.load_title(loader, response, result_id)
+        self.load_price(loader, response, result_id)
+        self.load_thumbnail(loader, response, result_id)
+        self.load_brand(loader, response, result_id)
+        self.load_detail_url(loader, response, result_id)
+        self.load_category(loader, response, result_id)
+        return loader.load_item()
     
     def load_title(self, loader, response, result_id):
         pass
@@ -123,9 +129,6 @@ class AmazonSpider(scrapy.Spider):
         pass
     
     def load_thumbnail(self, loader, response, result_id):
-        pass
-
-    def load_description(self, loader, response, result_id):
         pass
 
     def load_brand(self, loader, response, result_id):
