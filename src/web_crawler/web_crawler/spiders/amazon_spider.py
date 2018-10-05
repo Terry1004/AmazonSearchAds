@@ -19,6 +19,11 @@ class AmazonSpider(scrapy.Spider):
         title_paths:
         response_count: The number of responses received (for debug purpose only)
         useful_proxy: The set of proxy addresses that can be connected (for debug purpose only)
+        title_path: list of possible paths configurations of each produt
+        category_path: List of paths of the the main category
+        thumbnail_paths：list of paths of the product image
+        price_base_paths: List of paths of the product base price (before decimal)
+        price_upper_paths: List of paths of the product upper price (after decimal)
     """
     # set name of the spider
     name = 'amazon'
@@ -34,12 +39,31 @@ class AmazonSpider(scrapy.Spider):
             'Accept-Language': 'en-US,en;q=0.8'
         }
         self.title_paths = [
-            'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div.a-row.a-spacing-none.scx-truncate-medium.sx-line-clamp-2 > a > h2',
-            'div > div > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div.a-row.a-spacing-none.scx-truncate-medium.sx-line-clamp-2 > a > h2',
-            'div > div > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div:nth-child(1) > a > h2',
-            'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div:nth-child(1) > a > h2',
-            'div > div.a-row.a-spacing-none > div.a-row.a-spacing-mini.sx-line-clamp-4 > a > h2',
-            'div > div.a-row.a-spacing-none > div.a-row.a-spacing-mini > a > h2'
+            'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div.a-row.a-spacing-none.scx-truncate-medium.sx-line-clamp-2 > a',
+            'div > div > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div.a-row.a-spacing-none.scx-truncate-medium.sx-line-clamp-2 > a',
+            'div > div > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div:nth-child(1) > a',
+            'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div:nth-child(1) > a',
+            'div > div.a-row.a-spacing-none > div.a-row.a-spacing-mini.sx-line-clamp-4 > a',
+            'div > div.a-row.a-spacing-none > div.a-row.a-spacing-mini > a'
+        ]
+        self.category_paths = [
+            'leftNavContainer > ul:nth-child(2) > div > li:nth-child(1) > span > a > h4'
+        ]
+        self.brand_paths = [
+            'div > div > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div:nth-child(2) > span:nth-child(2)',
+            'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div:nth-child(2) > span:nth-child(2)'
+        ]
+        self.thumbnail_paths =[
+            'div > div > div > div.a-fixed-left-grid-col.a-col-left > div > div > a > img',
+            'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-left > div > div > a > img'
+        ]
+        self.price_base_paths=[
+            'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > span'
+            'div > div > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > span'
+        ]
+        self.price_upper_paths = [
+            'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > sup.sx-price-fractional'
+            'div > div > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > sup.sx-price-fractional'
         ]
         self.response_count = 0
         self.useful_proxy = set()
