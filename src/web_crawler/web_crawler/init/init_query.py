@@ -4,6 +4,7 @@ from .. import helpers
 
 LOGGER_NAME = 'init'
 
+
 class Query:
     """ A simple class representing one Query """
 
@@ -34,15 +35,15 @@ class Query:
 
 
 def init_query():
-    """ Read query feeds in the file and generate a proxy list
+    """ Read query feeds in the file (generator of Query objects)
     Args:
         config: Parsed config object (dict-like)
         logger: A logger corresponding to the current module
     """
     config, logger = helpers.setup_config_logger(LOGGER_NAME)
     file_path = config['init_files']['query_file']
-    with open(file_path) as f:
-        for line in f:
+    with open(file_path) as file:
+        for line in file:
             # ignore empty line
             if line == '\n':
                 continue

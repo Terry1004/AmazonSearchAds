@@ -54,14 +54,19 @@ class AmazonSpider(scrapy.Spider):
 
     def start_requests(self):
         """ Define starting requests urls """
-        urls = (self.query_api + query.query for query in self.query_it)
-        for url in urls:
+        queries = (query.query for query in self.query_it)
+        for query in queries:
+            url = self.query_api + query
             request = scrapy.Request(url = url, callback = self.parse, headers = self.headers) 
             proxy = self.proxy
             request.meta['proxy'] = proxy
+            request.meta['query'] = query
             self.logger.debug(f'Send request to url: {url}')
             self.logger.debug(f'Proxy used: {proxy}')
             yield request
+
+    def load_default_fields(self):
+        pass
 
     def parse(self, response):
         """ For testing purpose, try to see if the crawler can get responses from server """
