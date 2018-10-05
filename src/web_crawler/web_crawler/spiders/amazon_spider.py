@@ -77,6 +77,7 @@ class AmazonSpider(scrapy.Spider):
         else:
             self.response_count += 1
             self.useful_proxy.add(response.request.meta['proxy'])
+
         finally:
             self.logger.debug(f'Total number of responses received: {self.response_count}')
             self.logger.debug(f'All usefull proxies: {self.useful_proxy}')
