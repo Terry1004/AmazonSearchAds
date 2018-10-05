@@ -113,7 +113,38 @@ class AmazonSpider(scrapy.Spider):
         Return:
             An Ad object with all fields loaded
         """
+        self.load_default_fields(loader)
         pass
+    
+    def load_title(self, loader, response, result_id):
+        pass
+
+    def load_price(self, loader, response, result_id):
+        pass
+    
+    def load_thumbnail(self, loader, response, result_id):
+        pass
+
+    def load_description(self, loader, response, result_id):
+        pass
+
+    def load_brand(self, loader, response, result_id):
+        pass
+
+    def load_detail_url(self, loader, response, result_id):
+        pass
+
+    def load_category(self, loader, response, result_id):
+        pass
+    
+    def load_default_fields(self, loader):
+        loader.add_value('key_words', '')
+        loader.add_value('relevance_score', 0)
+        loader.add_value('p_click', 0)
+        loader.add_value('rank_score', 0)
+        loader.add_value('quality_score', 0)
+        loader.add_value('cost_per_click', 0)
+        loader.add_value('position', 'top')
 
     def parse(self, response):
         """ For testing purpose, try to see if the crawler can get responses from server """
