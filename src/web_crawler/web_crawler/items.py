@@ -38,7 +38,6 @@ class Ad(scrapy.Item):
     title = scrapy.Field()
     price = scrapy.Field()
     thumbnail = scrapy.Field()
-    description = scrapy.Field()
     brand = scrapy.Field()
     detail_url = scrapy.Field()
     category = scrapy.Field()
