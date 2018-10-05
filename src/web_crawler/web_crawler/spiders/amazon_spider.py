@@ -141,13 +141,13 @@ class AmazonSpider(scrapy.Spider):
         pass
     
     def load_default_fields(self, loader):
-        loader.add_value('key_words', '')
-        loader.add_value('relevance_score', 0)
-        loader.add_value('p_click', 0)
-        loader.add_value('rank_score', 0)
-        loader.add_value('quality_score', 0)
-        loader.add_value('cost_per_click', 0)
-        loader.add_value('position', 'top')
+        loader.add_value('key_words', [])
+        loader.add_value('relevance_score', 0.)
+        loader.add_value('p_click', 0.)
+        loader.add_value('rank_score', 0.)
+        loader.add_value('quality_score', 0.)
+        loader.add_value('cost_per_click', 0.)
+        loader.add_value('position', 0)
 
     def parse(self, response):
         """ For testing purpose, try to see if the crawler can get responses from server """
