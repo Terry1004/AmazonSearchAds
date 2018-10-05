@@ -8,10 +8,28 @@
 import scrapy
 
 class Ad(scrapy.Item):
+    """ A simple class representing one Advertisement
+        Attributes:
+            query: query input as a phrase of words
+            ad_id: unique id per ad
+            bid_price: random assigned bid price per click
+            campaign_id: unique id per query
+            query_group_id: one query group id for a group of similar queries, e.g. facial cream, facial moisturizer cream
+            title = crawled product title
+            price = crawled product price
+            thumbnail = picture url of crawled product
+            description =
+            brand = craweled product brand
+            detail_url = original url for each product
+            category = the first main category of crawled product
+            keyWords = keywords from query
+            relevanceScore =
+
+     """
     # Attribute from feed
-    adId = scrapy.Field()
-    campaignId = scrapy.Field()
-    bidPrice = scrapy.Field()
+    ad_id = scrapy.Field()
+    campaign_id = scrapy.Field()
+    bid_price = scrapy.Field()
     query_group_id = scrapy.Field()
     query = scrapy.Field()
 

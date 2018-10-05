@@ -5,7 +5,14 @@ from .. import helpers
 LOGGER_NAME = 'init'
 
 class Query:
-    """ A simple class representing one Query """
+    """ A simple class representing one query
+    Attributes:
+        logger: The logger object for logging
+        query: query input as a phrase of words
+        bid_price: random assigned bid price per click
+        campaign_id: unique id per query
+        query_group_id: one query group id for a group of similar queries, e.g. facial cream, facial moisturizer cream
+    """
 
     def __init__(self, string, logger):
         """ Initialize the fields of one query feed
@@ -34,7 +41,7 @@ class Query:
 
 
 def init_query():
-    """ Read query feeds in the file and generate a proxy list
+    """ Read query feeds in the file and generate a query list
     Args:
         config: Parsed config object (dict-like)
         logger: A logger corresponding to the current module
