@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96fb84ad-e718-4aa0-9d51-b24cb10263ad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/select_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/select_path.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/spiders/amazon_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/web_crawler/web_crawler/spiders/amazon_spider.py" afterDir="false" />
     </list>
@@ -45,15 +46,15 @@
         <counts>
           <entry key="Python Console" value="40" />
           <entry key="cfg" value="16" />
-          <entry key="py" value="1347" />
-          <entry key="txt" value="9" />
+          <entry key="py" value="1380" />
+          <entry key="txt" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Ini" value="16" />
-          <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="1387" />
+          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="Python" value="1420" />
         </counts>
       </usages-collector>
     </session>
@@ -105,8 +106,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/web_crawler/web_crawler/spiders/amazon_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="69" column="222" lean-forward="true" selection-start-line="69" selection-start-column="222" selection-end-line="69" selection-end-column="222" />
+            <state relative-caret-position="-1113">
+              <caret line="24" column="76" selection-start-line="24" selection-start-column="76" selection-end-line="24" selection-end-column="76" />
               <folding>
                 <element signature="e#55#68#0" expanded="true" />
               </folding>
@@ -117,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/select_path.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="92" column="201" selection-start-line="92" selection-end-line="93" />
+            <state relative-caret-position="-12">
+              <caret line="74" column="57" lean-forward="true" selection-start-line="74" selection-start-column="57" selection-end-line="74" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -279,7 +280,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24248926" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -390,15 +390,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/select_path.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="92" column="201" selection-start-line="92" selection-end-line="93" />
+        <state relative-caret-position="-12">
+          <caret line="74" column="57" lean-forward="true" selection-start-line="74" selection-start-column="57" selection-end-line="74" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/web_crawler/web_crawler/spiders/amazon_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="69" column="222" lean-forward="true" selection-start-line="69" selection-start-column="222" selection-end-line="69" selection-end-column="222" />
+        <state relative-caret-position="-1113">
+          <caret line="24" column="76" selection-start-line="24" selection-start-column="76" selection-end-line="24" selection-end-column="76" />
           <folding>
             <element signature="e#55#68#0" expanded="true" />
           </folding>
