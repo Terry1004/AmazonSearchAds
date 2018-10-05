@@ -3,6 +3,7 @@
 import scrapy
 from ..init import init_proxy, init_query
 from .. import helpers
+from ..items import Ad
 
 LOGGER_NAME = 'spider'
 
@@ -59,11 +60,15 @@ class AmazonSpider(scrapy.Spider):
         ]
         self.price_base_paths=[
             'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > span',
-            'div > div > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > span'
+            'div > div > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > span',
+            'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > span:nth-child(2)',
+            'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > span:nth-child(6)'
         ]
         self.price_upper_paths = [
             'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > sup.sx-price-fractional',
-            'div > div > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > sup.sx-price-fractional'
+            'div > div > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > sup.sx-price-fractional',
+            'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > sup:nth-child(3)',
+            'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > sup:nth-child(7)'
         ]
         self.response_count = 0
         self.useful_proxy = set()
@@ -99,7 +104,7 @@ class AmazonSpider(scrapy.Spider):
             self.logger.debug(f'Proxy used: {proxy}')
             yield request
 
-    def load_default_fields(self):
+    def load_fields(self, loader, response, result_id):
         pass
 
     def parse(self, response):
@@ -108,18 +113,16 @@ class AmazonSpider(scrapy.Spider):
             result_id = 0
             curr_li = response.css(f'#result_{result_id}')
             while curr_li:
-                print(curr_li.css('div > div > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div:nth-child(2) > span:nth-child(2)::text').extract())
-                result_id += 1   
-                curr_li = response.css(f'#result_{result_id}')      
-            ul = response.css('#s-results-list-atf>li')
-            print(f'number of list items: {len(ul)}')
-            # print(ul.extract())
+                loader = scrapy.loader.ItemLoader(item = Ad(), response = response)
+                ad = self.load_fields(loader, response, result_id)
+                result_id += 1
+                curr_li = response.css(f'#result_{result_id}')
         except Exception as e:
             self.logger.error(str(e))
         else:
             self.response_count += 1
             self.useful_proxy.add(response.request.meta['proxy'])
-
+            yield ad
         finally:
             self.logger.debug(f'Total number of responses received: {self.response_count}')
             self.logger.debug(f'All usefull proxies: {self.useful_proxy}')

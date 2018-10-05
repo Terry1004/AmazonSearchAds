@@ -6,8 +6,6 @@
 # https://doc.scrapy.org/en/latest/topics/items.html
 
 import scrapy
-from scrapy.loader import ItemLoader
-from scrapy.loader.processors import TakeFirst, MapCompose, Join
 
 
 class Ad(scrapy.Item):
@@ -53,7 +51,3 @@ class Ad(scrapy.Item):
     quality_score = scrapy.Field()
     cost_per_click = scrapy.Field()
     position = scrapy.Field() #1: top , 2: bottom
-
-class AdsLoader(scrapy.loader.ItemLoader):
-
-    default_output_processor = TakeFirst()
