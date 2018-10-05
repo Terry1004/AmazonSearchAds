@@ -1,0 +1,4 @@
+2018-10-05 17:03:18,535 - spider - DEBUG - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=facial cream
+2018-10-05 17:03:18,535 - spider - DEBUG - Proxy used: http://97.79.207.83:8080
+2018-10-05 17:03:21,429 - spider - DEBUG - Total number of responses received: 1
+2018-10-05 17:03:21,429 - spider - DEBUG - All usefull proxies: {'http://97.79.207.83:8080'}

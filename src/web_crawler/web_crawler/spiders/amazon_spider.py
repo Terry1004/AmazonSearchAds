@@ -16,6 +16,7 @@ class AmazonSpider(scrapy.Spider):
         query_it: The iterator to generate all query
         query_api: The api for searching on Amazon
         headers: To be filled in the header of http requests
+        title_paths:
         response_count: The number of responses received (for debug purpose only)
         useful_proxy: The set of proxy addresses that can be connected (for debug purpose only)
     """
@@ -32,6 +33,14 @@ class AmazonSpider(scrapy.Spider):
             'Accept-Encoding': 'gzip, deflate, sdch, br',
             'Accept-Language': 'en-US,en;q=0.8'
         }
+        self.title_paths = [
+            'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div.a-row.a-spacing-none.scx-truncate-medium.sx-line-clamp-2 > a > h2',
+            'div > div > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div.a-row.a-spacing-none.scx-truncate-medium.sx-line-clamp-2 > a > h2',
+            'div > div > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div:nth-child(1) > a > h2',
+            'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div:nth-child(1) > a > h2',
+            'div > div.a-row.a-spacing-none > div.a-row.a-spacing-mini.sx-line-clamp-4 > a > h2',
+            'div > div.a-row.a-spacing-none > div.a-row.a-spacing-mini > a > h2'
+        ]
         self.response_count = 0
         self.useful_proxy = set()
         super().__init__()
@@ -54,7 +63,8 @@ class AmazonSpider(scrapy.Spider):
 
     def start_requests(self):
         """ Define starting requests urls """
-        queries = (query.query for query in self.query_it)
+        # queries = (query.query for query in self.query_it)
+        queries = ['facial cream']
         for query in queries:
             url = self.query_api + query
             request = scrapy.Request(url = url, callback = self.parse, headers = self.headers) 
@@ -71,7 +81,15 @@ class AmazonSpider(scrapy.Spider):
     def parse(self, response):
         """ For testing purpose, try to see if the crawler can get responses from server """
         try:
-            response.body
+            result_id = 0
+            curr_li = response.css(f'#result_{result_id}')
+            while curr_li:
+                print(curr_li.css('div > div > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div:nth-child(2) > span:nth-child(2)::text').extract())
+                result_id += 1   
+                curr_li = response.css(f'#result_{result_id}')      
+            ul = response.css('#s-results-list-atf>li')
+            print(f'number of list items: {len(ul)}')
+            # print(ul.extract())
         except Exception as e:
             self.logger.error(str(e))
         else:

@@ -34,7 +34,7 @@ DOWNLOAD_DELAY = 0.5
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
 
-FEED_URI = 'file:///ads.json'
+FEED_URI = 'file:ads.json'
 FEED_FORMAT = 'json'
 
 # Disable cookies (enabled by default)
