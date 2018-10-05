@@ -6,6 +6,9 @@
 # https://doc.scrapy.org/en/latest/topics/items.html
 
 import scrapy
+from scrapy.loader import ItemLoader
+from scrapy.loader.processors import TakeFirst, MapCompose, Join
+
 
 class Ad(scrapy.Item):
     """ A simple class representing one Advertisement
@@ -51,7 +54,6 @@ class Ad(scrapy.Item):
     cost_per_click = scrapy.Field()
     position = scrapy.Field() #1: top , 2: bottom
 
-class WebCrawlerItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class AdsLoader(scrapy.loader.ItemLoader):
+
+    default_output_processor = TakeFirst()
