@@ -21,9 +21,9 @@ class Ad(scrapy.Item):
             description =
             brand = craweled product brand
             detail_url = original url for each product
-            category = the first main category of crawled product
-            keyWords = keywords from query
-            relevanceScore =
+            catagory = the first main category of crawled product
+            key_words = keywords from query
+            relevance_score =
 
      """
     # Attribute from feed
@@ -43,12 +43,12 @@ class Ad(scrapy.Item):
     category = scrapy.Field()
 
     # Attribute Learned
-    keyWords = scrapy.Field()
-    relevanceScore = scrapy.Field()
-    pClick = scrapy.Field()
-    rankScore = scrapy.Field()
-    qualityScore = scrapy.Field()
-    costPerClick = scrapy.Field()
+    key_words = scrapy.Field()
+    relevance_score = scrapy.Field()
+    p_click = scrapy.Field()
+    rank_score = scrapy.Field()
+    quality_score = scrapy.Field()
+    cost_per_click = scrapy.Field()
     position = scrapy.Field() #1: top , 2: bottom
 
 class WebCrawlerItem(scrapy.Item):
