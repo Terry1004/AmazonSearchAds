@@ -105,6 +105,14 @@ class AmazonSpider(scrapy.Spider):
             yield request
 
     def load_fields(self, loader, response, result_id):
+        """ Load all fields given a response and a result id number in the html unodered list
+        Args:
+            loader: The ItemLoder object to load items
+            response: The raw response from the website
+            result_id: The current result id number to be crawled
+        Return:
+            An Ad object with all fields loaded
+        """
         pass
 
     def parse(self, response):
