@@ -7,6 +7,7 @@
 
 import scrapy
 
+
 class Ad(scrapy.Item):
     """ A simple class representing one Advertisement
         Attributes:
@@ -50,8 +51,3 @@ class Ad(scrapy.Item):
     quality_score = scrapy.Field()
     cost_per_click = scrapy.Field()
     position = scrapy.Field() #1: top , 2: bottom
-
-class WebCrawlerItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass

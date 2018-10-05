@@ -3,6 +3,7 @@
 import scrapy
 from ..init import init_proxy, init_query
 from .. import helpers
+from ..items import Ad
 
 LOGGER_NAME = 'spider'
 
@@ -101,8 +102,47 @@ class AmazonSpider(scrapy.Spider):
             self.logger.debug(f'Proxy used: {proxy}')
             yield request
 
-    def load_default_fields(self):
+    def load_fields(self, loader, response, result_id):
+        """ Load all fields given a response and a result id number in the html unodered list
+        Args:
+            loader: The ItemLoder object to load items
+            response: The raw response from the website
+            result_id: The current result id number to be crawled
+        Return:
+            An Ad object with all fields loaded
+        """
+        self.load_default_fields(loader)
         pass
+    
+    def load_title(self, loader, response, result_id):
+        pass
+
+    def load_price(self, loader, response, result_id):
+        pass
+    
+    def load_thumbnail(self, loader, response, result_id):
+        pass
+
+    def load_description(self, loader, response, result_id):
+        pass
+
+    def load_brand(self, loader, response, result_id):
+        pass
+
+    def load_detail_url(self, loader, response, result_id):
+        pass
+
+    def load_category(self, loader, response, result_id):
+        pass
+    
+    def load_default_fields(self, loader):
+        loader.add_value('key_words', '')
+        loader.add_value('relevance_score', 0)
+        loader.add_value('p_click', 0)
+        loader.add_value('rank_score', 0)
+        loader.add_value('quality_score', 0)
+        loader.add_value('cost_per_click', 0)
+        loader.add_value('position', 'top')
 
     def parse(self, response):
         """ For testing purpose, try to see if the crawler can get responses from server """
@@ -110,18 +150,16 @@ class AmazonSpider(scrapy.Spider):
             result_id = 0
             curr_li = response.css(f'#result_{result_id}')
             while curr_li:
-                print(curr_li.css('div > div > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div:nth-child(2) > span:nth-child(2)::text').extract())
-                result_id += 1   
-                curr_li = response.css(f'#result_{result_id}')      
-            ul = response.css('#s-results-list-atf>li')
-            print(f'number of list items: {len(ul)}')
-            # print(ul.extract())
+                loader = scrapy.loader.ItemLoader(item = Ad(), response = response)
+                ad = self.load_fields(loader, response, result_id)
+                result_id += 1
+                curr_li = response.css(f'#result_{result_id}')
         except Exception as e:
             self.logger.error(str(e))
         else:
             self.response_count += 1
             self.useful_proxy.add(response.request.meta['proxy'])
-
+            yield ad
         finally:
             self.logger.debug(f'Total number of responses received: {self.response_count}')
             self.logger.debug(f'All usefull proxies: {self.useful_proxy}')
