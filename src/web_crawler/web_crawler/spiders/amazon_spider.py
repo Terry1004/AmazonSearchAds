@@ -1,6 +1,7 @@
 """ The main scrapy.spider class for web crawling """
 
 import scrapy
+from scrapy.loader import ItemLoader
 from ..init import init_proxy, init_query
 from .. import helpers
 from ..items import Ad
@@ -58,10 +59,11 @@ class AmazonSpider(scrapy.Spider):
             'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-left > div > div > a > img'
         ]
         self.price_paths=[
+            'div > div > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(4) > div.a-column.a-span7 > div:nth-child(1) > div:nth-child(3) > a > span.a-offscreen',
             'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div:nth-child(1) > div:nth-child(3) > a > span.a-offscreen',
             'div > div > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div:nth-child(1) > div:nth-child(3) > a > span.a-offscreen',
             'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-offscreen'
-        ]
+            ]
         # self.price_upper_paths = [
         #     'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > sup.sx-price-fractional',
         #     'div > div > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > sup.sx-price-fractional',
@@ -90,7 +92,7 @@ class AmazonSpider(scrapy.Spider):
 
     def start_requests(self):
         """ Define starting requests urls """
-        # queries = (query.query for query in self.query_it)
+        #queries = (query.query for query in self.query_it)
         queries = ['facial cream']
         for query in queries:
             url = self.query_api + query
@@ -102,7 +104,7 @@ class AmazonSpider(scrapy.Spider):
             self.logger.debug(f'Proxy used: {proxy}')
             yield request
 
-    def load_fields(self, loader, response, result_id):
+    def load_fields(self, loader, response, curr_li):
         """ Load all fields given a response and a result id number in the html unodered list
         Args:
             loader: The ItemLoder object to load items
@@ -112,40 +114,56 @@ class AmazonSpider(scrapy.Spider):
             An Ad object with all fields loaded
         """
         self.load_default_fields(loader)
-        self.load_title(loader, response, result_id)
-        self.load_price(loader, response, result_id)
-        self.load_thumbnail(loader, response, result_id)
-        self.load_brand(loader, response, result_id)
-        self.load_detail_url(loader, response, result_id)
-        self.load_category(loader, response, result_id)
+        self.load_title(loader, response, curr_li)
+        self.load_price(loader, response, curr_li)
+        self.load_thumbnail(loader, response, curr_li)
+        self.load_brand(loader, response, curr_li)
+        self.load_category(loader, response, curr_li)
         return loader.load_item()
     
-    def load_title(self, loader, response, result_id):
-        pass
+    def load_title(self, loader, response, curr_li):
+        for title_path in self.title_paths:
+            title_a = curr_li.css(title_path)
+            if title_a:
+                title = title_a.css('::attr(title)').extract()
+                url = title_a.css('::attr(href)').extract()
+                print (title)
+                print (url)
+                loader.add_value('title', title[0])
+                loader.add_value('detail_url', url[0])
+                return
+        self.logger.debug('Not found query because of title: ' + response.request.meta['query'])
 
-    def load_price(self, loader, response, result_id):
-        pass
+    def load_price(self, loader, response, curr_li):
+        for price_path in self.price_paths:
+            price_str = curr_li.css(price_path+'::text').extract()
+            if price_str:
+                print (price_str[0])
+                # the price_str is a list contains a price string seems like '$68.99 - $89.99' or single price '$45.99'
+                multi_price = price_str[0].split('-')
+                price = float(multi_price[0].split('$')[1]) # ['', '68.99']
+                print (price)
+                loader.add_value('price', price)
+                return
+        self.logger.debug('Not found query because of price: ' + response.request.meta['query'])
     
-    def load_thumbnail(self, loader, response, result_id):
+    def load_thumbnail(self, loader, response, curr_li):
         pass
 
-    def load_brand(self, loader, response, result_id):
+    def load_brand(self, loader, response, curr_li):
         pass
 
-    def load_detail_url(self, loader, response, result_id):
-        pass
-
-    def load_category(self, loader, response, result_id):
+    def load_category(self, loader, response, curr_li):
         pass
     
     def load_default_fields(self, loader):
         loader.add_value('key_words', '')
-        loader.add_value('relevance_score', 0)
-        loader.add_value('p_click', 0)
-        loader.add_value('rank_score', 0)
-        loader.add_value('quality_score', 0)
-        loader.add_value('cost_per_click', 0)
-        loader.add_value('position', 'top')
+        loader.add_value('relevance_score', 0.)
+        loader.add_value('p_click', 0.)
+        loader.add_value('rank_score', 0.)
+        loader.add_value('quality_score', 0.)
+        loader.add_value('cost_per_click', 0.)
+        loader.add_value('position', 0)
 
     def parse(self, response):
         """ For testing purpose, try to see if the crawler can get responses from server """
@@ -154,15 +172,15 @@ class AmazonSpider(scrapy.Spider):
             curr_li = response.css(f'#result_{result_id}')
             while curr_li:
                 loader = scrapy.loader.ItemLoader(item = Ad(), response = response)
-                ad = self.load_fields(loader, response, result_id)
+                ad = self.load_fields(loader, response, curr_li)
                 result_id += 1
                 curr_li = response.css(f'#result_{result_id}')
+                yield ad
         except Exception as e:
             self.logger.error(str(e))
         else:
             self.response_count += 1
             self.useful_proxy.add(response.request.meta['proxy'])
-            yield ad
         finally:
             self.logger.debug(f'Total number of responses received: {self.response_count}')
             self.logger.debug(f'All usefull proxies: {self.useful_proxy}')
