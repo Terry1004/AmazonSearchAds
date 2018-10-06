@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2018-10-05 21:41:00,219 - spider - DEBUG - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=facial cream
 2018-10-05 21:41:00,219 - spider - DEBUG - Proxy used: http://97.79.207.83:8080
 2018-10-05 21:41:04,639 - spider - ERROR - <traceback object at 0x113b530c8>
@@ -52,3 +53,28 @@
 2018-10-05 22:04:32,889 - spider - DEBUG - Not found query because of price: facial cream
 2018-10-05 22:04:33,364 - spider - DEBUG - Total number of responses received: 1
 2018-10-05 22:04:33,364 - spider - DEBUG - All usefull proxies: {'http://97.79.207.83:8080'}
+=======
+>>>>>>> 8e2e7626588352fed490e37246fe90812e70df06
+2018-10-05 22:11:29,414 - spider - DEBUG - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=home theater system 
+2018-10-05 22:11:29,414 - spider - DEBUG - Proxy used: http://97.79.207.83:8080
+2018-10-05 22:11:32,353 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:11:32,356 - spider - ERROR - load_category() takes 3 positional arguments but 4 were given
+2018-10-05 22:11:32,357 - spider - DEBUG - Total number of responses received: 0
+2018-10-05 22:11:32,358 - spider - DEBUG - All usefull proxies: set()
+2018-10-05 22:13:40,076 - spider - DEBUG - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=home theater system 
+2018-10-05 22:13:40,076 - spider - DEBUG - Proxy used: http://97.79.207.83:8080
+2018-10-05 22:13:47,275 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:47,313 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:47,579 - spider - DEBUG - Not found query because of title: home theater system 
+2018-10-05 22:13:47,580 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:47,581 - spider - ERROR - Not found query because of thumbnail: home theater system 
+2018-10-05 22:13:47,582 - spider - ERROR - Not found query because of brand: home theater system 
+2018-10-05 22:13:47,698 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:47,735 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:47,845 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:48,030 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:48,064 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:48,098 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:48,132 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:48,141 - spider - DEBUG - Total number of responses received: 1
+2018-10-05 22:13:48,141 - spider - DEBUG - All usefull proxies: {'http://97.79.207.83:8080'}
