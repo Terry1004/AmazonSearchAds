@@ -36,6 +36,7 @@ DOWNLOAD_DELAY = 0.5
 
 FEED_URI = 'file:ads.json'
 FEED_FORMAT = 'json'
+FEED_EXPORT_ENCODING = 'utf-8'
 
 # Disable cookies (enabled by default)
 #COOKIES_ENABLED = False
