@@ -59,6 +59,7 @@ class AmazonSpider(scrapy.Spider):
             'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-left > div > div > a > img'
         ]
         self.price_paths=[
+            'div > div > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(4) > div.a-column.a-span7 > div:nth-child(1) > div:nth-child(3) > a > span.a-offscreen',
             'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div:nth-child(1) > div:nth-child(3) > a > span.a-offscreen',
             'div > div > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div:nth-child(1) > div:nth-child(3) > a > span.a-offscreen',
             'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-offscreen'
@@ -98,6 +99,10 @@ class AmazonSpider(scrapy.Spider):
 
     def start_requests(self):
         """ Define starting requests urls """
+        #queries = (query.query for query in self.query_it)
+        queries = ['facial cream']
+        for query in queries:
+            url = self.query_api + query
         # queries = (query.query for query in self.query_it)
         for query in self.query_it:
             url = self.query_api + query.query
@@ -109,6 +114,7 @@ class AmazonSpider(scrapy.Spider):
             self.logger.debug(f'Proxy used: {proxy}')
             yield request
             break
+
 
     def load_fields(self, loader, response, curr_li, ad_id):
         """ Load all fields given a response and a result id number in the html unodered list
@@ -130,11 +136,31 @@ class AmazonSpider(scrapy.Spider):
         return loader.load_item()
     
     def load_title(self, loader, response, curr_li):
-        pass
+        for title_path in self.title_paths:
+            title_a = curr_li.css(title_path)
+            if title_a:
+                title = title_a.css('::attr(title)').extract()
+                url = title_a.css('::attr(href)').extract()
+                print (title)
+                print (url)
+                loader.add_value('title', title[0])
+                loader.add_value('detail_url', url[0])
+                return
+        self.logger.debug('Not found query because of title: ' + response.request.meta['query'])
 
     def load_price(self, loader, response, curr_li):
-        pass
-    
+        for price_path in self.price_paths:
+            price_str = curr_li.css(price_path+'::text').extract()
+            if price_str:
+                print (price_str[0])
+                # the price_str is a list contains a price string seems like '$68.99 - $89.99' or single price '$45.99'
+                multi_price = price_str[0].split('-')
+                price = float(multi_price[0].split('$')[1]) # ['', '68.99']
+                print (price)
+                loader.add_value('price', price)
+                return
+        self.logger.debug('Not found query because of price: ' + response.request.meta['query'])
+
     def load_thumbnail(self, loader, response, curr_li):
         """ Load crawled thumbnail into Ad object """
         for thumbnail_path in self.thumbnail_paths:

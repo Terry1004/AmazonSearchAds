@@ -1,0 +1,80 @@
+<<<<<<< HEAD
+2018-10-05 21:41:00,219 - spider - DEBUG - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=facial cream
+2018-10-05 21:41:00,219 - spider - DEBUG - Proxy used: http://97.79.207.83:8080
+2018-10-05 21:41:04,639 - spider - ERROR - <traceback object at 0x113b530c8>
+2018-10-05 21:41:04,639 - spider - DEBUG - Total number of responses received: 0
+2018-10-05 21:41:04,639 - spider - DEBUG - All usefull proxies: set()
+2018-10-05 21:48:50,840 - spider - DEBUG - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=facial cream
+2018-10-05 21:48:50,840 - spider - DEBUG - Proxy used: http://97.79.207.83:8080
+2018-10-05 21:49:17,331 - spider - ERROR - <traceback object at 0x1125065c8>
+2018-10-05 21:49:17,332 - spider - DEBUG - Total number of responses received: 0
+2018-10-05 21:49:17,332 - spider - DEBUG - All usefull proxies: set()
+2018-10-05 21:50:18,243 - spider - DEBUG - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=facial cream
+2018-10-05 21:50:18,244 - spider - DEBUG - Proxy used: http://97.79.207.83:8080
+2018-10-05 21:50:22,395 - spider - ERROR - <traceback object at 0x1112b3b88>
+2018-10-05 21:50:22,395 - spider - DEBUG - Total number of responses received: 0
+2018-10-05 21:50:22,395 - spider - DEBUG - All usefull proxies: set()
+2018-10-05 21:55:42,829 - spider - DEBUG - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=facial cream
+2018-10-05 21:55:42,829 - spider - DEBUG - Proxy used: http://97.79.207.83:8080
+2018-10-05 21:55:57,825 - spider - ERROR - Expected an argument, got <EOF at 12>
+2018-10-05 21:55:57,826 - spider - DEBUG - Total number of responses received: 0
+2018-10-05 21:55:57,826 - spider - DEBUG - All usefull proxies: set()
+2018-10-05 22:00:38,433 - spider - DEBUG - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=facial cream
+2018-10-05 22:00:38,433 - spider - DEBUG - Proxy used: http://97.79.207.83:8080
+2018-10-05 22:00:44,754 - spider - ERROR - Expected an argument, got <EOF at 12>
+2018-10-05 22:00:44,754 - spider - DEBUG - Total number of responses received: 0
+2018-10-05 22:00:44,754 - spider - DEBUG - All usefull proxies: set()
+2018-10-05 22:01:56,726 - spider - DEBUG - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=facial cream
+2018-10-05 22:01:56,726 - spider - DEBUG - Proxy used: http://97.79.207.83:8080
+2018-10-05 22:02:01,288 - spider - DEBUG - Total number of responses received: 0
+2018-10-05 22:02:01,288 - spider - DEBUG - All usefull proxies: set()
+2018-10-05 22:02:55,779 - spider - DEBUG - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=facial cream
+2018-10-05 22:02:55,779 - spider - DEBUG - Proxy used: http://97.79.207.83:8080
+2018-10-05 22:02:59,251 - spider - ERROR - 'AmazonSpider' object has no attribute 'load_detail_url'
+2018-10-05 22:02:59,252 - spider - DEBUG - Total number of responses received: 0
+2018-10-05 22:02:59,252 - spider - DEBUG - All usefull proxies: set()
+2018-10-05 22:03:47,450 - spider - DEBUG - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=facial cream
+2018-10-05 22:03:47,450 - spider - DEBUG - Proxy used: http://97.79.207.83:8080
+2018-10-05 22:03:52,253 - spider - DEBUG - Not found query because of title: facial cream
+2018-10-05 22:03:52,259 - spider - DEBUG - Not found query because of price: facial cream
+2018-10-05 22:03:52,421 - spider - DEBUG - Not found query because of title: facial cream
+2018-10-05 22:03:52,422 - spider - DEBUG - Not found query because of price: facial cream
+2018-10-05 22:03:52,455 - spider - DEBUG - Not found query because of title: facial cream
+2018-10-05 22:03:52,456 - spider - DEBUG - Not found query because of price: facial cream
+2018-10-05 22:03:52,980 - spider - DEBUG - Total number of responses received: 1
+2018-10-05 22:03:52,980 - spider - DEBUG - All usefull proxies: {'http://97.79.207.83:8080'}
+2018-10-05 22:04:29,696 - spider - DEBUG - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=facial cream
+2018-10-05 22:04:29,696 - spider - DEBUG - Proxy used: http://97.79.207.83:8080
+2018-10-05 22:04:32,712 - spider - DEBUG - Not found query because of title: facial cream
+2018-10-05 22:04:32,715 - spider - DEBUG - Not found query because of price: facial cream
+2018-10-05 22:04:32,754 - spider - DEBUG - Not found query because of title: facial cream
+2018-10-05 22:04:32,755 - spider - DEBUG - Not found query because of price: facial cream
+2018-10-05 22:04:32,888 - spider - DEBUG - Not found query because of title: facial cream
+2018-10-05 22:04:32,889 - spider - DEBUG - Not found query because of price: facial cream
+2018-10-05 22:04:33,364 - spider - DEBUG - Total number of responses received: 1
+2018-10-05 22:04:33,364 - spider - DEBUG - All usefull proxies: {'http://97.79.207.83:8080'}
+=======
+>>>>>>> 8e2e7626588352fed490e37246fe90812e70df06
+2018-10-05 22:11:29,414 - spider - DEBUG - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=home theater system 
+2018-10-05 22:11:29,414 - spider - DEBUG - Proxy used: http://97.79.207.83:8080
+2018-10-05 22:11:32,353 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:11:32,356 - spider - ERROR - load_category() takes 3 positional arguments but 4 were given
+2018-10-05 22:11:32,357 - spider - DEBUG - Total number of responses received: 0
+2018-10-05 22:11:32,358 - spider - DEBUG - All usefull proxies: set()
+2018-10-05 22:13:40,076 - spider - DEBUG - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=home theater system 
+2018-10-05 22:13:40,076 - spider - DEBUG - Proxy used: http://97.79.207.83:8080
+2018-10-05 22:13:47,275 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:47,313 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:47,579 - spider - DEBUG - Not found query because of title: home theater system 
+2018-10-05 22:13:47,580 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:47,581 - spider - ERROR - Not found query because of thumbnail: home theater system 
+2018-10-05 22:13:47,582 - spider - ERROR - Not found query because of brand: home theater system 
+2018-10-05 22:13:47,698 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:47,735 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:47,845 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:48,030 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:48,064 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:48,098 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:48,132 - spider - DEBUG - Not found query because of price: home theater system 
+2018-10-05 22:13:48,141 - spider - DEBUG - Total number of responses received: 1
+2018-10-05 22:13:48,141 - spider - DEBUG - All usefull proxies: {'http://97.79.207.83:8080'}
