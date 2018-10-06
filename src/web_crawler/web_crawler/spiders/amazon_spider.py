@@ -63,12 +63,6 @@ class AmazonSpider(scrapy.Spider):
             'div > div > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div:nth-child(1) > div:nth-child(3) > a > span.a-offscreen',
             'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-offscreen'
         ]
-        # self.price_upper_paths = [
-        #     'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > sup.sx-price-fractional',
-        #     'div > div > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > sup.sx-price-fractional',
-        #     'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > sup:nth-child(3)',
-        #     'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span7 > div.a-row.a-spacing-none > a > span.a-color-base.sx-zero-spacing > span > sup:nth-child(7)'
-        # ]
         self.response_count = 0
         self.useful_proxy = set()
         super().__init__()
@@ -172,6 +166,7 @@ class AmazonSpider(scrapy.Spider):
         loader.add_value('category', '')
 
     def load_default_fields(self, loader):
+        """ Initialize Ad fields that are not crawled from web """
         loader.add_value('key_words', [])
         loader.add_value('relevance_score', 0.)
         loader.add_value('p_click', 0.)
@@ -181,6 +176,7 @@ class AmazonSpider(scrapy.Spider):
         loader.add_value('position', 0)
 
     def load_query_fields(self, loader, response, ad_id):
+        """ Load Ad fields contained in request """
         request_meta = response.request.meta
         loader.add_value('ad_id', ad_id)
         loader.add_value('campaign_id', request_meta['campaign_id'])
