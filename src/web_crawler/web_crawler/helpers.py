@@ -48,7 +48,7 @@ def setup_config_logger(logger_name):
     # specify the path of log file
     handler = logging.FileHandler(config['log_files'][logger_name])
     # format the log
-    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(lineno)d - %(message)s')
     handler.setFormatter(formatter)
     logger.addHandler(handler)
     logger.setLevel(logging.DEBUG)
