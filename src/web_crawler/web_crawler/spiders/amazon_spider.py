@@ -126,7 +126,7 @@ class AdsLoader:
     """
     
     title_paths = [
-        # div > div.a-section.s-comparisonView > div.a-section.a-spacing-mini > div:nth-child(1) > a
+        'div > div.a-section.s-comparisonView > div.a-section.a-spacing-mini > div:nth-child(1) > a'
         'div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div.a-row.a-spacing-none.scx-truncate-medium.sx-line-clamp-2 > a',
         'div > div > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div.a-row.a-spacing-none.scx-truncate-medium.sx-line-clamp-2 > a',
         'div > div > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div:nth-child(1) > a',
@@ -214,7 +214,7 @@ class AdsLoader:
                 loader.add_value('thumbnail', thumbnail[0])
                 return
         cls.get_logger().debug('Not found query because of thumbnail: ' + response.request.meta['query'])
-        loader.add_value('thumnail', '')
+        loader.add_value('thumbnail', '')
 
     @classmethod
     def load_brand(cls, loader, response, curr_li):
@@ -234,7 +234,8 @@ class AdsLoader:
             category = response.css(category_path + '::text').extract()
             if category:
                 loader.add_value('category', category[0])
-        cls.get_logger().error('Not found query because of category: ' + response.request.meta['query'])
+        cls.get_logger().debug('Not found query because of category: ' + response.request.meta['query'])
+        loader.add_value('category', '')
 
     @classmethod
     def load_query_fields(cls, loader, response, ad_id):
