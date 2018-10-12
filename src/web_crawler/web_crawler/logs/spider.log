@@ -1,0 +1,1100 @@
+2018-10-12 15:22:13,830 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=home theater system 
+2018-10-12 15:22:13,830 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:22:13,843 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Multi-channel box system home theater
+2018-10-12 15:22:13,843 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:22:13,844 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Samsung blueray home theater
+2018-10-12 15:22:13,844 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:22:13,844 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=LED TV
+2018-10-12 15:22:13,844 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:22:13,912 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Large screen LED TV
+2018-10-12 15:22:13,912 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:22:17,610 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Eye protection LED TV
+2018-10-12 15:22:17,610 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:22:17,793 - spider - DEBUG - 204 - Not found query because of price: home theater system 
+2018-10-12 15:22:17,828 - spider - DEBUG - 204 - Not found query because of price: home theater system 
+2018-10-12 15:22:17,988 - spider - DEBUG - 189 - Not found query because of title: home theater system 
+2018-10-12 15:22:17,989 - spider - DEBUG - 204 - Not found query because of price: home theater system 
+2018-10-12 15:22:17,990 - spider - ERROR - 214 - Not found query because of thumbnail: home theater system 
+2018-10-12 15:22:17,991 - spider - ERROR - 224 - Not found query because of brand: home theater system 
+2018-10-12 15:22:18,052 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:22:18,053 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=High resolution LED TV
+2018-10-12 15:22:18,053 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:22:18,270 - spider - DEBUG - 204 - Not found query because of price: home theater system 
+2018-10-12 15:22:18,343 - spider - DEBUG - 204 - Not found query because of price: home theater system 
+2018-10-12 15:22:18,351 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=smart watch
+2018-10-12 15:22:18,351 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:22:18,795 - spider - DEBUG - 204 - Not found query because of price: home theater system 
+2018-10-12 15:22:18,874 - spider - DEBUG - 204 - Not found query because of price: home theater system 
+2018-10-12 15:22:19,025 - spider - DEBUG - 204 - Not found query because of price: home theater system 
+2018-10-12 15:22:19,107 - spider - DEBUG - 204 - Not found query because of price: home theater system 
+2018-10-12 15:22:19,186 - spider - DEBUG - 204 - Not found query because of price: home theater system 
+2018-10-12 15:22:19,221 - spider - DEBUG - 114 - Total number of responses received: 1
+2018-10-12 15:22:19,221 - spider - DEBUG - 115 - All usefull proxies: {'http://97.79.207.83:8080'}
+2018-10-12 15:22:19,306 - spider - DEBUG - 114 - Total number of responses received: 2
+2018-10-12 15:22:19,306 - spider - DEBUG - 115 - All usefull proxies: {'http://104.248.112.189: 8080', 'http://97.79.207.83:8080'}
+2018-10-12 15:22:19,724 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Water proof smart watch
+2018-10-12 15:22:19,725 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:22:19,948 - spider - DEBUG - 204 - Not found query because of price: Samsung blueray home theater
+2018-10-12 15:22:19,971 - spider - DEBUG - 204 - Not found query because of price: Samsung blueray home theater
+2018-10-12 15:22:20,016 - spider - DEBUG - 204 - Not found query because of price: Samsung blueray home theater
+2018-10-12 15:22:20,055 - spider - DEBUG - 204 - Not found query because of price: Samsung blueray home theater
+2018-10-12 15:22:20,074 - spider - DEBUG - 204 - Not found query because of price: Samsung blueray home theater
+2018-10-12 15:22:20,139 - spider - DEBUG - 204 - Not found query because of price: Samsung blueray home theater
+2018-10-12 15:22:20,207 - spider - DEBUG - 204 - Not found query because of price: Samsung blueray home theater
+2018-10-12 15:22:20,210 - spider - DEBUG - 114 - Total number of responses received: 3
+2018-10-12 15:22:20,210 - spider - DEBUG - 115 - All usefull proxies: {'http://104.248.112.189: 8080', 'http://97.79.207.83:8080', 'http://49.51.68.122:1080'}
+2018-10-12 15:22:20,892 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Electronic smart watch
+2018-10-12 15:22:20,892 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:22:21,405 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=fitness tracker smart watch
+2018-10-12 15:22:21,405 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:22:21,433 - spider - DEBUG - 114 - Total number of responses received: 4
+2018-10-12 15:22:21,433 - spider - DEBUG - 115 - All usefull proxies: {'http://104.248.112.189: 8080', 'http://162.243.140.150:80', 'http://97.79.207.83:8080', 'http://49.51.68.122:1080'}
+2018-10-12 15:22:21,529 - spider - DEBUG - 204 - Not found query because of price: smart watch
+2018-10-12 15:22:21,644 - spider - DEBUG - 204 - Not found query because of price: smart watch
+2018-10-12 15:22:21,770 - spider - DEBUG - 189 - Not found query because of title: smart watch
+2018-10-12 15:22:21,770 - spider - DEBUG - 204 - Not found query because of price: smart watch
+2018-10-12 15:22:21,771 - spider - ERROR - 214 - Not found query because of thumbnail: smart watch
+2018-10-12 15:22:21,771 - spider - ERROR - 224 - Not found query because of brand: smart watch
+2018-10-12 15:22:21,940 - spider - DEBUG - 204 - Not found query because of price: smart watch
+2018-10-12 15:22:21,976 - spider - DEBUG - 204 - Not found query because of price: smart watch
+2018-10-12 15:22:22,457 - spider - DEBUG - 204 - Not found query because of price: smart watch
+2018-10-12 15:22:22,462 - spider - DEBUG - 114 - Total number of responses received: 5
+2018-10-12 15:22:22,462 - spider - DEBUG - 115 - All usefull proxies: {'http://104.248.112.189: 8080', 'http://162.243.140.150:80', 'http://97.79.207.83:8080', 'http://49.51.68.122:1080'}
+2018-10-12 15:22:22,739 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=watch with leather band
+2018-10-12 15:22:22,739 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:22:22,876 - spider - DEBUG - 204 - Not found query because of price: High resolution LED TV
+2018-10-12 15:22:22,902 - spider - DEBUG - 204 - Not found query because of price: High resolution LED TV
+2018-10-12 15:22:23,064 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=watch with date display
+2018-10-12 15:22:23,065 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:22:23,129 - spider - DEBUG - 204 - Not found query because of price: High resolution LED TV
+2018-10-12 15:22:23,195 - spider - DEBUG - 204 - Not found query because of price: High resolution LED TV
+2018-10-12 15:22:23,232 - spider - DEBUG - 204 - Not found query because of price: High resolution LED TV
+2018-10-12 15:22:23,539 - spider - DEBUG - 204 - Not found query because of price: High resolution LED TV
+2018-10-12 15:22:23,580 - spider - DEBUG - 204 - Not found query because of price: High resolution LED TV
+2018-10-12 15:22:23,588 - spider - DEBUG - 114 - Total number of responses received: 6
+2018-10-12 15:22:23,588 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:24,423 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:22:24,426 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=ancient mechanical watch
+2018-10-12 15:22:24,427 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:22:24,604 - spider - DEBUG - 204 - Not found query because of price: Electronic smart watch
+2018-10-12 15:22:24,907 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=smart watch for children
+2018-10-12 15:22:24,907 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:22:24,987 - spider - DEBUG - 204 - Not found query because of price: Electronic smart watch
+2018-10-12 15:22:25,026 - spider - DEBUG - 204 - Not found query because of price: Electronic smart watch
+2018-10-12 15:22:25,094 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:25,094 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:25,094 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:25,126 - spider - DEBUG - 204 - Not found query because of price: Electronic smart watch
+2018-10-12 15:22:25,169 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:25,169 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:25,169 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:25,274 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:25,275 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:25,275 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:25,352 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:25,352 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:25,353 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:25,441 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:25,441 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:25,443 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:25,522 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:25,523 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:25,523 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:25,604 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:25,605 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:25,605 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:25,682 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:25,682 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:25,683 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:25,725 - spider - DEBUG - 204 - Not found query because of price: Electronic smart watch
+2018-10-12 15:22:25,776 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:25,778 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:25,778 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:25,829 - spider - DEBUG - 204 - Not found query because of price: Electronic smart watch
+2018-10-12 15:22:25,835 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Video Games
+2018-10-12 15:22:25,836 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:22:25,873 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:25,873 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:25,873 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:25,917 - spider - DEBUG - 204 - Not found query because of price: Electronic smart watch
+2018-10-12 15:22:25,958 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:25,958 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:25,958 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:25,999 - spider - DEBUG - 204 - Not found query because of price: Electronic smart watch
+2018-10-12 15:22:26,065 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:26,065 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:26,066 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:26,107 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:26,108 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:26,108 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:26,115 - spider - DEBUG - 114 - Total number of responses received: 7
+2018-10-12 15:22:26,115 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:26,156 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:26,157 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:26,157 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:26,202 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:26,202 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:26,203 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:26,247 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:26,248 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:26,248 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:26,291 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:26,292 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:26,293 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:26,337 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:26,338 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:26,338 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:26,385 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:26,385 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:26,385 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:26,431 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:26,432 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:26,433 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:26,474 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:26,474 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:26,474 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:26,522 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:26,522 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:26,523 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:26,570 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:26,570 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:26,571 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:26,630 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:26,631 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:26,631 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:26,674 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:26,675 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:26,675 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:26,683 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Xbox 360 video games
+2018-10-12 15:22:26,684 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:22:26,720 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:26,721 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:26,721 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:26,767 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:26,768 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:26,769 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:26,825 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:26,825 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:26,826 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:26,871 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:26,872 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:26,872 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:26,950 - spider - DEBUG - 204 - Not found query because of price: smart watch for children
+2018-10-12 15:22:27,002 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:27,002 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:27,003 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:27,046 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:27,047 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:27,049 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:27,089 - spider - DEBUG - 204 - Not found query because of price: smart watch for children
+2018-10-12 15:22:27,129 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:27,129 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:27,130 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:27,173 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:27,173 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:27,174 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:27,261 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:27,262 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:27,263 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:27,306 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:27,306 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:27,306 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:27,392 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:27,393 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:27,394 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:27,439 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:27,439 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:27,440 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:27,532 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:27,533 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:27,533 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:27,585 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:27,585 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:27,586 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:27,683 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:27,683 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:27,684 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:27,729 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:27,729 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:27,730 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:27,766 - spider - DEBUG - 204 - Not found query because of price: smart watch for children
+2018-10-12 15:22:27,806 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:27,806 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:27,807 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:27,845 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:27,846 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:27,846 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:27,902 - spider - DEBUG - 204 - Not found query because of price: smart watch for children
+2018-10-12 15:22:27,957 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:27,957 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:27,957 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:28,004 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:28,004 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:28,005 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:28,104 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:28,104 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:28,104 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:28,145 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:28,146 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:28,146 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:28,231 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:28,232 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:28,232 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:28,275 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:28,275 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:28,276 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:28,319 - spider - DEBUG - 204 - Not found query because of price: smart watch for children
+2018-10-12 15:22:28,373 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:28,374 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:28,374 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:28,424 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:28,425 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:28,425 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:28,516 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:28,517 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:28,517 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:28,559 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:28,560 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:28,560 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:28,651 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:28,651 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:28,652 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:28,698 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:28,698 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:28,699 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:28,777 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:28,777 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:28,777 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:28,820 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:28,820 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:28,821 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:28,921 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:28,922 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:28,922 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:28,972 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:28,972 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:28,972 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:29,086 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:29,086 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:29,087 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:29,091 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=action & shooter video games
+2018-10-12 15:22:29,091 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:22:29,135 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:29,135 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:29,136 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:29,239 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:29,239 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:29,239 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:29,296 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:29,297 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:29,297 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:29,402 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:29,402 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:29,402 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:29,437 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:29,437 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:29,437 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:29,479 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:29,479 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:29,481 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:29,568 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:29,568 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:29,568 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:29,613 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:29,614 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:29,615 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:29,660 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:29,661 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:29,661 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:29,747 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:29,748 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:29,748 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:29,789 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:29,789 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:29,789 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:29,836 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:29,836 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:29,836 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:29,880 - spider - DEBUG - 204 - Not found query because of price: smart watch for children
+2018-10-12 15:22:29,922 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:29,923 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:29,923 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:29,972 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:29,973 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:29,973 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:30,023 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:30,023 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:30,024 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:30,071 - spider - DEBUG - 204 - Not found query because of price: smart watch for children
+2018-10-12 15:22:30,120 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:30,120 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:30,121 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:30,169 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:30,170 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:30,170 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:30,220 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:30,220 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:30,220 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:30,226 - spider - DEBUG - 114 - Total number of responses received: 8
+2018-10-12 15:22:30,226 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:30,266 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:30,266 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:30,267 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:30,311 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:30,312 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:30,313 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:30,361 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:30,362 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:30,363 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:30,403 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:30,403 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:30,404 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:30,452 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:30,452 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:30,452 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:30,501 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:30,501 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:30,502 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:30,538 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:30,539 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:30,539 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:30,588 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:30,588 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:30,588 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:30,636 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:30,636 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:30,636 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:30,673 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:30,673 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:30,673 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:30,723 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:30,723 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:30,723 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:30,773 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:30,774 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:30,775 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:30,809 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:30,809 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:30,809 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:30,854 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:30,854 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:30,855 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:30,905 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:30,906 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:30,906 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:30,950 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:30,950 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:30,950 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:30,994 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:30,994 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:30,995 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:31,038 - spider - DEBUG - 204 - Not found query because of price: watch with leather band
+2018-10-12 15:22:31,038 - spider - ERROR - 214 - Not found query because of thumbnail: watch with leather band
+2018-10-12 15:22:31,039 - spider - ERROR - 224 - Not found query because of brand: watch with leather band
+2018-10-12 15:22:31,044 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=adventure video games
+2018-10-12 15:22:31,044 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:22:31,077 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:31,078 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:31,078 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:31,122 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:31,122 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:31,122 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:31,129 - spider - DEBUG - 114 - Total number of responses received: 9
+2018-10-12 15:22:31,129 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:31,170 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:31,170 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:31,171 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:31,214 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:31,215 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:31,215 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:31,253 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:31,254 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:31,254 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:31,301 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:31,302 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:31,302 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:31,339 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:31,339 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:31,340 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:31,397 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:31,398 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:31,399 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:31,447 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:31,448 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:31,448 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:31,493 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:31,493 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:31,493 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:31,537 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:31,537 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:31,538 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:31,587 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:31,588 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:31,588 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:31,636 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:31,637 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:31,637 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:31,687 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:31,687 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:31,688 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:31,734 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:31,734 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:31,734 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:31,780 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:31,782 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:31,782 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:31,820 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:31,820 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:31,821 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:31,864 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:31,865 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:31,865 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:31,899 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:31,900 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:31,900 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:31,941 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:31,942 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:31,942 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:31,982 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:31,982 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:31,982 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:32,035 - spider - DEBUG - 204 - Not found query because of price: watch with date display
+2018-10-12 15:22:32,036 - spider - ERROR - 214 - Not found query because of thumbnail: watch with date display
+2018-10-12 15:22:32,036 - spider - ERROR - 224 - Not found query because of brand: watch with date display
+2018-10-12 15:22:32,089 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:32,090 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:32,090 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:32,099 - spider - DEBUG - 114 - Total number of responses received: 10
+2018-10-12 15:22:32,099 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:32,146 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:32,147 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:32,147 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:32,152 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=sports  video games
+2018-10-12 15:22:32,152 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:22:32,187 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:32,187 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:32,187 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:32,224 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:32,224 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:32,224 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:32,259 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:32,259 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:32,259 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:32,391 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:32,392 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:32,392 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:32,443 - spider - DEBUG - 204 - Not found query because of price: Xbox 360 video games
+2018-10-12 15:22:32,482 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:32,482 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:32,482 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:32,535 - spider - DEBUG - 204 - Not found query because of price: Xbox 360 video games
+2018-10-12 15:22:32,572 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:32,573 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:32,573 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:32,623 - spider - DEBUG - 204 - Not found query because of price: Xbox 360 video games
+2018-10-12 15:22:32,670 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:32,670 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:32,671 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:32,723 - spider - DEBUG - 204 - Not found query because of price: Xbox 360 video games
+2018-10-12 15:22:32,768 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:32,769 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:32,769 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:32,830 - spider - DEBUG - 204 - Not found query because of price: Xbox 360 video games
+2018-10-12 15:22:32,867 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:32,867 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:32,867 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:32,920 - spider - DEBUG - 204 - Not found query because of price: Xbox 360 video games
+2018-10-12 15:22:32,959 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:32,960 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:32,961 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:33,021 - spider - DEBUG - 204 - Not found query because of price: Xbox 360 video games
+2018-10-12 15:22:33,067 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:33,067 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:33,068 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:33,125 - spider - DEBUG - 204 - Not found query because of price: Xbox 360 video games
+2018-10-12 15:22:33,168 - spider - DEBUG - 204 - Not found query because of price: ancient mechanical watch
+2018-10-12 15:22:33,169 - spider - ERROR - 214 - Not found query because of thumbnail: ancient mechanical watch
+2018-10-12 15:22:33,169 - spider - ERROR - 224 - Not found query because of brand: ancient mechanical watch
+2018-10-12 15:22:33,227 - spider - DEBUG - 204 - Not found query because of price: Xbox 360 video games
+2018-10-12 15:22:33,236 - spider - DEBUG - 114 - Total number of responses received: 11
+2018-10-12 15:22:33,237 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:33,292 - spider - DEBUG - 204 - Not found query because of price: Xbox 360 video games
+2018-10-12 15:22:33,353 - spider - DEBUG - 204 - Not found query because of price: Xbox 360 video games
+2018-10-12 15:22:33,417 - spider - DEBUG - 204 - Not found query because of price: Xbox 360 video games
+2018-10-12 15:22:33,493 - spider - DEBUG - 204 - Not found query because of price: Xbox 360 video games
+2018-10-12 15:22:33,556 - spider - DEBUG - 204 - Not found query because of price: Xbox 360 video games
+2018-10-12 15:22:33,622 - spider - DEBUG - 204 - Not found query because of price: Xbox 360 video games
+2018-10-12 15:22:33,708 - spider - DEBUG - 204 - Not found query because of price: Xbox 360 video games
+2018-10-12 15:22:33,718 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:22:33,719 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=PC & MAC video games
+2018-10-12 15:22:33,719 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:22:33,775 - spider - DEBUG - 204 - Not found query because of price: Xbox 360 video games
+2018-10-12 15:22:33,789 - spider - DEBUG - 114 - Total number of responses received: 12
+2018-10-12 15:22:33,789 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:34,086 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=PlayStation 3 video games
+2018-10-12 15:22:34,086 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:22:34,261 - spider - DEBUG - 204 - Not found query because of price: sports  video games
+2018-10-12 15:22:34,301 - spider - DEBUG - 204 - Not found query because of price: adventure video games
+2018-10-12 15:22:34,569 - spider - DEBUG - 204 - Not found query because of price: adventure video games
+2018-10-12 15:22:34,754 - spider - DEBUG - 204 - Not found query because of price: sports  video games
+2018-10-12 15:22:34,760 - spider - DEBUG - 114 - Total number of responses received: 13
+2018-10-12 15:22:34,760 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:34,801 - spider - DEBUG - 204 - Not found query because of price: sports  video games
+2018-10-12 15:22:34,837 - spider - DEBUG - 204 - Not found query because of price: sports  video games
+2018-10-12 15:22:35,021 - spider - DEBUG - 204 - Not found query because of price: sports  video games
+2018-10-12 15:22:35,069 - spider - DEBUG - 114 - Total number of responses received: 14
+2018-10-12 15:22:35,069 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:36,217 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=PlayStation 4 video games
+2018-10-12 15:22:36,217 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:22:36,297 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Nintendo Wii video games
+2018-10-12 15:22:36,297 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:22:36,417 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:36,467 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:36,531 - spider - DEBUG - 204 - Not found query because of price: PC & MAC video games
+2018-10-12 15:22:36,582 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:36,619 - spider - DEBUG - 204 - Not found query because of price: PC & MAC video games
+2018-10-12 15:22:36,671 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:36,768 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:36,859 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:36,901 - spider - ERROR - 107 - could not convert string to float: '1,449.00'
+2018-10-12 15:22:36,901 - spider - DEBUG - 114 - Total number of responses received: 14
+2018-10-12 15:22:36,901 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:36,953 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:37,010 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:37,070 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:37,133 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:37,187 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:37,296 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:37,355 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:37,417 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:37,470 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:37,528 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:37,598 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:37,677 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:37,732 - spider - DEBUG - 204 - Not found query because of price: PlayStation 3 video games
+2018-10-12 15:22:37,738 - spider - DEBUG - 114 - Total number of responses received: 15
+2018-10-12 15:22:37,738 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:39,937 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Nintendo DS video games
+2018-10-12 15:22:39,938 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:22:40,150 - spider - DEBUG - 204 - Not found query because of price: Nintendo Wii video games
+2018-10-12 15:22:40,192 - spider - DEBUG - 204 - Not found query because of price: Nintendo Wii video games
+2018-10-12 15:22:40,546 - spider - DEBUG - 204 - Not found query because of price: Nintendo Wii video games
+2018-10-12 15:22:40,586 - spider - DEBUG - 204 - Not found query because of price: Nintendo Wii video games
+2018-10-12 15:22:40,760 - spider - DEBUG - 204 - Not found query because of price: Nintendo Wii video games
+2018-10-12 15:22:40,939 - spider - DEBUG - 204 - Not found query because of price: Nintendo Wii video games
+2018-10-12 15:22:40,980 - spider - DEBUG - 204 - Not found query because of price: Nintendo Wii video games
+2018-10-12 15:22:41,021 - spider - DEBUG - 204 - Not found query because of price: Nintendo Wii video games
+2018-10-12 15:22:41,027 - spider - DEBUG - 114 - Total number of responses received: 16
+2018-10-12 15:22:41,027 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:41,165 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Outdoor Furniture
+2018-10-12 15:22:41,165 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:22:42,729 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=all weather outdoor furniture
+2018-10-12 15:22:42,729 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:22:42,898 - spider - DEBUG - 189 - Not found query because of title: Outdoor Furniture
+2018-10-12 15:22:42,899 - spider - DEBUG - 204 - Not found query because of price: Outdoor Furniture
+2018-10-12 15:22:42,899 - spider - ERROR - 214 - Not found query because of thumbnail: Outdoor Furniture
+2018-10-12 15:22:42,899 - spider - ERROR - 224 - Not found query because of brand: Outdoor Furniture
+2018-10-12 15:22:42,931 - spider - DEBUG - 189 - Not found query because of title: Outdoor Furniture
+2018-10-12 15:22:42,933 - spider - DEBUG - 204 - Not found query because of price: Outdoor Furniture
+2018-10-12 15:22:42,934 - spider - ERROR - 214 - Not found query because of thumbnail: Outdoor Furniture
+2018-10-12 15:22:42,935 - spider - ERROR - 224 - Not found query because of brand: Outdoor Furniture
+2018-10-12 15:22:43,528 - spider - DEBUG - 114 - Total number of responses received: 17
+2018-10-12 15:22:43,528 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:43,901 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:22:43,902 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=ikea outdoor furniture
+2018-10-12 15:22:43,902 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:22:44,409 - spider - DEBUG - 204 - Not found query because of price: all weather outdoor furniture
+2018-10-12 15:22:44,583 - spider - DEBUG - 114 - Total number of responses received: 18
+2018-10-12 15:22:44,584 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:45,972 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=outdoor furniture covers
+2018-10-12 15:22:45,972 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:22:46,299 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=outdoor furniture set
+2018-10-12 15:22:46,299 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:22:46,445 - spider - DEBUG - 204 - Not found query because of price: ikea outdoor furniture
+2018-10-12 15:22:46,473 - spider - DEBUG - 204 - Not found query because of price: ikea outdoor furniture
+2018-10-12 15:22:46,502 - spider - DEBUG - 189 - Not found query because of title: ikea outdoor furniture
+2018-10-12 15:22:46,504 - spider - DEBUG - 204 - Not found query because of price: ikea outdoor furniture
+2018-10-12 15:22:46,504 - spider - ERROR - 214 - Not found query because of thumbnail: ikea outdoor furniture
+2018-10-12 15:22:46,505 - spider - ERROR - 224 - Not found query because of brand: ikea outdoor furniture
+2018-10-12 15:22:46,753 - spider - DEBUG - 204 - Not found query because of price: ikea outdoor furniture
+2018-10-12 15:22:46,781 - spider - DEBUG - 204 - Not found query because of price: ikea outdoor furniture
+2018-10-12 15:22:46,874 - spider - DEBUG - 204 - Not found query because of price: ikea outdoor furniture
+2018-10-12 15:22:47,058 - spider - DEBUG - 114 - Total number of responses received: 19
+2018-10-12 15:22:47,058 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:47,575 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=suncast outdoor furniture
+2018-10-12 15:22:47,576 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:22:47,730 - spider - DEBUG - 204 - Not found query because of price: outdoor furniture covers
+2018-10-12 15:22:47,766 - spider - DEBUG - 204 - Not found query because of price: outdoor furniture covers
+2018-10-12 15:22:48,084 - spider - DEBUG - 204 - Not found query because of price: outdoor furniture covers
+2018-10-12 15:22:48,121 - spider - DEBUG - 204 - Not found query because of price: outdoor furniture covers
+2018-10-12 15:22:48,516 - spider - DEBUG - 204 - Not found query because of price: outdoor furniture covers
+2018-10-12 15:22:48,559 - spider - DEBUG - 204 - Not found query because of price: outdoor furniture covers
+2018-10-12 15:22:48,564 - spider - DEBUG - 114 - Total number of responses received: 20
+2018-10-12 15:22:48,564 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:50,761 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=teak oil for outdoor furniture
+2018-10-12 15:22:50,761 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:22:50,926 - spider - DEBUG - 204 - Not found query because of price: suncast outdoor furniture
+2018-10-12 15:22:50,955 - spider - DEBUG - 204 - Not found query because of price: suncast outdoor furniture
+2018-10-12 15:22:51,092 - spider - DEBUG - 189 - Not found query because of title: suncast outdoor furniture
+2018-10-12 15:22:51,092 - spider - DEBUG - 204 - Not found query because of price: suncast outdoor furniture
+2018-10-12 15:22:51,092 - spider - ERROR - 214 - Not found query because of thumbnail: suncast outdoor furniture
+2018-10-12 15:22:51,093 - spider - ERROR - 224 - Not found query because of brand: suncast outdoor furniture
+2018-10-12 15:22:51,267 - spider - DEBUG - 204 - Not found query because of price: suncast outdoor furniture
+2018-10-12 15:22:51,302 - spider - DEBUG - 204 - Not found query because of price: suncast outdoor furniture
+2018-10-12 15:22:51,518 - spider - DEBUG - 204 - Not found query because of price: suncast outdoor furniture
+2018-10-12 15:22:51,688 - spider - DEBUG - 204 - Not found query because of price: suncast outdoor furniture
+2018-10-12 15:22:51,728 - spider - DEBUG - 204 - Not found query because of price: suncast outdoor furniture
+2018-10-12 15:22:51,732 - spider - DEBUG - 114 - Total number of responses received: 21
+2018-10-12 15:22:51,732 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:51,977 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=beach outdoor furniture
+2018-10-12 15:22:51,977 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:22:52,102 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=garden bench outdoor furniture
+2018-10-12 15:22:52,102 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:22:54,167 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:22:54,168 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=urban outdoor furniture
+2018-10-12 15:22:54,168 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:22:54,677 - spider - ERROR - 107 - could not convert string to float: '1,117.12'
+2018-10-12 15:22:54,677 - spider - DEBUG - 114 - Total number of responses received: 21
+2018-10-12 15:22:54,678 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:54,700 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=office desk
+2018-10-12 15:22:54,700 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:22:55,432 - spider - DEBUG - 114 - Total number of responses received: 22
+2018-10-12 15:22:55,432 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:56,625 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=office computer desk
+2018-10-12 15:22:56,626 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:22:56,791 - spider - DEBUG - 204 - Not found query because of price: office desk
+2018-10-12 15:22:56,827 - spider - DEBUG - 204 - Not found query because of price: office desk
+2018-10-12 15:22:56,873 - spider - DEBUG - 189 - Not found query because of title: office desk
+2018-10-12 15:22:56,874 - spider - DEBUG - 204 - Not found query because of price: office desk
+2018-10-12 15:22:56,875 - spider - ERROR - 214 - Not found query because of thumbnail: office desk
+2018-10-12 15:22:56,876 - spider - ERROR - 224 - Not found query because of brand: office desk
+2018-10-12 15:22:56,912 - spider - DEBUG - 189 - Not found query because of title: office desk
+2018-10-12 15:22:56,913 - spider - DEBUG - 204 - Not found query because of price: office desk
+2018-10-12 15:22:56,913 - spider - ERROR - 214 - Not found query because of thumbnail: office desk
+2018-10-12 15:22:56,914 - spider - ERROR - 224 - Not found query because of brand: office desk
+2018-10-12 15:22:56,970 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=adjustable office desk
+2018-10-12 15:22:56,970 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:22:57,185 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:57,282 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:57,376 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:57,424 - spider - DEBUG - 204 - Not found query because of price: office desk
+2018-10-12 15:22:57,465 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:57,510 - spider - DEBUG - 204 - Not found query because of price: office desk
+2018-10-12 15:22:57,546 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:57,621 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:57,696 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:57,786 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:57,877 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:57,985 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:58,076 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:58,167 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:58,254 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:58,315 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=home office desk
+2018-10-12 15:22:58,315 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:22:58,351 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:58,401 - spider - DEBUG - 204 - Not found query because of price: office desk
+2018-10-12 15:22:58,462 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:58,512 - spider - DEBUG - 204 - Not found query because of price: office desk
+2018-10-12 15:22:58,557 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:58,565 - spider - DEBUG - 114 - Total number of responses received: 23
+2018-10-12 15:22:58,566 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:22:58,610 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:58,663 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:58,709 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:58,757 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:58,811 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:58,857 - spider - DEBUG - 204 - Not found query because of price: urban outdoor furniture
+2018-10-12 15:22:58,863 - spider - DEBUG - 114 - Total number of responses received: 24
+2018-10-12 15:22:58,863 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:00,037 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=metal office desk
+2018-10-12 15:23:00,037 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:23:00,189 - spider - DEBUG - 114 - Total number of responses received: 25
+2018-10-12 15:23:00,189 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:00,588 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=glass office desk
+2018-10-12 15:23:00,588 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:23:02,059 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:23:02,061 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=wood office desk
+2018-10-12 15:23:02,062 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:23:02,205 - spider - DEBUG - 114 - Total number of responses received: 26
+2018-10-12 15:23:02,205 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:02,685 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=modern office desk
+2018-10-12 15:23:02,685 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:23:02,841 - spider - DEBUG - 114 - Total number of responses received: 27
+2018-10-12 15:23:02,842 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:04,251 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Rotating office desk
+2018-10-12 15:23:04,251 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:23:04,411 - spider - DEBUG - 114 - Total number of responses received: 28
+2018-10-12 15:23:04,412 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:05,909 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Corner L Shaped office desk
+2018-10-12 15:23:05,910 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:23:06,069 - spider - DEBUG - 114 - Total number of responses received: 29
+2018-10-12 15:23:06,069 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:08,716 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=lego city toy
+2018-10-12 15:23:08,717 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:23:08,863 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Lego city toy for children
+2018-10-12 15:23:08,863 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:23:09,026 - spider - DEBUG - 114 - Total number of responses received: 30
+2018-10-12 15:23:09,026 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:10,332 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Lego toy dinosaur
+2018-10-12 15:23:10,333 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:23:10,753 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:23:10,754 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Lego airplane hard level
+2018-10-12 15:23:10,755 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:23:10,930 - spider - DEBUG - 114 - Total number of responses received: 31
+2018-10-12 15:23:10,930 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:12,398 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Lego harry porter limited edition
+2018-10-12 15:23:12,399 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:23:12,528 - spider - DEBUG - 114 - Total number of responses received: 32
+2018-10-12 15:23:12,528 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:13,541 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Lego trunk for boys
+2018-10-12 15:23:13,541 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:23:13,678 - spider - DEBUG - 114 - Total number of responses received: 33
+2018-10-12 15:23:13,678 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:13,744 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Lego for girls
+2018-10-12 15:23:13,744 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:23:13,881 - spider - DEBUG - 114 - Total number of responses received: 34
+2018-10-12 15:23:13,881 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:16,605 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Lego city policeman
+2018-10-12 15:23:16,605 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:23:16,646 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Camping Tent
+2018-10-12 15:23:16,647 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:23:16,783 - spider - DEBUG - 114 - Total number of responses received: 35
+2018-10-12 15:23:16,783 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:18,114 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=High strength camping tent
+2018-10-12 15:23:18,114 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:23:18,266 - spider - DEBUG - 114 - Total number of responses received: 36
+2018-10-12 15:23:18,266 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:19,525 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:23:19,528 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Water proof double layer camping tent
+2018-10-12 15:23:19,528 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:23:21,596 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=UV protection camping tend
+2018-10-12 15:23:21,596 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:23:21,747 - spider - DEBUG - 114 - Total number of responses received: 37
+2018-10-12 15:23:21,747 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:23,198 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Cosy camping tent
+2018-10-12 15:23:23,198 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:23:23,355 - spider - DEBUG - 114 - Total number of responses received: 38
+2018-10-12 15:23:23,355 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:24,916 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=bike
+2018-10-12 15:23:24,916 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:23:25,048 - spider - DEBUG - 114 - Total number of responses received: 39
+2018-10-12 15:23:25,048 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:27,836 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Carbon bike
+2018-10-12 15:23:27,836 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:23:27,982 - spider - DEBUG - 114 - Total number of responses received: 40
+2018-10-12 15:23:27,982 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:28,594 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Light bike
+2018-10-12 15:23:28,595 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:23:29,892 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Mountain bike with flat tires
+2018-10-12 15:23:29,892 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:23:30,551 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:23:30,552 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Bike for girls
+2018-10-12 15:23:30,552 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:23:30,686 - spider - DEBUG - 114 - Total number of responses received: 41
+2018-10-12 15:23:30,687 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:31,752 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Various speed bike
+2018-10-12 15:23:31,752 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:23:31,927 - spider - DEBUG - 114 - Total number of responses received: 42
+2018-10-12 15:23:31,928 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:33,560 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Shaver
+2018-10-12 15:23:33,560 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:23:33,747 - spider - DEBUG - 114 - Total number of responses received: 43
+2018-10-12 15:23:33,747 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:34,468 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Philips Norelco Shaver
+2018-10-12 15:23:34,468 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:23:34,564 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Electric Travel Shaver
+2018-10-12 15:23:34,565 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:23:34,630 - spider - DEBUG - 114 - Total number of responses received: 44
+2018-10-12 15:23:34,630 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:36,946 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Philips Waterproof Shaver
+2018-10-12 15:23:36,946 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:23:37,110 - spider - DEBUG - 114 - Total number of responses received: 45
+2018-10-12 15:23:37,110 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:37,112 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Women Electric Shaver
+2018-10-12 15:23:37,112 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:23:38,822 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:23:38,824 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Cleaning Center Shaver for Men
+2018-10-12 15:23:38,824 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:23:38,960 - spider - DEBUG - 114 - Total number of responses received: 46
+2018-10-12 15:23:38,961 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:40,018 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Braun Washable Shaver
+2018-10-12 15:23:40,018 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:23:40,153 - spider - DEBUG - 114 - Total number of responses received: 47
+2018-10-12 15:23:40,153 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:41,423 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Panasonic Electric Razor
+2018-10-12 15:23:41,423 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:23:41,571 - spider - DEBUG - 114 - Total number of responses received: 48
+2018-10-12 15:23:41,571 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:42,059 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Remington Foil Shaver
+2018-10-12 15:23:42,059 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:23:42,211 - spider - DEBUG - 114 - Total number of responses received: 49
+2018-10-12 15:23:42,211 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:44,339 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Philips Body Trimmer
+2018-10-12 15:23:44,339 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:23:44,377 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Kids Bed
+2018-10-12 15:23:44,377 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:23:44,526 - spider - DEBUG - 114 - Total number of responses received: 50
+2018-10-12 15:23:44,527 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:46,448 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Twin Loft Bed
+2018-10-12 15:23:46,448 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:23:46,607 - spider - DEBUG - 114 - Total number of responses received: 51
+2018-10-12 15:23:46,608 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:46,660 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:23:46,662 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Wood Toddler Bed
+2018-10-12 15:23:46,663 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:23:48,734 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Nursery Travel Bed
+2018-10-12 15:23:48,734 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:23:48,865 - spider - DEBUG - 114 - Total number of responses received: 52
+2018-10-12 15:23:48,865 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:50,112 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Twin Platform Bed
+2018-10-12 15:23:50,112 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:23:50,297 - spider - DEBUG - 114 - Total number of responses received: 53
+2018-10-12 15:23:50,298 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:52,405 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Kids Tent Toddler
+2018-10-12 15:23:52,405 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:23:52,563 - spider - DEBUG - 114 - Total number of responses received: 54
+2018-10-12 15:23:52,563 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:53,216 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Sleeping Bag Sofa Bed
+2018-10-12 15:23:53,216 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:23:54,114 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Metal Daybed Frame
+2018-10-12 15:23:54,114 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:23:54,832 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=14 Inch Steel Bed Frame
+2018-10-12 15:23:54,833 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:23:54,994 - spider - DEBUG - 114 - Total number of responses received: 55
+2018-10-12 15:23:54,994 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:56,499 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:23:56,501 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Twin Bed Set
+2018-10-12 15:23:56,502 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:23:56,654 - spider - DEBUG - 114 - Total number of responses received: 56
+2018-10-12 15:23:56,654 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:58,235 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=grill
+2018-10-12 15:23:58,235 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:23:58,370 - spider - DEBUG - 114 - Total number of responses received: 57
+2018-10-12 15:23:58,371 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:23:59,616 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Electronic smoke free grill
+2018-10-12 15:23:59,617 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:23:59,747 - spider - DEBUG - 114 - Total number of responses received: 58
+2018-10-12 15:23:59,747 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:01,122 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Small grill pan
+2018-10-12 15:24:01,123 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:24:01,282 - spider - DEBUG - 114 - Total number of responses received: 59
+2018-10-12 15:24:01,282 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:04,529 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=heavy duty grill pan
+2018-10-12 15:24:04,529 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:24:06,039 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=tea maker
+2018-10-12 15:24:06,039 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:24:07,424 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Ancient tea maker
+2018-10-12 15:24:07,424 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:24:07,454 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:24:07,455 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=classic tea maker
+2018-10-12 15:24:07,455 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:24:07,570 - spider - DEBUG - 114 - Total number of responses received: 60
+2018-10-12 15:24:07,570 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:07,599 - spider - DEBUG - 114 - Total number of responses received: 61
+2018-10-12 15:24:07,600 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:09,141 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=British style tea maker
+2018-10-12 15:24:09,142 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:24:09,326 - spider - DEBUG - 114 - Total number of responses received: 62
+2018-10-12 15:24:09,326 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:10,505 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Automatic tea maker
+2018-10-12 15:24:10,505 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:24:10,626 - spider - DEBUG - 114 - Total number of responses received: 63
+2018-10-12 15:24:10,626 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:11,125 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Tea maker with infuser
+2018-10-12 15:24:11,125 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:24:11,273 - spider - DEBUG - 114 - Total number of responses received: 64
+2018-10-12 15:24:11,274 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:11,562 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Portable Bluetooth Speaker 
+2018-10-12 15:24:11,562 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:24:13,478 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Bluetooth Wireless Speaker
+2018-10-12 15:24:13,479 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:24:13,532 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Magic Box II Bluetooth Speaker
+2018-10-12 15:24:13,533 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:24:13,614 - spider - DEBUG - 114 - Total number of responses received: 65
+2018-10-12 15:24:13,614 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:14,972 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:24:14,973 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Soundbot SB571 Bluetooth Speaker
+2018-10-12 15:24:14,973 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:24:15,124 - spider - DEBUG - 114 - Total number of responses received: 66
+2018-10-12 15:24:15,124 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:15,967 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Bluetooth V4.0 Portable Speaker Green
+2018-10-12 15:24:15,967 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:24:16,093 - spider - DEBUG - 114 - Total number of responses received: 67
+2018-10-12 15:24:16,094 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:17,949 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Bluetooth Speaker for Shower and Outdoor
+2018-10-12 15:24:17,949 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:24:18,075 - spider - DEBUG - 114 - Total number of responses received: 68
+2018-10-12 15:24:18,076 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:19,950 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Waterproof Bluetooth Speaker
+2018-10-12 15:24:19,950 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:24:20,103 - spider - DEBUG - 114 - Total number of responses received: 69
+2018-10-12 15:24:20,103 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:20,540 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Amuoc L1 Bluetooth Speaker
+2018-10-12 15:24:20,540 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:24:22,209 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Bluetooth Speaker ZENBRE Z3 10W 
+2018-10-12 15:24:22,209 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:24:22,338 - spider - DEBUG - 114 - Total number of responses received: 70
+2018-10-12 15:24:22,338 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:22,474 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Ranking Hi-Fi Bluetooth Speaker 
+2018-10-12 15:24:22,474 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:24:24,046 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:24:24,048 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Lawn Mower
+2018-10-12 15:24:24,048 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:24:24,184 - spider - DEBUG - 114 - Total number of responses received: 71
+2018-10-12 15:24:24,185 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:25,228 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Electronic lawn mower
+2018-10-12 15:24:25,228 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:24:25,375 - spider - DEBUG - 114 - Total number of responses received: 72
+2018-10-12 15:24:25,375 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:26,498 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Cordless Push Lawn Mower
+2018-10-12 15:24:26,499 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:24:26,618 - spider - DEBUG - 114 - Total number of responses received: 73
+2018-10-12 15:24:26,618 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:27,322 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Variable speed automatic lawn mower
+2018-10-12 15:24:27,322 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:24:27,464 - spider - DEBUG - 114 - Total number of responses received: 74
+2018-10-12 15:24:27,465 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:28,855 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=sports camera
+2018-10-12 15:24:28,856 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:24:28,976 - spider - DEBUG - 114 - Total number of responses received: 75
+2018-10-12 15:24:28,977 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:29,876 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=4k wifi sports action camera
+2018-10-12 15:24:29,876 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:24:30,361 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=waterproof sports action camera
+2018-10-12 15:24:30,362 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:24:32,179 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:24:32,180 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=1080p full hd dv sports recorder
+2018-10-12 15:24:32,180 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:24:32,327 - spider - DEBUG - 114 - Total number of responses received: 76
+2018-10-12 15:24:32,327 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:32,758 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=goPro hero5 black
+2018-10-12 15:24:32,758 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:24:32,903 - spider - DEBUG - 114 - Total number of responses received: 77
+2018-10-12 15:24:32,903 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:36,097 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=waterproof sports dv
+2018-10-12 15:24:36,097 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:24:36,218 - spider - DEBUG - 114 - Total number of responses received: 78
+2018-10-12 15:24:36,218 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:36,292 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=waterproof sports camera with sony sensor
+2018-10-12 15:24:36,292 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:24:36,430 - spider - DEBUG - 114 - Total number of responses received: 79
+2018-10-12 15:24:36,431 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:39,308 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=floureon y8-p waterproof wireless mini wifi action sports camera
+2018-10-12 15:24:39,308 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:24:39,460 - spider - DEBUG - 114 - Total number of responses received: 80
+2018-10-12 15:24:39,460 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:40,334 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=sports camera with remote control
+2018-10-12 15:24:40,334 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:24:42,093 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=sports camera with accessories
+2018-10-12 15:24:42,093 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:24:42,218 - spider - DEBUG - 114 - Total number of responses received: 81
+2018-10-12 15:24:42,219 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:42,330 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:24:42,331 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Face moisturizer
+2018-10-12 15:24:42,331 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:24:43,382 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Face moisturizer serum
+2018-10-12 15:24:43,382 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:24:43,529 - spider - DEBUG - 114 - Total number of responses received: 82
+2018-10-12 15:24:43,529 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:44,744 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Sulwhasoo face moisturizer serum
+2018-10-12 15:24:44,745 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:24:44,877 - spider - DEBUG - 114 - Total number of responses received: 83
+2018-10-12 15:24:44,878 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:45,960 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Facial hydrating moisturizer cream
+2018-10-12 15:24:45,960 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:24:46,123 - spider - DEBUG - 114 - Total number of responses received: 84
+2018-10-12 15:24:46,123 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:48,069 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Intense hydrating face cream
+2018-10-12 15:24:48,070 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:24:48,531 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Illuminating facial moisturizer cream
+2018-10-12 15:24:48,531 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:24:48,695 - spider - DEBUG - 114 - Total number of responses received: 85
+2018-10-12 15:24:48,695 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:50,240 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Organic facial moisturizer lotion oil free
+2018-10-12 15:24:50,240 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:24:50,770 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:24:50,772 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Anti-aging facial organic serum
+2018-10-12 15:24:50,772 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:24:50,903 - spider - DEBUG - 114 - Total number of responses received: 86
+2018-10-12 15:24:50,903 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:53,701 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Oil-free facial moisturizer cream
+2018-10-12 15:24:53,702 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:24:53,845 - spider - DEBUG - 114 - Total number of responses received: 87
+2018-10-12 15:24:53,846 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:55,346 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Pore-perfecting facial moisturizer for normal to oil skin
+2018-10-12 15:24:55,347 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:24:55,484 - spider - DEBUG - 114 - Total number of responses received: 88
+2018-10-12 15:24:55,484 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:55,543 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Snow blower
+2018-10-12 15:24:55,543 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:24:55,684 - spider - DEBUG - 114 - Total number of responses received: 89
+2018-10-12 15:24:55,684 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:57,377 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Electric snow blower
+2018-10-12 15:24:57,377 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:24:57,843 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Heavy duty snow blower
+2018-10-12 15:24:57,843 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:24:57,987 - spider - DEBUG - 114 - Total number of responses received: 90
+2018-10-12 15:24:57,987 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:24:59,266 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Electronic snow blower with light in front
+2018-10-12 15:24:59,267 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:24:59,500 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:24:59,500 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=sports camera
+2018-10-12 15:24:59,500 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:24:59,501 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=vibration resist sports camera
+2018-10-12 15:24:59,501 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:24:59,647 - spider - DEBUG - 114 - Total number of responses received: 91
+2018-10-12 15:24:59,647 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:25:01,066 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Water proof sports camera
+2018-10-12 15:25:01,066 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:25:01,194 - spider - DEBUG - 114 - Total number of responses received: 92
+2018-10-12 15:25:01,194 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:25:02,194 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Wifi sports camera
+2018-10-12 15:25:02,195 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:25:02,325 - spider - DEBUG - 114 - Total number of responses received: 93
+2018-10-12 15:25:02,325 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:25:04,402 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Wide angle sports camera
+2018-10-12 15:25:04,402 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:25:04,537 - spider - DEBUG - 114 - Total number of responses received: 94
+2018-10-12 15:25:04,537 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:25:06,533 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Shampoo
+2018-10-12 15:25:06,533 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:25:06,744 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Reduce hair loss shampoo
+2018-10-12 15:25:06,744 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:25:08,806 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:25:08,807 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=voluminizing shampoo
+2018-10-12 15:25:08,807 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:25:08,966 - spider - DEBUG - 114 - Total number of responses received: 95
+2018-10-12 15:25:08,966 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:25:10,034 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=strengthen hair shampoo
+2018-10-12 15:25:10,034 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:25:10,189 - spider - DEBUG - 114 - Total number of responses received: 96
+2018-10-12 15:25:10,190 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:25:11,559 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Shampoo for damaged hair
+2018-10-12 15:25:11,559 - spider - DEBUG - 86 - Proxy used: http://97.104.197.147:8080
+2018-10-12 15:25:11,719 - spider - DEBUG - 114 - Total number of responses received: 97
+2018-10-12 15:25:11,719 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:25:12,173 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Three-in-one functional shampoo
+2018-10-12 15:25:12,173 - spider - DEBUG - 86 - Proxy used: http://49.51.68.122:1080
+2018-10-12 15:25:12,302 - spider - DEBUG - 114 - Total number of responses received: 98
+2018-10-12 15:25:12,302 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:25:14,073 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=organic milk powder for baby
+2018-10-12 15:25:14,073 - spider - DEBUG - 86 - Proxy used: http://74.132.148.53:54534
+2018-10-12 15:25:14,188 - spider - DEBUG - 114 - Total number of responses received: 99
+2018-10-12 15:25:14,188 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:25:15,352 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=organic goat milk powder for new born baby
+2018-10-12 15:25:15,352 - spider - DEBUG - 86 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 15:25:15,739 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=high nutritious milk power for baby
+2018-10-12 15:25:15,739 - spider - DEBUG - 86 - Proxy used: http://162.243.140.150:80
+2018-10-12 15:25:17,582 - spider - DEBUG - 49 - Finsh one proxy rotation
+2018-10-12 15:25:17,584 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=milk powder origins from Australia
+2018-10-12 15:25:17,585 - spider - DEBUG - 86 - Proxy used: http://37.61.224.240:8195
+2018-10-12 15:25:17,730 - spider - DEBUG - 114 - Total number of responses received: 100
+2018-10-12 15:25:17,731 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:25:17,888 - spider - DEBUG - 85 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=New Zealand milk powder
+2018-10-12 15:25:17,888 - spider - DEBUG - 86 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:25:17,996 - spider - DEBUG - 114 - Total number of responses received: 101
+2018-10-12 15:25:17,997 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:25:20,307 - spider - DEBUG - 114 - Total number of responses received: 102
+2018-10-12 15:25:20,307 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
+2018-10-12 15:25:22,000 - spider - DEBUG - 114 - Total number of responses received: 103
+2018-10-12 15:25:22,001 - spider - DEBUG - 115 - All usefull proxies: {'http://37.61.224.240:8195', 'http://49.51.68.122:1080', 'http://97.79.207.83:8080', 'http://104.248.112.189: 8080', 'http://162.243.140.150:80'}
