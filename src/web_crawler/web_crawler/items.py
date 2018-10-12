@@ -19,7 +19,6 @@ class Ad(scrapy.Item):
             title = crawled product title
             price = crawled product price
             thumbnail = picture url of crawled product
-            description =
             brand = craweled product brand
             detail_url = original url for each product
             catagory = the first main category of crawled product

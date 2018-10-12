@@ -1,0 +1,17 @@
+2018-10-12 15:00:29,344 - spider - DEBUG - 83 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=home theater system 
+2018-10-12 15:00:29,344 - spider - DEBUG - 84 - Proxy used: http://97.79.207.83:8080
+2018-10-12 15:00:35,078 - spider - DEBUG - 205 - Not found query because of price: home theater system 
+2018-10-12 15:00:35,113 - spider - DEBUG - 205 - Not found query because of price: home theater system 
+2018-10-12 15:00:35,271 - spider - DEBUG - 190 - Not found query because of title: home theater system 
+2018-10-12 15:00:35,272 - spider - DEBUG - 205 - Not found query because of price: home theater system 
+2018-10-12 15:00:35,273 - spider - ERROR - 215 - Not found query because of thumbnail: home theater system 
+2018-10-12 15:00:35,275 - spider - ERROR - 225 - Not found query because of brand: home theater system 
+2018-10-12 15:00:35,485 - spider - DEBUG - 205 - Not found query because of price: home theater system 
+2018-10-12 15:00:35,525 - spider - DEBUG - 205 - Not found query because of price: home theater system 
+2018-10-12 15:00:35,773 - spider - DEBUG - 205 - Not found query because of price: home theater system 
+2018-10-12 15:00:35,818 - spider - DEBUG - 205 - Not found query because of price: home theater system 
+2018-10-12 15:00:35,897 - spider - DEBUG - 205 - Not found query because of price: home theater system 
+2018-10-12 15:00:35,939 - spider - DEBUG - 205 - Not found query because of price: home theater system 
+2018-10-12 15:00:35,986 - spider - DEBUG - 205 - Not found query because of price: home theater system 
+2018-10-12 15:00:35,992 - spider - DEBUG - 114 - Total number of responses received: 1
+2018-10-12 15:00:35,992 - spider - DEBUG - 115 - All usefull proxies: {'http://97.79.207.83:8080'}
