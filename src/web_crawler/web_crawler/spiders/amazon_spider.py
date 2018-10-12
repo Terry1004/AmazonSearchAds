@@ -186,7 +186,7 @@ class AdsLoader:
                 loader.add_value('title', title[0])
                 loader.add_value('detail_url', url[0])
                 return
-        cls.get_logger().debug('Not found query because of title: ' + response.request.meta['query'])
+        cls.get_logger().error('Not found query because of title: ' + response.request.meta['query'])
 
     @classmethod
     def load_price(cls, loader, response, curr_li):
@@ -202,6 +202,7 @@ class AdsLoader:
                 loader.add_value('price', price)
                 return
         cls.get_logger().debug('Not found query because of price: ' + response.request.meta['query'])
+        loader.add_value('price', '')
 
     @classmethod
     def load_thumbnail(cls, loader, response, curr_li):
@@ -211,7 +212,8 @@ class AdsLoader:
             if thumbnail:
                 loader.add_value('thumbnail', thumbnail[0])
                 return
-        cls.get_logger().error('Not found query because of thumbnail: ' + response.request.meta['query'])
+        cls.get_logger().debug('Not found query because of thumbnail: ' + response.request.meta['query'])
+        loader.add_value('thumnail', '')
 
     @classmethod
     def load_brand(cls, loader, response, curr_li):
@@ -221,7 +223,8 @@ class AdsLoader:
             if brand:
                 loader.add_value('brand', brand[0])
                 return
-        cls.get_logger().error('Not found query because of brand: ' + response.request.meta['query'])
+        cls.get_logger().debug('Not found query because of brand: ' + response.request.meta['query'])
+        loader.add_value('brand', '')
 
     @classmethod
     def load_category(cls, loader, response):
