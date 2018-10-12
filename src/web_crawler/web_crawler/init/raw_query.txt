@@ -1,22 +1,22 @@
-home theater system , 22.0, 8060,11
-Multi-channel box system home theater, 34.2, 8061, 11
-Samsung blueray home theater, 24.2, 8062, 11
+home theater system,22.0,8060,11
+Multi-channel box system home theater,34.2,8061,11
+Samsung blueray home theater,24.2,8062,11
 
-LED TV, 18.0, 8070,12
-Large screen LED TV, 19.8, 8071, 12
-Eye protection LED TV, 14.8, 8072, 12
-High resolution LED TV, 34.2, 8073, 12
+LED TV,18.0,8070,12
+Large screen LED TV,19.8,8071,12
+Eye protection LED TV,14.8,8072,12
+High resolution LED TV,34.2,8073,12
 
-smart watch, 4.5, 8080,13
-Water proof smart watch, 12.3, 8081, 13
-Electronic smart watch, 13.2, 8082, 13
-fitness tracker smart watch, 23.1, 8083, 13
-watch with leather band, 12.3, 8084,13
-watch with date display, 13.4, 8085, 13
-ancient mechanical watch, 12.3, 8086,13
-smart watch for children, 9.8, 8087,13
+smart watch,4.5,8080,13
+Water proof smart watch,12.3,8081,13
+Electronic smart watch,13.2,8082,13
+fitness tracker smart watch,23.1,8083,13
+watch with leather band,12.3,8084,13
+watch with date display,13.4,8085,13
+ancient mechanical watch,12.3,8086,13
+smart watch for children,9.8,8087,13
 
-Video Games, 6.8, 8090,14
+Video Games,6.8,8090,14
 Xbox 360 video games,4.5,8091,14
 action & shooter video games,2.4,8092,14
 adventure video games,3.4,8093,14
@@ -27,142 +27,142 @@ PlayStation 4 video games,6.3,8097,14
 Nintendo Wii video games,4.7,8098,14
 Nintendo DS video games,5.3,8099,14
 
-Outdoor Furniture, 22.5,8100,15
-all weather outdoor furniture, 17, 8101,15
-ikea outdoor furniture, 18, 8102,15
-outdoor furniture covers, 17, 8103,15
-outdoor furniture set, 23, 8104,15
-suncast outdoor furniture, 20, 8105,15
-teak oil for outdoor furniture, 10, 8106,15
-beach outdoor furniture, 17, 8107,15
-garden bench outdoor furniture, 16.5, 8108,15
-urban outdoor furniture, 21, 8109,15
+Outdoor Furniture,22.5,8100,15
+all weather outdoor furniture,17,8101,15
+ikea outdoor furniture,18,8102,15
+outdoor furniture covers,17,8103,15
+outdoor furniture set,23,8104,15
+suncast outdoor furniture,20,8105,15
+teak oil for outdoor furniture,10,8106,15
+beach outdoor furniture,17,8107,15
+garden bench outdoor furniture,16.5,8108,15
+urban outdoor furniture,21,8109,15
 
-office desk, 24.0, 8110,16
-office computer desk, 22.0, 8111,16
-adjustable office desk, 24.6, 8112,16
-home office desk, 27.0, 8113,16
-metal office desk, 21.0, 8114,16
-glass office desk, 20.0, 8115,16
-wood office desk, 29.2, 8116,16
-modern office desk, 26.1, 8117,16
-Rotating office desk, 28.0, 8118,16
-Corner L Shaped office desk, 21.1, 8119,16
+office desk,24.0,8110,16
+office computer desk,22.0,8111,16
+adjustable office desk,24.6,8112,16
+home office desk,27.0,8113,16
+metal office desk,21.0,8114,16
+glass office desk,20.0,8115,16
+wood office desk,29.2,8116,16
+modern office desk,26.1,8117,16
+Rotating office desk,28.0,8118,16
+Corner L Shaped office desk,21.1,8119,16
 
-lego city toy,6.5, 8120,17
-Lego city toy for children, 8.2, 8121, 17
-Lego toy dinosaur, 9.2, 8122, 17
-Lego airplane hard level, 9.4, 8123, 17
-Lego harry porter limited edition, 10.9, 8124, 17
-Lego trunk for boys, 11.3, 8125, 17
-Lego for girls, 5.9, 8126,17
-Lego city policeman, 6.6, 8127,17
+lego city toy,6.5,8120,17
+Lego city toy for children,8.2,8121,17
+Lego toy dinosaur,9.2,8122,17
+Lego airplane hard level,9.4,8123,17
+Lego harry porter limited edition,10.9,8124,17
+Lego trunk for boys,11.3,8125,17
+Lego for girls,5.9,8126,17
+Lego city policeman,6.6,8127,17
 
-Camping Tent, 12.5, 8130,18
-High strength camping tent, 13.4, 8131, 18
-Water proof double layer camping tent, 14.2, 8132, 18
-UV protection camping tend, 17.2, 8132, 18
-Cosy camping tent, 12.3, 8133, 18
+Camping Tent,12.5,8130,18
+High strength camping tent,13.4,8131,18
+Water proof double layer camping tent,14.2,8132,18
+UV protection camping tend,17.2,8132,18
+Cosy camping tent,12.3,8133,18
 
-bike, 8.5, 8140,19
-Carbon bike, 6.7, 8141, 19
-Light bike, 4.9, 8142, 19
-Mountain bike with flat tires, 5.9, 8143, 19
-Bike for girls, 2.3, 8144, 19
-Various speed bike, 12.3, 8145, 19
+bike,8.5,8140,19
+Carbon bike,6.7,8141,19
+Light bike,4.9,8142,19
+Mountain bike with flat tires,5.9,8143,19
+Bike for girls,2.3,8144,19
+Various speed bike,12.3,8145,19
 
-Shaver, 5.5, 8150,20
-Philips Norelco Shaver, 6.4, 8151,20
-Electric Travel Shaver, 4.6, 8152,20
-Philips Waterproof Shaver, 6.0, 8153,20
-Women Electric Shaver, 5.9, 8154,20
-Cleaning Center Shaver for Men, 6.9, 8155,20
-Braun Washable Shaver, 6.5, 8156,20
-Panasonic Electric Razor, 7.0, 8157,20
-Remington Foil Shaver, 6.6, 8158,20
-Philips Body Trimmer, 5.0, 8159,20
+Shaver,5.5,8150,20
+Philips Norelco Shaver,6.4,8151,20
+Electric Travel Shaver,4.6,8152,20
+Philips Waterproof Shaver,6.0,8153,20
+Women Electric Shaver,5.9,8154,20
+Cleaning Center Shaver for Men,6.9,8155,20
+Braun Washable Shaver,6.5,8156,20
+Panasonic Electric Razor,7.0,8157,20
+Remington Foil Shaver,6.6,8158,20
+Philips Body Trimmer,5.0,8159,20
 
-Kids Bed, 12.0,8160,21
-Twin Loft Bed, 13.0, 8161,21
-Wood Toddler Bed, 15.0, 8162,21
-Nursery Travel Bed, 11.0, 8163,21
-Twin Platform Bed, 10.0, 8164,21
-Kids Tent Toddler, 11.0, 8165,21
-Sleeping Bag Sofa Bed, 13.0, 8166,21
-Metal Daybed Frame, 14.0, 8167,21
-14 Inch Steel Bed Frame, 16.0, 8168,21
-Twin Bed Set, 18.0, 8169,21
+Kids Bed,12.0,8160,21
+Twin Loft Bed,13.0,8161,21
+Wood Toddler Bed,15.0,8162,21
+Nursery Travel Bed,11.0,8163,21
+Twin Platform Bed,10.0,8164,21
+Kids Tent Toddler,11.0,8165,21
+Sleeping Bag Sofa Bed,13.0,8166,21
+Metal Daybed Frame,14.0,8167,21
+14 Inch Steel Bed Frame,16.0,8168,21
+Twin Bed Set,18.0,8169,21
 
 grill,24.0,8170,22
-Electronic smoke free grill, 13.0, 8171, 22
-Small grill pan, 12.3, 8172, 22
-heavy duty grill pan, 13.4, 8173,22
+Electronic smoke free grill,13.0,8171,22
+Small grill pan,12.3,8172,22
+heavy duty grill pan,13.4,8173,22
 
-tea maker, 2.5, 8180,23
-Ancient tea maker, 4.5, 8181, 23
-classic tea maker, 6.5, 8182, 23
-British style tea maker, 6.8, 8183,23
-Automatic tea maker, 8.3, 8184, 23
-Tea maker with infuser, 9.2, 8185, 23
+tea maker,2.5,8180,23
+Ancient tea maker,4.5,8181,23
+classic tea maker,6.5,8182,23
+British style tea maker,6.8,8183,23
+Automatic tea maker,8.3,8184,23
+Tea maker with infuser,9.2,8185,23
 
-Portable Bluetooth Speaker , 12.0, 8190,24
-Bluetooth Wireless Speaker, 13.0, 8191,24
-Magic Box II Bluetooth Speaker, 14.0, 8192,24
-Soundbot SB571 Bluetooth Speaker, 15.0, 8193,24
-Bluetooth V4.0 Portable Speaker Green, 16.0, 8194,24
-Bluetooth Speaker for Shower and Outdoor, 17.0, 8195,24
-Waterproof Bluetooth Speaker, 18.0, 8196,24
-Amuoc L1 Bluetooth Speaker, 19.0, 8197,24
-Bluetooth Speaker ZENBRE Z3 10W , 20.0, 8198,24
-Ranking Hi-Fi Bluetooth Speaker , 21.0, 8199,24
+Portable Bluetooth Speaker ,12.0,8190,24
+Bluetooth Wireless Speaker,13.0,8191,24
+Magic Box II Bluetooth Speaker,14.0,8192,24
+Soundbot SB571 Bluetooth Speaker,15.0,8193,24
+Bluetooth V4.0 Portable Speaker Green,16.0,8194,24
+Bluetooth Speaker for Shower and Outdoor,17.0,8195,24
+Waterproof Bluetooth Speaker,18.0,8196,24
+Amuoc L1 Bluetooth Speaker,19.0,8197,24
+Bluetooth Speaker ZENBRE Z3 10W ,20.0,8198,24
+Ranking Hi-Fi Bluetooth Speaker ,21.0,8199,24
 
-Lawn Mower, 25.8, 8200,25
-Electronic lawn mower, 34.2, 8201, 25
-Cordless Push Lawn Mower, 56.2, 8202, 25
-Variable speed automatic lawn mower, 24.3, 8203,25
+Lawn Mower,25.8,8200,25
+Electronic lawn mower,34.2,8201,25
+Cordless Push Lawn Mower,56.2,8202,25
+Variable speed automatic lawn mower,24.3,8203,25
 
-sports camera, 5.0, 8210,26
-4k wifi sports action camera, 7.5, 8211,26
-waterproof sports action camera, 8.4, 8212,26
-1080p full hd dv sports recorder, 3.2, 8213,26
-goPro hero5 black, 3.6, 8214,26
-waterproof sports dv, 4.4, 8215,26
-waterproof sports camera with sony sensor, 2.9, 8216,26
-floureon y8-p waterproof wireless mini wifi action sports camera, 1.4, 8217,26
-sports camera with remote control, 5.3, 8218,26
-sports camera with accessories, 6.5, 8219,26
+sports camera,5.0,8210,26
+4k wifi sports action camera,7.5,8211,26
+waterproof sports action camera,8.4,8212,26
+1080p full hd dv sports recorder,3.2,8213,26
+goPro hero5 black,3.6,8214,26
+waterproof sports dv,4.4,8215,26
+waterproof sports camera with sony sensor,2.9,8216,26
+floureon y8-p waterproof wireless mini wifi action sports camera,1.4,8217,26
+sports camera with remote control,5.3,8218,26
+sports camera with accessories,6.5,8219,26
 
-Face moisturizer, 6.0, 8220,27
-Face moisturizer serum, 7.6, 8221, 27
-Sulwhasoo face moisturizer serum, 19.3, 8222, 27
-Facial hydrating moisturizer cream, 9.7, 8223, 27
-Intense hydrating face cream, 9.6, 8224, 27
-Illuminating facial moisturizer cream, 9.8, 8225, 27
-Organic facial moisturizer lotion oil free, 5.7, 8226, 27
-Anti-aging facial organic serum, 10.2, 8227, 27
-Oil-free facial moisturizer cream, 12.2, 8228, 27
-Pore-perfecting facial moisturizer for normal to oil skin, 13.4, 8229, 27
+Face moisturizer,6.0,8220,27
+Face moisturizer serum,7.6,8221,27
+Sulwhasoo face moisturizer serum,19.3,8222,27
+Facial hydrating moisturizer cream,9.7,8223,27
+Intense hydrating face cream,9.6,8224,27
+Illuminating facial moisturizer cream,9.8,8225,27
+Organic facial moisturizer lotion oil free,5.7,8226,27
+Anti-aging facial organic serum,10.2,8227,27
+Oil-free facial moisturizer cream,12.2,8228,27
+Pore-perfecting facial moisturizer for normal to oil skin,13.4,8229,27
 
-Snow blower, 15.0, 8230,28
-Electric snow blower, 15.6, 8231, 28
-Heavy duty snow blower, 23.8, 8232, 28
-Electronic snow blower with light in front, 24.3, 8234, 28
+Snow blower,15.0,8230,28
+Electric snow blower,15.6,8231,28
+Heavy duty snow blower,23.8,8232,28
+Electronic snow blower with light in front,24.3,8234,28
 
-sports camera, 13.5, 8240,29
-vibration resist sports camera, 20.3, 8241, 29
-Water proof sports camera, 24.3, 8242, 29
-Wifi sports camera, 13.2, 8283, 29
-Wide angle sports camera, 17.2, 8244, 29
+sports camera,13.5,8240,29
+vibration resist sports camera,20.3,8241,29
+Water proof sports camera,24.3,8242,29
+Wifi sports camera,13.2,8283,29
+Wide angle sports camera,17.2,8244,29
 
-Shampoo, 3.0, 8250,30
-Reduce hair loss shampoo, 4.5, 8251, 30
-voluminizing shampoo, 6.7, 8252, 30
-strengthen hair shampoo, 6.8, 8253, 30
-Shampoo for damaged hair, 7.8, 8254, 30
-Three-in-one functional shampoo, 8.9,8255, 30
+Shampoo,3.0,8250,30
+Reduce hair loss shampoo,4.5,8251,30
+voluminizing shampoo,6.7,8252,30
+strengthen hair shampoo,6.8,8253,30
+Shampoo for damaged hair,7.8,8254,30
+Three-in-one functional shampoo,8.9,8255,30
 
-organic milk powder for baby, 6.7, 8260, 31
-organic goat milk powder for new born baby, 8.7, 8261, 31
-high nutritious milk power for baby, 8.9, 8262, 31
-milk powder origins from Australia, 9.8, 8263,31
-New Zealand milk powder, 8.7, 8264,31
+organic milk powder for baby,6.7,8260,31
+organic goat milk powder for new born baby,8.7,8261,31
+high nutritious milk power for baby,8.9,8262,31
+milk powder origins from Australia,9.8,8263,31
+New Zealand milk powder,8.7,8264,31
