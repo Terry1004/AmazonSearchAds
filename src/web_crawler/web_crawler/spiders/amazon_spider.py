@@ -5,6 +5,8 @@ from scrapy.loader import ItemLoader
 from ..init import init_proxy, init_query
 from .. import helpers
 from ..items import Ad
+from re import sub
+from decimal import Decimal
 
 LOGGER_NAME = 'spider'
 
@@ -196,7 +198,7 @@ class AdsLoader:
             if price_str:
                 # the price_str is a list contains a price string seems like '$68.99 - $89.99' or single price '$45.99'
                 multi_price = price_str[0].split('-')
-                price = float(multi_price[0].split('$')[1]) # ['', '68.99']
+                price = Decimal(sub(r'[^\d.]', '', multi_price[0]))
                 loader.add_value('price', price)
                 return
         cls.get_logger().debug('Not found query because of price: ' + response.request.meta['query'])
@@ -231,8 +233,8 @@ class AdsLoader:
             category = response.css(category_path + '::text').extract()
             if category:
                 loader.add_value('category', category[0])
-                return
         cls.get_logger().error('Not found query because of category: ' + response.request.meta['query'])
+        loader.add_value('category', '')
 
     @classmethod
     def load_query_fields(cls, loader, response, ad_id):
