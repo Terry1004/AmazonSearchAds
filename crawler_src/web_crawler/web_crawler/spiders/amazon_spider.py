@@ -234,6 +234,7 @@ class AdsLoader:
             category = response.css(category_path + '::text').extract()
             if category:
                 loader.add_value('category', category[0])
+                return
         cls.get_logger().debug('Not found query because of category: ' + response.request.meta['query'])
         loader.add_value('category', '')
 

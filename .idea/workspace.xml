@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96fb84ad-e718-4aa0-9d51-b24cb10263ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/crawler_src/web_crawler/ads.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crawler_src/web_crawler/web_crawler/init/raw_query.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crawler_src/web_crawler/web_crawler/logs/spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web_crawler/ads.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web_crawler/scrapy.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_src/web_crawler/scrapy.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web_crawler/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_src/web_crawler/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_src/web_crawler/web_crawler/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/init/init_proxy.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_src/web_crawler/web_crawler/init/init_proxy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/init/init_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_src/web_crawler/web_crawler/init/init_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/init/proxy_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_src/web_crawler/web_crawler/init/proxy_list.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/init/proxy_list_deprecated.txt" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_src/web_crawler/web_crawler/init/proxy_list_deprecated.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/init/raw_query.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/web_crawler/web_crawler/init/raw_query.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_src/web_crawler/web_crawler/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/logs/init.log" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_src/web_crawler/web_crawler/logs/init.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/logs/spider.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_src/web_crawler/web_crawler/middlewares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_src/web_crawler/web_crawler/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_src/web_crawler/web_crawler/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/spiders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_src/web_crawler/web_crawler/spiders/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/spiders/amazon_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_src/web_crawler/web_crawler/spiders/amazon_spider.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,40 +87,7 @@
         <entry file="file://$PROJECT_DIR$/src/web_crawler/web_crawler/init/raw_query.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="469">
-              <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/web_crawler/web_crawler/spiders/amazon_spider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="128" selection-start-line="128" selection-end-line="128" />
-              <folding>
-                <element signature="e#55#68#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/web_crawler/web_crawler/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-301">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/web_crawler/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
+              <caret line="170" selection-start-line="170" selection-end-line="170" />
             </state>
           </provider>
         </entry>
@@ -185,22 +171,6 @@
               <item name="web_crawler" type="462c0819:PsiDirectoryNode" />
               <item name="web_crawler" type="462c0819:PsiDirectoryNode" />
               <item name="init" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AmazonSearchAds" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AmazonSearchAds" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="web_crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="web_crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AmazonSearchAds" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AmazonSearchAds" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="web_crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="web_crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -456,7 +426,7 @@
     <entry file="file://$PROJECT_DIR$/src/web_crawler/web_crawler/init/raw_query.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="469">
-          <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
+          <caret line="170" selection-start-line="170" selection-end-line="170" />
         </state>
       </provider>
     </entry>
