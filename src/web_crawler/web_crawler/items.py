@@ -19,7 +19,6 @@ class Ad(scrapy.Item):
             title = crawled product title
             price = crawled product price
             thumbnail = picture url of crawled product
-            description =
             brand = craweled product brand
             detail_url = original url for each product
             catagory = the first main category of crawled product
@@ -41,12 +40,3 @@ class Ad(scrapy.Item):
     brand = scrapy.Field()
     detail_url = scrapy.Field()
     category = scrapy.Field()
-
-    # Attribute Learned
-    key_words = scrapy.Field()
-    relevance_score = scrapy.Field()
-    p_click = scrapy.Field()
-    rank_score = scrapy.Field()
-    quality_score = scrapy.Field()
-    cost_per_click = scrapy.Field()
-    position = scrapy.Field() #1: top , 2: bottom

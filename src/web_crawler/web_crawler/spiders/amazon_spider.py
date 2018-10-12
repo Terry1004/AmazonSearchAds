@@ -20,10 +20,6 @@ class AmazonSpider(scrapy.Spider):
         headers: To be filled in the header of http requests
         response_count: The number of responses received (for debug purpose only)
         useful_proxy: The set of proxy addresses that can be connected (for debug purpose only)
-        title_path: list of possible paths configurations of each produt
-        category_path: List of paths of the the main category
-        thumbnail_paths：list of paths of the product image
-        price_paths: List of paths of the product price/price range (hidden)
     """
     # set name of the spider
     name = 'amazon'
@@ -73,7 +69,7 @@ class AmazonSpider(scrapy.Spider):
 
     def start_requests(self):
         """ Define starting requests urls """
-        #queries = (query.query for query in self.query_it)
+        # queries = (query.query for query in self.query_it)
         queries = ['facial cream']
         for query in queries:
             url = self.query_api + query
@@ -171,7 +167,6 @@ class AdsLoader:
         Return:
             An Ad object with all fields loaded
         """
-        cls.load_default_fields(loader)
         cls.load_query_fields(loader, response, ad_id)
         cls.load_title(loader, response, curr_li)
         cls.load_price(loader, response, curr_li)
@@ -188,8 +183,6 @@ class AdsLoader:
             if title_a:
                 title = title_a.css('::attr(title)').extract()
                 url = title_a.css('::attr(href)').extract()
-                print (title)
-                print (url)
                 loader.add_value('title', title[0])
                 loader.add_value('detail_url', url[0])
                 return
@@ -219,7 +212,6 @@ class AdsLoader:
                 loader.add_value('thumbnail', thumbnail[0])
                 return
         cls.get_logger().error('Not found query because of thumbnail: ' + response.request.meta['query'])
-        loader.add_value('thumbnail', '')
 
     @classmethod
     def load_brand(cls, loader, response, curr_li):
@@ -230,7 +222,6 @@ class AdsLoader:
                 loader.add_value('brand', brand[0])
                 return
         cls.get_logger().error('Not found query because of brand: ' + response.request.meta['query'])
-        loader.add_value('brand', '')
 
     @classmethod
     def load_category(cls, loader, response):
@@ -241,18 +232,6 @@ class AdsLoader:
                 loader.add_value('category', category[0])
                 return
         cls.get_logger().error('Not found query because of category: ' + response.request.meta['query'])
-        loader.add_value('category', '')
-
-    @classmethod
-    def load_default_fields(cls, loader):
-        """ Initialize Ad fields that are not crawled from web """
-        loader.add_value('key_words', [])
-        loader.add_value('relevance_score', 0.)
-        loader.add_value('p_click', 0.)
-        loader.add_value('rank_score', 0.)
-        loader.add_value('quality_score', 0.)
-        loader.add_value('cost_per_click', 0.)
-        loader.add_value('position', 0)
 
     @classmethod
     def load_query_fields(cls, loader, response, ad_id):
