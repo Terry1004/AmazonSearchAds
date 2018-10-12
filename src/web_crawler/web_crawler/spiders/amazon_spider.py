@@ -213,7 +213,7 @@ class AdsLoader:
                 loader.add_value('thumbnail', thumbnail[0])
                 return
         cls.get_logger().debug('Not found query because of thumbnail: ' + response.request.meta['query'])
-        loader.add_value('thumnail', '')
+        loader.add_value('thumbnail', '')
 
     @classmethod
     def load_brand(cls, loader, response, curr_li):
@@ -233,7 +233,7 @@ class AdsLoader:
             category = response.css(category_path + '::text').extract()
             if category:
                 loader.add_value('category', category[0])
-        cls.get_logger().error('Not found query because of category: ' + response.request.meta['query'])
+        cls.get_logger().debug('Not found query because of category: ' + response.request.meta['query'])
         loader.add_value('category', '')
 
     @classmethod
