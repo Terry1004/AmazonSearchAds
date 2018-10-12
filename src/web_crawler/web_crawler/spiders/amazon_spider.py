@@ -167,7 +167,6 @@ class AdsLoader:
         Return:
             An Ad object with all fields loaded
         """
-        cls.load_default_fields(loader)
         cls.load_query_fields(loader, response, ad_id)
         cls.load_title(loader, response, curr_li)
         cls.load_price(loader, response, curr_li)
@@ -233,17 +232,6 @@ class AdsLoader:
                 loader.add_value('category', category[0])
                 return
         cls.get_logger().error('Not found query because of category: ' + response.request.meta['query'])
-
-    @classmethod
-    def load_default_fields(cls, loader):
-        """ Initialize Ad fields that are not crawled from web """
-        loader.add_value('key_words', [])
-        loader.add_value('relevance_score', 0.)
-        loader.add_value('p_click', 0.)
-        loader.add_value('rank_score', 0.)
-        loader.add_value('quality_score', 0.)
-        loader.add_value('cost_per_click', 0.)
-        loader.add_value('position', 0)
 
     @classmethod
     def load_query_fields(cls, loader, response, ad_id):
