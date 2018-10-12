@@ -194,11 +194,9 @@ class AdsLoader:
         for price_path in cls.price_paths:
             price_str = curr_li.css(price_path+'::text').extract()
             if price_str:
-                print (price_str[0])
                 # the price_str is a list contains a price string seems like '$68.99 - $89.99' or single price '$45.99'
                 multi_price = price_str[0].split('-')
                 price = float(multi_price[0].split('$')[1]) # ['', '68.99']
-                print (price)
                 loader.add_value('price', price)
                 return
         cls.get_logger().debug('Not found query because of price: ' + response.request.meta['query'])
