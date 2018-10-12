@@ -22,6 +22,7 @@ class AmazonSpider(scrapy.Spider):
         headers: To be filled in the header of http requests
         response_count: The number of responses received (for debug purpose only)
         useful_proxy: The set of proxy addresses that can be connected (for debug purpose only)
+        ads_id: The id of the product crawled, increment by one for each time crawled
     """
     # set name of the spider
     name = 'amazon'
@@ -38,6 +39,7 @@ class AmazonSpider(scrapy.Spider):
         }
         self.response_count = 0
         self.useful_proxy = set()
+        self.ads_id = 0
         super().__init__()
 
     @property
@@ -72,7 +74,7 @@ class AmazonSpider(scrapy.Spider):
     def start_requests(self):
         """ Define starting requests urls """
         # queries = (query.query for query in self.query_it)
-        queries = ['facial cream']
+        # queries = ['facial cream']
         # for query in queries:
         #     url = self.query_api + query
         # queries = (query.query for query in self.query_it)
@@ -87,9 +89,8 @@ class AmazonSpider(scrapy.Spider):
             yield request
 
     def parse(self, response):
-        """ For testing purpose, try to see if the crawler can get responses from server """
+        """ Parse the response received """
         # The ad id to be assigned to each crawled id (each time increment by 1)
-        ad_id = 0
         try:
             # The result id number in the li element of the ul element of amazon website
             result_id = 0
@@ -98,11 +99,11 @@ class AmazonSpider(scrapy.Spider):
             while curr_li:
                 loader = ItemLoader(item = Ad(), response = response)
                 # load all fields into Ad object and return it
-                ad = AdsLoader.load_fields(loader, response, curr_li, ad_id)
+                ad = AdsLoader.load_fields(loader, response, curr_li, self.ads_id)
                 # increment result id number and ad id number
                 result_id += 1
                 curr_li = response.css(f'#result_{result_id}')
-                ad_id += 1
+                self.ads_id += 1
                 yield ad
         except Exception as e:
             self.logger.error(str(e))

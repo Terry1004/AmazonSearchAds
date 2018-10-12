@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96fb84ad-e718-4aa0-9d51-b24cb10263ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/web_crawler/ads.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/web_crawler/ads.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/init/proxy_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/web_crawler/web_crawler/init/proxy_list.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/logs/spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/web_crawler/web_crawler/logs/spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/web_crawler/web_crawler/spiders/amazon_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/web_crawler/web_crawler/spiders/amazon_spider.py" afterDir="false" />
     </list>
@@ -32,7 +30,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cfg" value="3" />
-          <entry key="json" value="19" />
+          <entry key="json" value="20" />
           <entry key="log" value="16" />
           <entry key="py" value="20" />
           <entry key="txt" value="12" />
@@ -41,7 +39,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Ini" value="3" />
-          <entry key="JSON" value="19" />
+          <entry key="JSON" value="20" />
           <entry key="PLAIN_TEXT" value="28" />
           <entry key="Python" value="20" />
         </counts>
@@ -50,6 +48,8 @@
         <counts>
           <entry key="Python Console" value="40" />
           <entry key="cfg" value="16" />
+          <entry key="json" value="1" />
+          <entry key="log" value="1" />
           <entry key="py" value="2640" />
           <entry key="txt" value="843" />
         </counts>
@@ -57,7 +57,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Ini" value="16" />
-          <entry key="PLAIN_TEXT" value="843" />
+          <entry key="JSON" value="1" />
+          <entry key="PLAIN_TEXT" value="844" />
           <entry key="Python" value="2680" />
         </counts>
       </usages-collector>
@@ -74,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/web_crawler/web_crawler/spiders/amazon_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="195" column="50" selection-start-line="195" selection-start-column="50" selection-end-line="195" selection-end-column="50" />
+            <state relative-caret-position="-2298">
+              <caret line="64" column="51" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
               <folding>
                 <element signature="e#55#68#0" expanded="true" />
               </folding>
@@ -86,11 +87,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/web_crawler/web_crawler/logs/spider.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="713" column="72" selection-start-line="713" selection-start-column="72" selection-end-line="713" selection-end-column="459" />
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/web_crawler/ads.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -104,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/src/web_crawler/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -129,9 +139,9 @@
         <option value="$PROJECT_DIR$/src/web_crawler/web_crawler/items.py" />
         <option value="$PROJECT_DIR$/src/web_crawler/web_crawler/init/raw_query.txt" />
         <option value="$PROJECT_DIR$/src/web_crawler/test.py" />
+        <option value="$PROJECT_DIR$/src/web_crawler/web_crawler/init/proxy_list.txt" />
         <option value="$PROJECT_DIR$/src/web_crawler/ads.json" />
         <option value="$PROJECT_DIR$/src/web_crawler/web_crawler/logs/spider.log" />
-        <option value="$PROJECT_DIR$/src/web_crawler/web_crawler/init/proxy_list.txt" />
         <option value="$PROJECT_DIR$/src/web_crawler/web_crawler/spiders/amazon_spider.py" />
       </list>
     </option>
@@ -420,7 +430,7 @@
     <entry file="file://$PROJECT_DIR$/src/web_crawler/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
@@ -437,16 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/web_crawler/ads.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/web_crawler/web_crawler/logs/spider.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="713" column="72" selection-start-line="713" selection-start-column="72" selection-end-line="713" selection-end-column="459" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/web_crawler/web_crawler/init/proxy_list.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -460,13 +460,27 @@
     <entry file="file://$PROJECT_DIR$/src/web_crawler/web_crawler/logs/init.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/web_crawler/ads.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/web_crawler/web_crawler/spiders/amazon_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="195" column="50" selection-start-line="195" selection-start-column="50" selection-end-line="195" selection-end-column="50" />
+        <state relative-caret-position="-2298">
+          <caret line="64" column="51" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
           <folding>
             <element signature="e#55#68#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/web_crawler/web_crawler/logs/spider.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
