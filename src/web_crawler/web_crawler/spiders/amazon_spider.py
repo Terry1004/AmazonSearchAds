@@ -5,6 +5,8 @@ from scrapy.loader import ItemLoader
 from ..init import init_proxy, init_query
 from .. import helpers
 from ..items import Ad
+from re import sub
+from decimal import Decimal
 
 LOGGER_NAME = 'spider'
 
@@ -71,8 +73,8 @@ class AmazonSpider(scrapy.Spider):
         """ Define starting requests urls """
         # queries = (query.query for query in self.query_it)
         queries = ['facial cream']
-        for query in queries:
-            url = self.query_api + query
+        # for query in queries:
+        #     url = self.query_api + query
         # queries = (query.query for query in self.query_it)
         for query in self.query_it:
             url = self.query_api + query.query
@@ -83,7 +85,6 @@ class AmazonSpider(scrapy.Spider):
             self.logger.debug(f'Send request to url: {url}')
             self.logger.debug(f'Proxy used: {proxy}')
             yield request
-            break
 
     def parse(self, response):
         """ For testing purpose, try to see if the crawler can get responses from server """
@@ -194,10 +195,9 @@ class AdsLoader:
         for price_path in cls.price_paths:
             price_str = curr_li.css(price_path+'::text').extract()
             if price_str:
-                print (price_str[0])
                 # the price_str is a list contains a price string seems like '$68.99 - $89.99' or single price '$45.99'
                 multi_price = price_str[0].split('-')
-                price = float(multi_price[0].split('$')[1]) # ['', '68.99']
+                price = Decimal(sub(r'[^\d.]', '', multi_price[0]))
                 print (price)
                 loader.add_value('price', price)
                 return
@@ -230,7 +230,6 @@ class AdsLoader:
             category = response.css(category_path + '::text').extract()
             if category:
                 loader.add_value('category', category[0])
-                return
         cls.get_logger().error('Not found query because of category: ' + response.request.meta['query'])
 
     @classmethod
