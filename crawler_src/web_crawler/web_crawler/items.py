@@ -4,6 +4,8 @@
 #
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/items.html
+""" A module containing one Ads class """
+
 
 import scrapy
 
@@ -16,15 +18,13 @@ class Ad(scrapy.Item):
             bid_price: random assigned bid price per click
             campaign_id: unique id per query
             query_group_id: one query group id for a group of similar queries, e.g. facial cream, facial moisturizer cream
-            title = crawled product title
-            price = crawled product price
-            thumbnail = picture url of crawled product
-            brand = craweled product brand
-            detail_url = original url for each product
-            catagory = the first main category of crawled product
-            key_words = keywords from query
-            relevance_score =
-
+            title: crawled product title
+            price: crawled product price
+            thumbnail: picture url of crawled product
+            brand: craweled product brand
+            detail_url: original url for each product
+            catagory: the first main category of crawled product
+            key_words: keywords from query
      """
     # Attribute from feed
     ad_id = scrapy.Field()

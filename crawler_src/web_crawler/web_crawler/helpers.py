@@ -1,9 +1,11 @@
-""" Helper functions for parsing the configuration file and generate logger """
+""" Helper functions for parsing the configuration file and generate logger 
+"""
 
 import configparser
 import logging
 import os
 import socket
+
 
 # find the absolute config file path
 CONFIG_PATH = os.path.join(os.path.abspath(os.path.dirname(__file__)), '../scrapy.cfg')
@@ -14,7 +16,7 @@ def read_config():
     object returned then is not available to avoid duplicate parsing of config file
     Args:
         Void
-    Return:
+    Returns:
         Parsed config object (dict-like) 
     """
     config = configparser.ConfigParser()
@@ -40,8 +42,9 @@ def setup_config_logger(logger_name):
     Args:
         logger_name: The name of the logger, which will be the same as the name of the log file 
         in the config file
-    Return:
-        Void
+    Returns:
+        config: The parsed configuration object 
+        logger: The logger object with given name
     """
     config = read_config()
     logger = logging.getLogger(logger_name)

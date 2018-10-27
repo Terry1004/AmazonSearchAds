@@ -1,4 +1,9 @@
-""" The main scrapy.spider class for web crawling """
+""" The main scrapy.spider class for web crawling 
+
+    Attributes:
+        _LOGGER_NAME: The name of the logger to use for this module
+"""
+
 
 import scrapy
 from scrapy.loader import ItemLoader
@@ -8,7 +13,9 @@ from ..items import Ad
 from re import sub
 from decimal import Decimal
 
-LOGGER_NAME = 'spider'
+
+_LOGGER_NAME = 'spider'
+
 
 class AmazonSpider(scrapy.Spider):
     """ The main spider class for crawling product information and output to json 
@@ -44,7 +51,7 @@ class AmazonSpider(scrapy.Spider):
 
     @property
     def proxy(self):
-        """ The proxy to use for the current request """
+        """ Returns: The proxy to use for the current request """
         try:
             proxy = next(self._proxy_it)
         except StopIteration:
@@ -55,7 +62,7 @@ class AmazonSpider(scrapy.Spider):
 
     @property
     def logger(self):
-        """ Override the scrapy logger attribute """
+        """ Returns: The overriden scrapy logger """
         return self._logger
 
     def add_query_meta(self, query, meta):
@@ -63,8 +70,6 @@ class AmazonSpider(scrapy.Spider):
         Args:
             query: The Query object of which the information should be recorded
             meta: The meta field of a request object
-        Return:
-            Void
         """
         meta['query'] = query.query
         meta['campaign_id'] = query.campaign_id
@@ -154,10 +159,10 @@ class AdsLoader:
     
     @classmethod
     def get_logger(cls):
-        """ Return the logger object corresponding to web crawling 
+        """ Returns: the logger object corresponding to web crawling 
         (WARNING: has to be used after initialization of an instance of AmazonSpider)
         """
-        return helpers.get_logger(LOGGER_NAME)
+        return helpers.get_logger(_LOGGER_NAME)
 
     @classmethod
     def load_fields(cls, loader, response, curr_li, ad_id):
@@ -167,7 +172,7 @@ class AdsLoader:
             response: The raw response from the website
             result_id: The current result id number to be crawled
             ad_id: The id of ad
-        Return:
+        Returns:
             An Ad object with all fields loaded
         """
         cls.load_query_fields(loader, response, ad_id)

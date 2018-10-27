@@ -1,12 +1,19 @@
-""" The module for parsing the query feed list file into a list of query objects """
+""" The module for parsing the query feed list file into a list of query objects 
+
+    Attributes:
+        _LOGGER_NAME: The name of the logger to use for this module
+"""
+
 
 from .. import helpers
 
-LOGGER_NAME = 'init'
+
+_LOGGER_NAME = 'init'
 
 
 class Query:
     """ A simple class representing one query
+    
     Attributes:
         logger: The logger object for logging
         query: query input as a phrase of words
@@ -17,6 +24,7 @@ class Query:
 
     def __init__(self, string, logger):
         """ Initialize the fields of one query feed
+        
         Args:
             string: A line in query feed
             logger: A logger object to used in this module
@@ -32,7 +40,7 @@ class Query:
             self.query_group_id = fields[3]
 
     def __repr__(self):
-        """ Return the string representing the fields of query, separated by new lines """
+        """ Returns: the string representing the fields of query, separated by new lines """
         res_list = []
         res_list.append(f'query: {self.query}')
         res_list.append(f'bid_price: {self.bid_price}')
@@ -43,11 +51,15 @@ class Query:
 
 def init_query():
     """ Read query feeds in the file (generator of Query objects)
+    
     Args:
         config: Parsed config object (dict-like)
         logger: A logger corresponding to the current module
+    
+    Yields:
+        A sequence of Query objects to be used for searching on Amazon
     """
-    config, logger = helpers.setup_config_logger(LOGGER_NAME)
+    config, logger = helpers.setup_config_logger(_LOGGER_NAME)
     file_path = config['init_files']['query_file']
     with open(file_path) as file:
         for line in file:

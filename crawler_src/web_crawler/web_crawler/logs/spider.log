@@ -1,0 +1,165 @@
+2018-10-12 17:06:00,773 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=home theater system
+2018-10-12 17:06:00,773 - spider - DEBUG - 88 - Proxy used: http://97.79.207.83:8080
+2018-10-12 17:06:00,787 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Multi-channel box system home theater
+2018-10-12 17:06:00,787 - spider - DEBUG - 88 - Proxy used: http://49.51.68.122:1080
+2018-10-12 17:06:00,788 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Samsung blueray home theater
+2018-10-12 17:06:00,788 - spider - DEBUG - 88 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 17:06:00,790 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=LED TV
+2018-10-12 17:06:00,790 - spider - DEBUG - 88 - Proxy used: http://162.243.140.150:80
+2018-10-12 17:06:00,790 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Large screen LED TV
+2018-10-12 17:06:00,791 - spider - DEBUG - 88 - Proxy used: http://142.93.103.219:8080
+2018-10-12 17:06:00,791 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Eye protection LED TV
+2018-10-12 17:06:00,791 - spider - DEBUG - 88 - Proxy used: http://35.224.248.29:3128
+2018-10-12 17:06:00,792 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=High resolution LED TV
+2018-10-12 17:06:00,793 - spider - DEBUG - 88 - Proxy used: http://64.214.77.66:8080
+2018-10-12 17:06:00,794 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=smart watch
+2018-10-12 17:06:00,794 - spider - DEBUG - 88 - Proxy used: http://104.248.113.223:8080
+2018-10-12 17:06:00,794 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Water proof smart watch
+2018-10-12 17:06:00,794 - spider - DEBUG - 88 - Proxy used: http://142.93.242.159:54321
+2018-10-12 17:06:00,795 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Electronic smart watch
+2018-10-12 17:06:00,795 - spider - DEBUG - 88 - Proxy used: http://162.243.140.150:8000
+2018-10-12 17:06:00,795 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=fitness tracker smart watch
+2018-10-12 17:06:00,795 - spider - DEBUG - 88 - Proxy used: http://142.93.121.197:8080
+2018-10-12 17:06:00,796 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=watch with leather band
+2018-10-12 17:06:00,796 - spider - DEBUG - 88 - Proxy used: http://104.248.113.134:8080
+2018-10-12 17:06:00,797 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=watch with date display
+2018-10-12 17:06:00,797 - spider - DEBUG - 88 - Proxy used: http://104.248.113.253:8080
+2018-10-12 17:06:00,799 - spider - DEBUG - 51 - Finsh one proxy rotation
+2018-10-12 17:06:00,800 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=ancient mechanical watch
+2018-10-12 17:06:00,800 - spider - DEBUG - 88 - Proxy used: http://37.61.224.240:8195
+2018-10-12 17:06:00,801 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=smart watch for children
+2018-10-12 17:06:00,801 - spider - DEBUG - 88 - Proxy used: http://97.79.207.83:8080
+2018-10-12 17:06:01,427 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Video Games
+2018-10-12 17:06:01,427 - spider - DEBUG - 88 - Proxy used: http://49.51.68.122:1080
+2018-10-12 17:06:03,449 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Xbox 360 video games
+2018-10-12 17:06:03,450 - spider - DEBUG - 88 - Proxy used: http://104.248.112.189: 8080
+2018-10-12 17:06:03,647 - spider - DEBUG - 205 - Not found query because of price: Samsung blueray home theater
+2018-10-12 17:06:03,675 - spider - DEBUG - 205 - Not found query because of price: Samsung blueray home theater
+2018-10-12 17:06:03,722 - spider - DEBUG - 205 - Not found query because of price: Samsung blueray home theater
+2018-10-12 17:06:03,764 - spider - DEBUG - 205 - Not found query because of price: Samsung blueray home theater
+2018-10-12 17:06:03,793 - spider - DEBUG - 205 - Not found query because of price: Samsung blueray home theater
+2018-10-12 17:06:03,869 - spider - DEBUG - 205 - Not found query because of price: Samsung blueray home theater
+2018-10-12 17:06:03,949 - spider - DEBUG - 205 - Not found query because of price: Samsung blueray home theater
+2018-10-12 17:06:03,956 - spider - DEBUG - 116 - Total number of responses received: 1
+2018-10-12 17:06:03,957 - spider - DEBUG - 117 - All usefull proxies: {'http://104.248.112.189: 8080'}
+2018-10-12 17:06:04,366 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=action & shooter video games
+2018-10-12 17:06:04,367 - spider - DEBUG - 88 - Proxy used: http://162.243.140.150:80
+2018-10-12 17:06:04,523 - spider - DEBUG - 205 - Not found query because of price: Multi-channel box system home theater
+2018-10-12 17:06:04,907 - spider - DEBUG - 116 - Total number of responses received: 2
+2018-10-12 17:06:04,908 - spider - DEBUG - 117 - All usefull proxies: {'http://49.51.68.122:1080', 'http://104.248.112.189: 8080'}
+2018-10-12 17:06:04,948 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=adventure video games
+2018-10-12 17:06:04,949 - spider - DEBUG - 88 - Proxy used: http://142.93.103.219:8080
+2018-10-12 17:06:05,100 - spider - ERROR - 192 - Not found query because of title: LED TV
+2018-10-12 17:06:05,101 - spider - DEBUG - 205 - Not found query because of price: LED TV
+2018-10-12 17:06:05,102 - spider - DEBUG - 216 - Not found query because of thumbnail: LED TV
+2018-10-12 17:06:05,103 - spider - DEBUG - 227 - Not found query because of brand: LED TV
+2018-10-12 17:06:05,141 - spider - ERROR - 192 - Not found query because of title: LED TV
+2018-10-12 17:06:05,142 - spider - DEBUG - 205 - Not found query because of price: LED TV
+2018-10-12 17:06:05,143 - spider - DEBUG - 216 - Not found query because of thumbnail: LED TV
+2018-10-12 17:06:05,143 - spider - DEBUG - 227 - Not found query because of brand: LED TV
+2018-10-12 17:06:05,182 - spider - ERROR - 192 - Not found query because of title: LED TV
+2018-10-12 17:06:05,184 - spider - DEBUG - 205 - Not found query because of price: LED TV
+2018-10-12 17:06:05,185 - spider - DEBUG - 216 - Not found query because of thumbnail: LED TV
+2018-10-12 17:06:05,186 - spider - DEBUG - 227 - Not found query because of brand: LED TV
+2018-10-12 17:06:05,272 - spider - DEBUG - 205 - Not found query because of price: LED TV
+2018-10-12 17:06:05,315 - spider - DEBUG - 205 - Not found query because of price: LED TV
+2018-10-12 17:06:05,396 - spider - DEBUG - 205 - Not found query because of price: LED TV
+2018-10-12 17:06:05,431 - spider - DEBUG - 205 - Not found query because of price: LED TV
+2018-10-12 17:06:05,478 - spider - DEBUG - 205 - Not found query because of price: LED TV
+2018-10-12 17:06:05,561 - spider - DEBUG - 205 - Not found query because of price: LED TV
+2018-10-12 17:06:05,608 - spider - DEBUG - 205 - Not found query because of price: LED TV
+2018-10-12 17:06:05,649 - spider - DEBUG - 205 - Not found query because of price: LED TV
+2018-10-12 17:06:05,745 - spider - DEBUG - 116 - Total number of responses received: 3
+2018-10-12 17:06:05,746 - spider - DEBUG - 117 - All usefull proxies: {'http://162.243.140.150:80', 'http://49.51.68.122:1080', 'http://104.248.112.189: 8080'}
+2018-10-12 17:06:06,482 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=sports  video games
+2018-10-12 17:06:06,482 - spider - DEBUG - 88 - Proxy used: http://35.224.248.29:3128
+2018-10-12 17:06:06,657 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:06,702 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:06,761 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:06,815 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:06,854 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:06,927 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=PC & MAC video games
+2018-10-12 17:06:06,927 - spider - DEBUG - 88 - Proxy used: http://64.214.77.66:8080
+2018-10-12 17:06:06,972 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:07,143 - spider - DEBUG - 205 - Not found query because of price: Eye protection LED TV
+2018-10-12 17:06:07,199 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:07,261 - spider - DEBUG - 205 - Not found query because of price: Eye protection LED TV
+2018-10-12 17:06:07,400 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:07,407 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=PlayStation 3 video games
+2018-10-12 17:06:07,408 - spider - DEBUG - 88 - Proxy used: http://104.248.113.223:8080
+2018-10-12 17:06:07,500 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:07,585 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:07,748 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:07,793 - spider - DEBUG - 205 - Not found query because of price: smart watch
+2018-10-12 17:06:07,880 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:08,001 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:08,116 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:08,154 - spider - ERROR - 192 - Not found query because of title: smart watch
+2018-10-12 17:06:08,155 - spider - DEBUG - 205 - Not found query because of price: smart watch
+2018-10-12 17:06:08,155 - spider - DEBUG - 216 - Not found query because of thumbnail: smart watch
+2018-10-12 17:06:08,156 - spider - DEBUG - 227 - Not found query because of brand: smart watch
+2018-10-12 17:06:08,229 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:08,322 - spider - DEBUG - 205 - Not found query because of price: Eye protection LED TV
+2018-10-12 17:06:08,363 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:08,370 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=PlayStation 4 video games
+2018-10-12 17:06:08,370 - spider - DEBUG - 88 - Proxy used: http://142.93.242.159:54321
+2018-10-12 17:06:08,439 - spider - DEBUG - 205 - Not found query because of price: Eye protection LED TV
+2018-10-12 17:06:08,481 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:08,614 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:08,658 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:08,794 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:08,843 - spider - DEBUG - 205 - Not found query because of price: Large screen LED TV
+2018-10-12 17:06:08,963 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:08,969 - spider - DEBUG - 116 - Total number of responses received: 4
+2018-10-12 17:06:08,970 - spider - DEBUG - 117 - All usefull proxies: {'http://142.93.103.219:8080', 'http://162.243.140.150:80', 'http://49.51.68.122:1080', 'http://104.248.112.189: 8080'}
+2018-10-12 17:06:09,013 - spider - DEBUG - 205 - Not found query because of price: smart watch
+2018-10-12 17:06:09,086 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:09,189 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:09,292 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:09,414 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:09,466 - spider - DEBUG - 205 - Not found query because of price: smart watch
+2018-10-12 17:06:09,539 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:09,618 - spider - DEBUG - 205 - Not found query because of price: Eye protection LED TV
+2018-10-12 17:06:09,657 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:09,662 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Nintendo Wii video games
+2018-10-12 17:06:09,662 - spider - DEBUG - 88 - Proxy used: http://162.243.140.150:8000
+2018-10-12 17:06:09,734 - spider - DEBUG - 205 - Not found query because of price: Eye protection LED TV
+2018-10-12 17:06:09,781 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:09,804 - spider - DEBUG - 116 - Total number of responses received: 5
+2018-10-12 17:06:09,804 - spider - DEBUG - 117 - All usefull proxies: {'http://49.51.68.122:1080', 'http://162.243.140.150:80', 'http://142.93.103.219:8080', 'http://104.248.113.223:8080', 'http://104.248.112.189: 8080'}
+2018-10-12 17:06:09,808 - spider - DEBUG - 116 - Total number of responses received: 6
+2018-10-12 17:06:09,810 - spider - DEBUG - 117 - All usefull proxies: {'http://49.51.68.122:1080', 'http://162.243.140.150:80', 'http://142.93.103.219:8080', 'http://104.248.113.223:8080', 'http://35.224.248.29:3128', 'http://104.248.112.189: 8080'}
+2018-10-12 17:06:09,912 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:09,918 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Nintendo DS video games
+2018-10-12 17:06:09,918 - spider - DEBUG - 88 - Proxy used: http://142.93.121.197:8080
+2018-10-12 17:06:10,004 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:10,114 - spider - DEBUG - 205 - Not found query because of price: fitness tracker smart watch
+2018-10-12 17:06:10,156 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:10,229 - spider - DEBUG - 205 - Not found query because of price: fitness tracker smart watch
+2018-10-12 17:06:10,385 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:10,501 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:10,620 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:10,727 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:10,767 - spider - DEBUG - 205 - Not found query because of price: Electronic smart watch
+2018-10-12 17:06:10,855 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:11,020 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:11,025 - spider - DEBUG - 87 - Send request to url: https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Outdoor Furniture
+2018-10-12 17:06:11,025 - spider - DEBUG - 88 - Proxy used: http://104.248.113.134:8080
+2018-10-12 17:06:11,185 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:11,313 - spider - DEBUG - 205 - Not found query because of price: watch with leather band
+2018-10-12 17:06:11,313 - spider - DEBUG - 216 - Not found query because of thumbnail: watch with leather band
+2018-10-12 17:06:11,313 - spider - DEBUG - 227 - Not found query because of brand: watch with leather band
+2018-10-12 17:06:11,378 - spider - DEBUG - 205 - Not found query because of price: Water proof smart watch
+2018-10-12 17:06:11,443 - spider - DEBUG - 205 - Not found query because of price: watch with leather band
+2018-10-12 17:06:11,443 - spider - DEBUG - 216 - Not found query because of thumbnail: watch with leather band
+2018-10-12 17:06:11,443 - spider - DEBUG - 227 - Not found query because of brand: watch with leather band
+2018-10-12 17:06:11,481 - spider - DEBUG - 205 - Not found query because of price: fitness tracker smart watch
+2018-10-12 17:06:11,489 - spider - DEBUG - 116 - Total number of responses received: 7
+2018-10-12 17:06:11,489 - spider - DEBUG - 117 - All usefull proxies: {'http://49.51.68.122:1080', 'http://162.243.140.150:80', 'http://142.93.103.219:8080', 'http://104.248.113.223:8080', 'http://35.224.248.29:3128', 'http://142.93.242.159:54321', 'http://104.248.112.189: 8080'}
+2018-10-12 17:06:11,561 - spider - DEBUG - 205 - Not found query because of price: watch with leather band
+2018-10-12 17:06:11,562 - spider - DEBUG - 216 - Not found query because of thumbnail: watch with leather band
+2018-10-12 17:06:11,562 - spider - DEBUG - 227 - Not found query because of brand: watch with leather band
+2018-10-12 17:06:11,592 - spider - DEBUG - 205 - Not found query because of price: fitness tracker smart watch
+2018-10-12 17:06:11,652 - spider - DEBUG - 205 - Not found query because of price: watch with leather band
+2018-10-12 17:06:11,652 - spider - DEBUG - 216 - Not found query because of thumbnail: watch with leather band
+2018-10-12 17:06:11,652 - spider - DEBUG - 227 - Not found query because of brand: watch with leather band

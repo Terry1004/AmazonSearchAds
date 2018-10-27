@@ -1,8 +1,12 @@
-""" The module for parsing the proxy list file into a list of proxy objects """
+""" The module for parsing the proxy list file into a list of proxy objects 
+
+    Attributes:
+        _LOGGER_NAME: The name of the logger to use for this module
+"""
 
 from .. import helpers
 
-LOGGER_NAME = 'init'
+_LOGGER_NAME = 'init'
 
 
 class Proxy:
@@ -29,11 +33,11 @@ class Proxy:
 
     @property
     def address(self):
-        """ The proxy server address """
+        """ Returns: The proxy server address """
         return f'http://{self.host}:{self.port}'
 
     def __repr__(self):
-        """ Return the string representing the fields of proxy, separated by new lines """
+        """ Returns: the string representing the fields of proxy, separated by new lines """
         res_list = []
         res_list.append(f'host: {self.host}')
         res_list.append(f'port: {self.port}')
@@ -45,8 +49,10 @@ def init_proxy():
     Args:
         config: Parsed config object (dict-like)
         logger: A logger corresponding to the current module
+    Yields:
+        A sequence of Proxy objects to use for web crawling
     """
-    config, logger = helpers.setup_config_logger(LOGGER_NAME)
+    config, logger = helpers.setup_config_logger(_LOGGER_NAME)
     file_path = config['init_files']['proxy_file']
     with open(file_path) as file:
         for line in file:

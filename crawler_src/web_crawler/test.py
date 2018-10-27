@@ -1,3 +1,6 @@
+""" A simple test module for debugging """
+
+
 from web_crawler.init.init_proxy import init_proxy
 from web_crawler.init.init_query import init_query
 
