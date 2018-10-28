@@ -19,8 +19,8 @@ public class SearchAdsEngine {
 	private String budgetDataFilePath = "";
 	
 	/**
-	 * A dummy class defined in order to ensure that at most one <code>SearchAdsEngine</code>
-	 * instance can exist and this instance can only be initialized by the static method 
+	 * A protected constructor defined in order to ensure that at most one <code>SearchAdsEngine
+	 * </code> instance can exist and this instance can only be initialized by the static method 
 	 * <code>getInstance</code> from outside of this class.
 	 * @param redisEngine The <code>RedisEngine</code> object that provides Redis server access.
 	 * @param mysqlEngine The <code>MysqlEngine</code> object that provides MySQL server access.
@@ -44,8 +44,7 @@ public class SearchAdsEngine {
 	 * @param mysqlEngine The <code>MysqlEngine</code> object that provides MySQL server access.
 	 * @param adsDataFilePath The path to the file that stores ads data.
 	 * @param budgetDataFilePath The path to the file that stores budget data.
-	 * @return {@link #SearchAdsEngine(RedisEngine, MysqlEngine, String, String)} The instance of the 
-	 * (dummy class of the) core class for handling incoming queries and return relevant ads information.
+	 * @return SearchAdsEngine The instance of this SearchAdsEngine class.
 	 * @see RedisEngine
 	 * @see MySQLEngine
 	 * @see #SearchAdsEngine(RedisEngine, MysqlEngine, String, String)

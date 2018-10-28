@@ -12,8 +12,8 @@ public class MysqlEngine {
 	private String mysqlPassword = "";
 	
 	/**
-	 * A dummy class defined in order to ensure that at most one <code>MysqlEngine</code> instance 
-	 * can exist and this instance can only be initialized by the static method <code>
+	 * A protected constructor defined in order to ensure that at most one <code>MysqlEngine</code> 
+	 * instance can exist and this instance can only be initialized by the static method <code>
 	 * getInstance</code> from outside of this class.
 	 * @param mysqlHost The host name of the server in the form of "ip address: port".
 	 * @param mysqlDB The name of the database to be connected to.
@@ -35,8 +35,7 @@ public class MysqlEngine {
 	 * @param mysqlDB The name of the database to be connected to.
 	 * @param mysqlUser The username of the MySQL server to be connected to.
 	 * @param mysqlPassword The password of the MySQL server to be connected to.
-	 * @return {@link #MysqlEngine(String, String, String, String)} The instance of the (dummy class of the) 
-	 * class for connecting to MySQL server, adding to and retrieving data from it.
+	 * @return MysqlEngine The instance of this MysqlEngine class.
 	 * @see #MysqlEngine(String, String, String, String)
 	 */
 	public static MysqlEngine getInstance(String mysqlHost, String mysqlDB, String mysqlUser, String mysqlPassword) {
