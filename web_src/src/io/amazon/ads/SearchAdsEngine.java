@@ -1,5 +1,9 @@
 package io.amazon.ads;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import io.amazon.ads.StaticObjs.Ad;
 import io.amazon.ads.Utilities.MysqlEngine;
 import io.amazon.ads.Utilities.RedisEngine;
 
@@ -56,8 +60,24 @@ public class SearchAdsEngine {
 		return instance;
 	}
 	
-	public void init() {
-		
+	/**
+	 * Initialize the instance by loading ads and budget data into MySQL amd Redis server
+	 * @see #loadAds()
+	 * @see #loadBudget()
+	 * @return isInit Implies if this <code>SearchAdsEngine</code> is successfully initialized
+	 */
+	public Boolean init() {
+		Boolean isInit = true;
+		loadAds();
+		loadBudget();
+		return isInit;
+	}
+	
+	public List<Ad> selectAds(String query) {
+		List<Ad> ads = new ArrayList<>();
+		ads.add(new Ad("test"));
+		ads.add(new Ad(query));
+		return ads;
 	}
 	
 	public RedisEngine getRedisEngine() {
@@ -74,6 +94,20 @@ public class SearchAdsEngine {
 	
 	public String getBudgetDataFilePath() {
 		return budgetDataFilePath;
+	}
+	
+	/**
+	 * Load Ads data into MySQL and Redis server
+	 */
+	private void loadAds() {
+		
+	}
+	
+	/**
+	 * Load budget data into MySQL server
+	 */
+	private void loadBudget() {
+		
 	}
 
 }
