@@ -36,7 +36,7 @@ class AmazonSpider(scrapy.Spider):
 
     def __init__(self):
         self._proxy_it = init_proxy.init_proxy()
-        self._logger = helpers.setup_config_logger(LOGGER_NAME)[1]
+        self._logger = helpers.setup_config_logger(_LOGGER_NAME)[1]
         self.query_it = init_query.init_query()
         self.query_api = 'https://www.amazon.com/s/ref=nb_sb_noss?field-keywords='
         self.headers = {
