@@ -1,4 +1,6 @@
 **/__pycache__
+/.idea
+/.vscode
 crawler_src/web_crawler/ads.json
 crawler_src/web_crawler/scrapy.cfg
 crawler_src/web_crawler/test.py
