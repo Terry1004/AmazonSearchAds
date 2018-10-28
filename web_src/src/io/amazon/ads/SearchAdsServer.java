@@ -13,7 +13,8 @@ import io.amazon.ads.Utilities.RedisEngine;
 import io.amazon.ads.Utilities.MysqlEngine;
 
 /**
- * Servlet implementation class SearchAdsServer
+ * The search ads server that returns all ads upon given query.
+ * @see SearchAdsEngine
  */
 @WebServlet(name = "SearchAds", urlPatterns = { "/search-ads" })
 public class SearchAdsServer extends HttpServlet {
@@ -28,7 +29,12 @@ public class SearchAdsServer extends HttpServlet {
     }
 
 	/**
+	 * Called upon initialization of the search ads server. Initialize a core 
+	 * <code>SearchAdsEngine</code> object for handling incoming queries.
+	 * @param config A ServletConfig instance.
+	 * @throws ServletException A ServletException instance. Thrown by the parent class.
 	 * @see Servlet#init(ServletConfig)
+	 * @see ServletException
 	 */
 	public void init(ServletConfig config) throws ServletException {
 		// TODO Auto-generated method stub
