@@ -1,0 +1,7 @@
+**/__pycache__
+crawler_src/web_crawler/ads.json
+crawler_src/web_crawler/scrapy.cfg
+crawler_src/web_crawler/test.py
+crawler_src/web_crawler/web_crawler/init/proxy_list.txt
+crawler_src/web_crawler/web_crawler/init/raw_query.txt
+crawler_src/web_crawler/web_crawler/logs
