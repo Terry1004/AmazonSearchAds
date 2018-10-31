@@ -75,8 +75,11 @@ public class SearchAdsEngine {
 	
 	public List<Ad> selectAds(String query) {
 		List<Ad> ads = new ArrayList<>();
-		ads.add(new Ad("test"));
-		ads.add(new Ad(query));
+		redisEngine.addPair("test", "test");
+		redisEngine.addPair("test", query);
+		for (String title: redisEngine.getValues("test")) {
+			ads.add(new Ad(title));
+		}
 		return ads;
 	}
 	

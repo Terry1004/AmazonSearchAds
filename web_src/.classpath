@@ -15,7 +15,8 @@
 	<classpathentry kind="lib" path="javalib/lucene-suggest-4.0.0.jar"/>
 	<classpathentry kind="lib" path="javalib/mysql-connector-java-5.1.40-bin.jar"/>
 	<classpathentry kind="lib" path="javalib/servlet-api-3.1.jar"/>
-	<classpathentry kind="lib" path="javalib/jedis-2.1.0-sources.jar"/>
 	<classpathentry kind="lib" path="javalib/json-20180130.jar"/>
+	<classpathentry kind="lib" path="javalib/jedis-2.8.2.jar"/>
+	<classpathentry kind="lib" path="javalib/commons-pool2-2.5.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
