@@ -11,7 +11,6 @@ import redis.clients.jedis.JedisPoolConfig;
 public class RedisEngine {
 	
 	private static RedisEngine instance;
-	private String redisHost = "";
 	private JedisPool jedisPool;
 	
 	/**
@@ -23,8 +22,8 @@ public class RedisEngine {
 	 * @see #getInstance(String)
 	 */
 	protected RedisEngine(String redisHost) {
-		this.redisHost = redisHost;
-		jedisPool = new JedisPool(new JedisPoolConfig(), "localhost");
+		jedisPool = new JedisPool(new JedisPoolConfig(), redisHost);
+		jedisPool.getResource().flushAll();
 		System.out.println("Jeids Server connection successful");
 	}
 	
