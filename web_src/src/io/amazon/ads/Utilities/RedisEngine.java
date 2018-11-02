@@ -22,9 +22,14 @@ public class RedisEngine {
 	 * @see #getInstance(String)
 	 */
 	protected RedisEngine(String redisHost) {
-		jedisPool = new JedisPool(new JedisPoolConfig(), redisHost);
-		jedisPool.getResource().flushAll();
-		System.out.println("Jeids Server connection successful");
+		try {
+			jedisPool = new JedisPool(new JedisPoolConfig(), redisHost);
+			jedisPool.getResource().flushAll();
+			System.out.println("RedisEngine successfully initialized");
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("RedisEngine fails to be initialized");
+		}
 	}
 	
 	/**

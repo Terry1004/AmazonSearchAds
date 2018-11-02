@@ -48,35 +48,16 @@ public class SearchAdsServer extends HttpServlet {
 		// TODO Auto-generated method stub
 		super.init(config);
 		ServletContext application = config.getServletContext();
-		String adsDataFilePath = application.getInitParameter("adsDataFilePath");
-	    String budgetDataFilePath = application.getInitParameter("budgetDataFilePath");
-	    String uiTemplateFilePath = application.getInitParameter("uiTemplateFilePath");
-	    String adTemplateFilePath = application.getInitParameter("adTemplateFilePath");
+		String adsDataPath = application.getInitParameter("adsDataPath");
+	    String budgetDataPath = application.getInitParameter("budgetDataPath");
+	    String uiTemplatePath = application.getInitParameter("uiTemplatePath");
+	    String adTemplatePath = application.getInitParameter("adTemplatePath");
 	    String redisHost = application.getInitParameter("redisHost");
-	    String mysqlHost = application.getInitParameter("mysqlHost");
-	    String mysqlDB = application.getInitParameter("mysqlDB");
-	    String mysqlUser = application.getInitParameter("mysqlUser");
-	    String mysqlPassword = application.getInitParameter("mysqlPassword");
+	    String dbSourceUrl = application.getInitParameter("dbSourceUrl");
 	    RedisEngine redisEngine = RedisEngine.getInstance(redisHost);
-	    MysqlEngine mysqlEngine = MysqlEngine.getInstance(mysqlHost, mysqlDB, mysqlUser, mysqlPassword);
-	    searchAdsEngine = SearchAdsEngine.getInstance(redisEngine, mysqlEngine, adsDataFilePath, budgetDataFilePath);
-	    if (searchAdsEngine.init()) {
-	    	System.out.println("searchAdsEngine initialized");
-	    	try {
-				byte[] uiData;
-				byte[] adData;
-				uiData = Files.readAllBytes(Paths.get(uiTemplateFilePath));
-				uiTemplate = new String(uiData, StandardCharsets.UTF_8);
-				adData = Files.readAllBytes(Paths.get(adTemplateFilePath));
-				adTemplate = new String(adData, StandardCharsets.UTF_8);
-				System.out.println("Templates initilized");
-			} catch (IOException e) {
-				e.printStackTrace();
-				System.out.println("Templates fail to be initialized");
-			}
-	    } else {
-	    	System.out.println("searchAdsEngine fails to be initialized");
-	    }
+	    MysqlEngine mysqlEngine = MysqlEngine.getInstance(dbSourceUrl);
+	    searchAdsEngine = SearchAdsEngine.getInstance(redisEngine, mysqlEngine, adsDataPath, budgetDataPath);
+	    initTemplates(uiTemplatePath, adTemplatePath);
 	}
 
 	/**
@@ -125,6 +106,21 @@ public class SearchAdsServer extends HttpServlet {
 	 */
 	protected void doHead(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+	}
+	
+	private void initTemplates(String uiTemplatePath, String adTemplatePath) {
+		try {
+			byte[] uiData;
+			byte[] adData;
+			uiData = Files.readAllBytes(Paths.get(uiTemplatePath));
+			uiTemplate = new String(uiData, StandardCharsets.UTF_8);
+			adData = Files.readAllBytes(Paths.get(adTemplatePath));
+			adTemplate = new String(adData, StandardCharsets.UTF_8);
+			System.out.println("Templates successfully initilized");
+		} catch (IOException e) {
+			e.printStackTrace();
+			System.out.println("Templates fail to be initialized");
+		}
 	}
 
 }

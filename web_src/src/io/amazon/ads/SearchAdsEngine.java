@@ -25,20 +25,31 @@ public class SearchAdsEngine {
 	/**
 	 * A protected constructor defined in order to ensure that at most one <code>SearchAdsEngine
 	 * </code> instance can exist and this instance can only be initialized by the static method 
-	 * <code>getInstance</code> from outside of this class.
+	 * <code>getInstance</code> from outside of this class. When creating a new instance, ads
+	 * and budget information is also loaded into Redis and MySQL.
 	 * @param redisEngine The <code>RedisEngine</code> object that provides Redis server access.
 	 * @param mysqlEngine The <code>MysqlEngine</code> object that provides MySQL server access.
 	 * @param adsDataFilePath The path to the file that stores ads data.
 	 * @param budgetDataFilePath The path to the file that stores budget data.
 	 * @see #getInstance(RedisEngine, MysqlEngine, String, String)
+	 * @see #loadAds()
+	 * @see #loadBudget()
 	 * @see RedisEngine
 	 * @see MysqlEngine
 	 */
 	protected SearchAdsEngine(RedisEngine redisEngine, MysqlEngine mysqlEngine, String adsDataFilePath, String budgetDataFilePath) {
-		this.redisEngine = redisEngine;
-		this.mysqlEngine = mysqlEngine;
-		this.adsDataFilePath = adsDataFilePath;
-		this.budgetDataFilePath = budgetDataFilePath;
+		try {
+			this.redisEngine = redisEngine;
+			this.mysqlEngine = mysqlEngine;
+			this.adsDataFilePath = adsDataFilePath;
+			this.budgetDataFilePath = budgetDataFilePath;
+			loadAds();
+			loadBudget();
+			System.out.println("searchAdsEngine successfully initialized");
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("searchAdsEngine fails to be initialized");
+		}
 	}
 	
 	/**
@@ -58,19 +69,6 @@ public class SearchAdsEngine {
 			instance = new SearchAdsEngine(redisEngine, mysqlEngine, adsDataFilePath, budgetDataFilePath);
 		}
 		return instance;
-	}
-	
-	/**
-	 * Initialize the instance by loading ads and budget data into MySQL amd Redis server
-	 * @see #loadAds()
-	 * @see #loadBudget()
-	 * @return isInit Implies if this <code>SearchAdsEngine</code> is successfully initialized
-	 */
-	public Boolean init() {
-		Boolean isInit = true;
-		loadAds();
-		loadBudget();
-		return isInit;
 	}
 	
 	public List<Ad> selectAds(String query) {
