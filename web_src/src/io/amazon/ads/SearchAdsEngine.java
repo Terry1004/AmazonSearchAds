@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 import io.amazon.ads.StaticObjs.Ad;
@@ -137,7 +136,8 @@ public class SearchAdsEngine {
 	}
 	
 	/**
-	 * Load ads data into MySQL and Redis server
+	 * Load ads data into MySQL and Redis. Ads without adId or campaignId will be ignored
+	 * @see #parseAd(String, int)
 	 */
 	private void loadAds() {
 		try (BufferedReader brAd = new BufferedReader(new FileReader(adsDataFilePath))) {
