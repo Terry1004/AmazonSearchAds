@@ -48,38 +48,34 @@ public class RedisEngine {
 	}
 	
 	/**
-	 * Add a pair of key and value into redis. The key and value mush both be String types.
-	 * @param key The key used to be stored in redis.
-	 * @param value The value to be stored in redis under <code>key</code>
-	 * @see #getValues(String)
+	 * Get a Jedis connection object from the connection pool. It is important to close the Jedis connection
+	 * after all transactions are done.
+	 * @return A jedis connection object from the connection pool.
 	 */
-	public void addPair(String key, String value) {
-		Jedis jedis = null;
-		try {
-			jedis = jedisPool.getResource();
-			jedis.rpush(key, value);
-		} finally {
-			if (jedis != null) {
-				jedis.close();
-			}
-		}
+	public Jedis getJedisConn() {
+		return jedisPool.getResource();
 	}
 	
 	/**
-	 * Retrieve all values stored under a given key
-	 * @param key The key under which the values are to be retrieved
-	 * @return A list of values stored under the key
+	 * Add a pair of key and value into redis using the given jedis connection object. The key 
+	 * and value mush both be String types. Usually used after calling <code>getJedisConn()</code>.
+	 * @param key The key used to be stored in redis.
+	 * @param value The value to be stored in redis under <code>key</code>.
+	 * @param jedis The Jedis connection object.
+	 * @see #getValues(String)
+	 * @see #getJedisConn()
+	 */
+	public void addPair(String key, String value, Jedis jedis) {
+		jedis.rpush(key, value);
+	}
+	
+	/**
+	 * Retrieve all values stored under a given key using the jedis connection object.
+	 * @param key The key under which the values are to be retrieved.
+	 * @return A list of values stored under the key.
 	 * @see #addPair(String, String)
 	 */
-	public List<String> getValues(String key) {
-		Jedis jedis = null;
-		try {
-			jedis  = jedisPool.getResource();
-		} finally {
-			if (jedis != null) {
-				jedis.close();
-			}
-		}
+	public List<String> getValues(String key, Jedis jedis) {
 		return jedis.lrange(key, 0, -1);
 	}
 	
