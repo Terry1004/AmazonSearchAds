@@ -1,7 +1,13 @@
 package io.amazon.ads;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import io.amazon.ads.StaticObjs.Ad;
 import io.amazon.ads.Utilities.MysqlEngine;
@@ -76,7 +82,9 @@ public class SearchAdsEngine {
 		redisEngine.addPair("test", "test");
 		redisEngine.addPair("test", query);
 		for (String title: redisEngine.getValues("test")) {
-			ads.add(new Ad(title));
+			Ad ad = new Ad();
+			ad.title = title;
+			ads.add(ad);
 		}
 		return ads;
 	}
@@ -101,7 +109,28 @@ public class SearchAdsEngine {
 	 * Load Ads data into MySQL and Redis server
 	 */
 	private void loadAds() {
-		
+		try (BufferedReader brAd = new BufferedReader(new FileReader(adsDataFilePath))) {
+			String line;
+			while ((line = brAd.readLine()) != null) {
+				JSONObject adJson = new JSONObject(line);
+				Ad ad = new Ad(); 
+				if(adJson.isNull("adId") || adJson.isNull("campaignId")) {
+					continue;
+				}
+				ad.adId = adJson.getLong("adId");
+				ad.campaignId = adJson.getLong("campaignId");
+				ad.brand = adJson.getString("brand");
+				ad.price = adJson.isNull("price") ? 100.0 : adJson.getDouble("price");
+				ad.thumbnail = adJson.getString("thumbnail");
+				ad.title = adJson.getString("title");
+				ad.detail_url = adJson.getString("detail_url");						
+				ad.category =  adJson.getString("category");
+				ad.keyWords = new ArrayList<String>();
+			}
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	/**

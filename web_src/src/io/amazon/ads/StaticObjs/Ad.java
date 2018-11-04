@@ -27,9 +27,4 @@ public class Ad implements Serializable{
     public String detail_url = ""; 
     public String query = ""; 
     public String category = "";
-	
-	public Ad(String title) {
-		this.title = title;
-	}
-
 }
