@@ -106,28 +106,49 @@ public class SearchAdsEngine {
 	}
 	
 	/**
-	 * Load Ads data into MySQL and Redis server
+	 * Parse a line of a json string into an Ad object. If adId or campaignId is not found, null
+	 * is returned instead. Price is default to 100.
+	 * @param line A json string of an Ad object.
+	 * @param counter The line number (starting from 0), used for logging.
+	 * @return An Ad object parsed from the json string. Null is returned if adId or campaignId
+	 * is not found. Price is 100 if price is not found in the json string.
+	 */
+	private Ad parseAd(String line, int counter) {
+		JSONObject adJson = new JSONObject(line);
+		Ad ad = new Ad();
+		if (adJson.isNull("adId")) {
+			System.out.println("adId not found: line " + counter);
+			return null;
+		}
+		if (adJson.isNull("campaignId")) {
+			System.out.println("campaignId not found: line " + counter);
+			return null;
+		}
+		ad.brand = adJson.getString("brand");
+		ad.thumbnail = adJson.getString("thumbnail");
+		ad.title = adJson.getString("title");
+		ad.detail_url = adJson.getString("detail_url");
+		ad.category =  adJson.getString("category");
+		ad.adId = adJson.getLong("adId");
+		ad.campaignId = adJson.getLong("campaignId");
+		ad.price = adJson.isNull("price") ? 100.0 : adJson.getDouble("price");
+		ad.keyWords = new ArrayList<String>();
+		return ad;
+	}
+	
+	/**
+	 * Load ads data into MySQL and Redis server
 	 */
 	private void loadAds() {
 		try (BufferedReader brAd = new BufferedReader(new FileReader(adsDataFilePath))) {
 			String line;
+			int counter = 0;
 			while ((line = brAd.readLine()) != null) {
-				JSONObject adJson = new JSONObject(line);
-				Ad ad = new Ad(); 
-				if(adJson.isNull("adId") || adJson.isNull("campaignId")) {
-					continue;
+				Ad ad = parseAd(line, counter);
+				if (ad != null) {
+					
 				}
-				ad.adId = adJson.getLong("adId");
-				ad.campaignId = adJson.getLong("campaignId");
-				ad.brand = adJson.getString("brand");
-				ad.price = adJson.isNull("price") ? 100.0 : adJson.getDouble("price");
-				ad.thumbnail = adJson.getString("thumbnail");
-				ad.title = adJson.getString("title");
-				ad.detail_url = adJson.getString("detail_url");						
-				ad.category =  adJson.getString("category");
-				ad.keyWords = new ArrayList<String>();
 			}
-
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

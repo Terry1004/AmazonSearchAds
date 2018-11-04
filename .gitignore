@@ -1,7 +1,7 @@
 **/__pycache__
 /.idea
 /.vscode
-crawler_src/web_crawler/ads.json
+data
 crawler_src/web_crawler/test.py
 crawler_src/web_crawler/web_crawler/init/proxy_list.txt
 crawler_src/web_crawler/web_crawler/init/raw_query.txt
