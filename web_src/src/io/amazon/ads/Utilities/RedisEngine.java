@@ -65,7 +65,7 @@ public class RedisEngine {
 	 * @see #getValues(String)
 	 * @see #getJedisConn()
 	 */
-	public void addPair(String key, String value, Jedis jedis) {
+	public static void addPair(String key, String value, Jedis jedis) {
 		jedis.rpush(key, value);
 	}
 	
@@ -75,7 +75,7 @@ public class RedisEngine {
 	 * @return A list of values stored under the key.
 	 * @see #addPair(String, String)
 	 */
-	public List<String> getValues(String key, Jedis jedis) {
+	public static List<String> getValues(String key, Jedis jedis) {
 		return jedis.lrange(key, 0, -1);
 	}
 	

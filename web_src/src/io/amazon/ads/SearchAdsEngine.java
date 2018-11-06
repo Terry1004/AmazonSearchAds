@@ -136,7 +136,7 @@ public class SearchAdsEngine {
 	}
 	
 	/**
-	 * Load ads data into MySQL and Redis. Ads without adId or campaignId will be ignored
+	 * Load ads data into MySQL and Redis. Ads without adId or campaignId will be ignored.
 	 * @see #parseAd(String, int)
 	 */
 	private void loadAds() {
