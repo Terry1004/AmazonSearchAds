@@ -19,22 +19,25 @@ _LOGGER_NAME = 'spider'
 
 class AmazonSpider(scrapy.Spider):
     """ The main spider class for crawling product information and output to json 
-    Class Attributes:
-        name: name of the spider object, required by scrapy 
+    
     Attributes:
-        _proxy_it: The iterator to generate all proxy (protected)
-        _logger: Dummy attribute for overriding the logger defined in scrapy.spider
-        query_it: The iterator to generate all query
-        query_api: The api for searching on Amazon
-        headers: To be filled in the header of http requests
-        response_count: The number of responses received (for debug purpose only)
-        useful_proxy: The set of proxy addresses that can be connected (for debug purpose only)
-        ads_id: The id of the product crawled, increment by one for each time crawled
+        name: name of the spider object, required by scrapy 
     """
     # set name of the spider
     name = 'amazon'
 
     def __init__(self):
+        """ Initialize a Spider instance for crawling amazon
+        Attributes:
+            _proxy_it: The iterator to generate all proxy (protected)
+            _logger: Dummy attribute for overriding the logger defined in scrapy.spider
+            query_it: The iterator to generate all query
+            query_api: The api for searching on Amazon
+            headers: To be filled in the header of http requests
+            response_count: The number of responses received (for debug purpose only)
+            useful_proxy: The set of proxy addresses that can be connected (for debug purpose only)
+            ads_id: The id of the product crawled, increment by one for each time crawled
+        """
         self._proxy_it = init_proxy.init_proxy()
         self._logger = helpers.setup_config_logger(_LOGGER_NAME)[1]
         self.query_it = init_query.init_query()
