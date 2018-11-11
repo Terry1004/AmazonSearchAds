@@ -8,7 +8,7 @@
 import scrapy
 from scrapy.loader import ItemLoader
 from ..init import init_proxy, init_query
-from .. import helpers
+from ..helpers import Config
 from ..items import Ad
 from re import sub
 from decimal import Decimal
@@ -39,7 +39,7 @@ class AmazonSpider(scrapy.Spider):
             ads_id: The id of the product crawled, increment by one for each time crawled
         """
         self._proxy_it = init_proxy.init_proxy()
-        self._logger = helpers.setup_config_logger(_LOGGER_NAME)[1]
+        self._logger = Config.get_logger(_LOGGER_NAME)
         self.query_it = init_query.init_query()
         self.query_api = 'https://www.amazon.com/s/ref=nb_sb_noss?field-keywords='
         self.headers = {
@@ -165,7 +165,7 @@ class AdsLoader:
         """ Returns: the logger object corresponding to web crawling 
         (WARNING: has to be used after initialization of an instance of AmazonSpider)
         """
-        return helpers.get_logger(_LOGGER_NAME)
+        return Config.get_logger(_LOGGER_NAME)
 
     @classmethod
     def load_fields(cls, loader, response, curr_li, ad_id):

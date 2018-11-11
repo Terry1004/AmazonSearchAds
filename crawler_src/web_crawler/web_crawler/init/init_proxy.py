@@ -4,7 +4,7 @@
         _LOGGER_NAME: The name of the logger to use for this module
 """
 
-from .. import helpers
+from ..helpers import Config
 
 _LOGGER_NAME = 'init'
 
@@ -17,13 +17,12 @@ class Proxy:
         port: The port number of the proxy host
     """
 
-    def __init__(self, string, logger):
+    def __init__(self, string):
         """ Initialize the fields of one proxy server
         Args:
             string: A line in the proxy list file
-            logger: A logger object to used in this module
         """
-        self.logger = logger
+        self.logger = Config.get_logger(_LOGGER_NAME)
         fields = string.strip().split(',')
         if len(fields) != 2:
             self.logger.critical(f'Line {string.strip()} has incorrect number of fields in proxy list file: {len(fields)}')
@@ -52,11 +51,10 @@ def init_proxy():
     Yields:
         A sequence of Proxy objects to use for web crawling
     """
-    config, logger = helpers.setup_config_logger(_LOGGER_NAME)
-    file_path = config['init_files']['proxy_file']
+    file_path = Config.config['init_files']['proxy_file']
     with open(file_path) as file:
         for line in file:
             # ignore empty line
             if line == '\n':
                 continue
-            yield Proxy(line, logger)
+            yield Proxy(line)

@@ -3,6 +3,8 @@
 /.vscode
 data
 crawler_src/web_crawler/test.py
+crawler_src/web_crawler/ads.json
+crawler_src/web_crawler/web_crawler/logs
 crawler_src/web_crawler/web_crawler/init/proxy_list.txt
 crawler_src/web_crawler/web_crawler/init/raw_query.txt
 web_src/WebContent/WEB-INF/web.xml
