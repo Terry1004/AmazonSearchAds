@@ -3,11 +3,14 @@ package io.amazon.ads.Utilities;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
+import org.apache.log4j.Logger;
+
 /**
  * This class is able to connect to MySQL server, add to and retrieve data from it.
  */
 public class MysqlEngine {
 	
+	private static final Logger logger = Logger.getLogger(MysqlEngine.class);
 	private static MysqlEngine instance;
 	private DataSource mysqlData;
 	
@@ -26,10 +29,9 @@ public class MysqlEngine {
 		try {
 			ctx = new InitialContext();
 			mysqlData = (DataSource) ctx.lookup(dbSourceUrl);
-			System.out.println("MysqlEngine successfully initialized");
+			logger.info("MysqlEngine successfully initialized");
 		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println("MysqlEngine fails to be initialized");
+			logger.error("MysqlEngine fails to be initialized", e);
 		}
 	}
 	

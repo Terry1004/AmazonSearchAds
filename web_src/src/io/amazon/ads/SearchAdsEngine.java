@@ -6,11 +6,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.json.JSONObject;
 
 import io.amazon.ads.StaticObjs.Ad;
 import io.amazon.ads.Utilities.MysqlEngine;
 import io.amazon.ads.Utilities.RedisEngine;
+import redis.clients.jedis.Jedis;
 
 /**
  * This class is able to handle incoming queries by returning a sorted list of ads information by
@@ -21,6 +23,7 @@ import io.amazon.ads.Utilities.RedisEngine;
  */
 public class SearchAdsEngine {
 	
+	private static final Logger logger = Logger.getLogger(SearchAdsEngine.class);
 	private static SearchAdsEngine instance;
 	private RedisEngine redisEngine;
 	private MysqlEngine mysqlEngine;
@@ -48,12 +51,11 @@ public class SearchAdsEngine {
 			this.mysqlEngine = mysqlEngine;
 			this.adsDataFilePath = adsDataFilePath;
 			this.budgetDataFilePath = budgetDataFilePath;
-			loadAds();
-			loadBudget();
-			System.out.println("searchAdsEngine successfully initialized");
+//			loadAds();
+//			loadBudget();
+			logger.info("searchAdsEngine successfully initialized");
 		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println("searchAdsEngine fails to be initialized");
+			logger.error("searchAdsEngine fails to be initialized", e);
 		}
 	}
 	
@@ -78,9 +80,10 @@ public class SearchAdsEngine {
 	
 	public List<Ad> selectAds(String query) {
 		List<Ad> ads = new ArrayList<>();
-		redisEngine.addPair("test", "test");
-		redisEngine.addPair("test", query);
-		for (String title: redisEngine.getValues("test")) {
+		Jedis jedis = redisEngine.getJedisConn();
+		RedisEngine.addPair("test", "test", jedis);
+		RedisEngine.addPair("test", query, jedis);
+		for (String title: RedisEngine.getValues("test", jedis)) {
 			Ad ad = new Ad();
 			ad.title = title;
 			ads.add(ad);
@@ -116,11 +119,11 @@ public class SearchAdsEngine {
 		JSONObject adJson = new JSONObject(line);
 		Ad ad = new Ad();
 		if (adJson.isNull("adId")) {
-			System.out.println("adId not found: line " + counter);
+			logger.debug("adId not found: line " + counter);
 			return null;
 		}
 		if (adJson.isNull("campaignId")) {
-			System.out.println("campaignId not found: line " + counter);
+			logger.debug("campaignId not found: line " + counter);
 			return null;
 		}
 		ad.brand = adJson.getString("brand");

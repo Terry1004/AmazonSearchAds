@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
+
 import io.amazon.ads.Utilities.RedisEngine;
 import io.amazon.ads.StaticObjs.Ad;
 import io.amazon.ads.Utilities.MysqlEngine;
@@ -24,6 +26,8 @@ import io.amazon.ads.Utilities.MysqlEngine;
  */
 @WebServlet(name = "SearchAds", urlPatterns = { "/search-ads" })
 public class SearchAdsServer extends HttpServlet {
+	
+	private static final Logger logger = Logger.getLogger(SearchAdsServer.class);
 	private static final long serialVersionUID = 1L;
     private static SearchAdsEngine searchAdsEngine;
     private String uiTemplate = "";
@@ -116,10 +120,9 @@ public class SearchAdsServer extends HttpServlet {
 			uiTemplate = new String(uiData, StandardCharsets.UTF_8);
 			adData = Files.readAllBytes(Paths.get(adTemplatePath));
 			adTemplate = new String(adData, StandardCharsets.UTF_8);
-			System.out.println("Templates successfully initilized");
+			logger.info("Templates successfully initialized");
 		} catch (IOException e) {
-			e.printStackTrace();
-			System.out.println("Templates fail to be initialized");
+			logger.error("Templates fail to be initialized", e);
 		}
 	}
 

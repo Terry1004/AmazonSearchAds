@@ -1,6 +1,8 @@
 package io.amazon.ads.Utilities;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
@@ -10,6 +12,7 @@ import redis.clients.jedis.JedisPoolConfig;
  */
 public class RedisEngine {
 	
+	private static final Logger logger = Logger.getLogger(RedisEngine.class);
 	private static RedisEngine instance;
 	private JedisPool jedisPool;
 	
@@ -25,10 +28,9 @@ public class RedisEngine {
 		try {
 			jedisPool = new JedisPool(new JedisPoolConfig(), redisHost);
 			jedisPool.getResource().flushAll();
-			System.out.println("RedisEngine successfully initialized");
+			logger.info("RedisEngine successfully initialized");
 		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println("RedisEngine fails to be initialized");
+			logger.error("RedisEngine fails to be initialized", e);
 		}
 	}
 	

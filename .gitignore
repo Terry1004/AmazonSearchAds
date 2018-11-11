@@ -9,3 +9,4 @@ crawler_src/web_crawler/web_crawler/init/proxy_list.txt
 crawler_src/web_crawler/web_crawler/init/raw_query.txt
 web_src/WebContent/WEB-INF/web.xml
 web_src/WebContent/WEB-INF/jetty-env.xml
+web_src/logs
