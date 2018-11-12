@@ -20,6 +20,12 @@ public class MysqlConnection {
 	private static final Logger logger = Logger.getLogger(MysqlConnection.class);
 	private Connection mysqlConnection;
 	
+	/**
+	 * The constructor of this object. It simply request a Mysql connection from the given data source.
+	 * @param mysqlDataSource The MySQL data source through which one requests a connection.
+	 * @see DataSource
+	 * @see Connection
+	 */
 	public MysqlConnection(DataSource mysqlDataSource) {
 		try {
 			mysqlConnection = mysqlDataSource.getConnection();
