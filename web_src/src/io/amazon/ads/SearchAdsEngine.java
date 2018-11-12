@@ -11,8 +11,9 @@ import org.json.JSONObject;
 
 import io.amazon.ads.StaticObjs.Ad;
 import io.amazon.ads.Utilities.MysqlEngine;
+import io.amazon.ads.Utilities.RedisConnection;
 import io.amazon.ads.Utilities.RedisEngine;
-import redis.clients.jedis.Jedis;
+import redis.clients.jedis.exceptions.JedisException;
 
 /**
  * This class is able to handle incoming queries by returning a sorted list of ads information by
@@ -53,9 +54,9 @@ public class SearchAdsEngine {
 			this.budgetDataFilePath = budgetDataFilePath;
 //			loadAds();
 //			loadBudget();
-			logger.info("searchAdsEngine successfully initialized");
+			logger.info("SearchAdsEngine successfully initialized.");
 		} catch (Exception e) {
-			logger.error("searchAdsEngine fails to be initialized", e);
+			logger.error("SearchAdsEngine fails to be initialized.", e);
 		}
 	}
 	
@@ -80,14 +81,23 @@ public class SearchAdsEngine {
 	
 	public List<Ad> selectAds(String query) {
 		List<Ad> ads = new ArrayList<>();
-		Jedis jedis = redisEngine.getJedisConn();
-		RedisEngine.addPair("test", "test", jedis);
-		RedisEngine.addPair("test", query, jedis);
-		for (String title: RedisEngine.getValues("test", jedis)) {
-			Ad ad = new Ad();
-			ad.title = title;
-			ads.add(ad);
+		RedisConnection redisConnection = null;
+		try {
+			redisConnection = redisEngine.getRedisConn();
+		} catch (JedisException e) {
+			logger.error("Could not get a Jedis connection from the connection pool.", e);
 		}
+		try {
+			redisConnection.addPair("test", "test");
+			redisConnection.addPair("test", query);
+			for (String title: redisConnection.getValues("test")) {
+				Ad ad = new Ad();
+				ad.title = title;
+				ads.add(ad);
+			}
+		} catch (JedisException e) {
+			logger.error("Redis Transaction error during selecting ads.", e);
+		} 
 		return ads;
 	}
 	

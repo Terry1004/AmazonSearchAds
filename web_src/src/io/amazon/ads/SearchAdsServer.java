@@ -120,9 +120,9 @@ public class SearchAdsServer extends HttpServlet {
 			uiTemplate = new String(uiData, StandardCharsets.UTF_8);
 			adData = Files.readAllBytes(Paths.get(adTemplatePath));
 			adTemplate = new String(adData, StandardCharsets.UTF_8);
-			logger.info("Templates successfully initialized");
+			logger.info("Templates successfully initialized.");
 		} catch (IOException e) {
-			logger.error("Templates fail to be initialized", e);
+			logger.error("Templates fail to be initialized.", e);
 		}
 	}
 

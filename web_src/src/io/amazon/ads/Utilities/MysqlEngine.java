@@ -29,9 +29,9 @@ public class MysqlEngine {
 		try {
 			ctx = new InitialContext();
 			mysqlData = (DataSource) ctx.lookup(dbSourceUrl);
-			logger.info("MysqlEngine successfully initialized");
+			logger.info("MysqlEngine successfully initialized.");
 		} catch (Exception e) {
-			logger.error("MysqlEngine fails to be initialized", e);
+			logger.error("MysqlEngine fails to be initialized.", e);
 		}
 	}
 	
