@@ -1,11 +1,13 @@
 package io.amazon.ads.Utilities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.Logger;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
+import redis.clients.jedis.exceptions.JedisException;
 
 /**
  * This class wraps a Jedis instance for executing transactions. Created by specifying a Jedis connection
@@ -26,7 +28,11 @@ public class RedisConnection {
 	 * @see Jedis
 	 */
 	public RedisConnection(JedisPool jedisPool) {
-		this.jedis = jedisPool.getResource();
+		try {
+			this.jedis = jedisPool.getResource();
+		} catch (JedisException e) {
+			logger.error("Error when getting a Jedis connection from the connection pool.", e);
+		}
 	}
 	
 	/**
@@ -37,7 +43,11 @@ public class RedisConnection {
 	 * @see #getValues(String)
 	 */
 	public void addPair(String key, String value) {
-		jedis.rpush(key, value);
+		try {
+			jedis.rpush(key, value);
+		} catch (JedisException e) {
+			logger.error("Redis Transaction error during selecting ads.", e);
+		}
 	}
 	
 	/**
@@ -47,6 +57,12 @@ public class RedisConnection {
 	 * @see #addPair(String, String)
 	 */
 	public List<String> getValues(String key) {
-		return jedis.lrange(key, 0, -1);
+		List<String> values = new ArrayList<>();
+		try {
+			values = jedis.lrange(key, 0, -1);
+		} catch (JedisException e) {
+			logger.error("Redis Transaction error during selecting ads.", e);
+		}
+		return values;
 	}
 }

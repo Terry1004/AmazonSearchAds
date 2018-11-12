@@ -6,13 +6,14 @@ import javax.sql.DataSource;
 import org.apache.log4j.Logger;
 
 /**
- * This class is able to connect to MySQL server, add to and retrieve data from it.
+ * This class holds a DataSource instance and can generate MysqlConnection object when transactions
+ * need to be done.
  */
 public class MysqlEngine {
 	
 	private static final Logger logger = Logger.getLogger(MysqlEngine.class);
 	private static MysqlEngine instance;
-	private DataSource mysqlData;
+	private DataSource mysqlDataSource;
 	
 	/**
 	 * A protected constructor defined in order to ensure that at most one <code>MysqlEngine</code> 
@@ -28,7 +29,7 @@ public class MysqlEngine {
 		InitialContext ctx;
 		try {
 			ctx = new InitialContext();
-			mysqlData = (DataSource) ctx.lookup(dbSourceUrl);
+			mysqlDataSource = (DataSource) ctx.lookup(dbSourceUrl);
 			logger.info("MysqlEngine successfully initialized.");
 		} catch (Exception e) {
 			logger.error("MysqlEngine fails to be initialized.", e);
@@ -48,6 +49,10 @@ public class MysqlEngine {
 			instance= new MysqlEngine(dbSourceUrl);
 		}
 		return instance;
+	}
+	
+	public MysqlConnection getMysqlConnection() {
+		return new MysqlConnection(mysqlDataSource);
 	}
 	
 }

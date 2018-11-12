@@ -82,22 +82,14 @@ public class SearchAdsEngine {
 	public List<Ad> selectAds(String query) {
 		List<Ad> ads = new ArrayList<>();
 		RedisConnection redisConnection = null;
-		try {
-			redisConnection = redisEngine.getRedisConn();
-		} catch (JedisException e) {
-			logger.error("Could not get a Jedis connection from the connection pool.", e);
+		redisConnection = redisEngine.getRedisConn();
+		redisConnection.addPair("test", "test");
+		redisConnection.addPair("test", query);
+		for (String title: redisConnection.getValues("test")) {
+			Ad ad = new Ad();
+			ad.title = title;
+			ads.add(ad);
 		}
-		try {
-			redisConnection.addPair("test", "test");
-			redisConnection.addPair("test", query);
-			for (String title: redisConnection.getValues("test")) {
-				Ad ad = new Ad();
-				ad.title = title;
-				ads.add(ad);
-			}
-		} catch (JedisException e) {
-			logger.error("Redis Transaction error during selecting ads.", e);
-		} 
 		return ads;
 	}
 	
