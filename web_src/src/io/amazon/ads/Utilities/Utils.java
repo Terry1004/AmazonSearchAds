@@ -27,11 +27,16 @@ public class Utils {
 	
 	/**
 	 * Split a string into keywords that are tokenized and stemmed with stop words removed.
+	 * Return an empty list if the input string is null or empty string.
 	 * @param string The string to be split into key words
-	 * @return A list of keywords obtained from the given <code>title</code>
+	 * @return A list of keywords obtained from the given <code>title</code>. It is empty
+	 * if the input string is null or empty.
 	 */
 	public static List<String> splitKeyWords(String string) {
 		List<String> keyWords = new ArrayList<String>();
+		if (string == null || string.equals("")) {
+			return keyWords;
+		}
 		CharArraySet stopWords = EnglishAnalyzer.getDefaultStopSet();
 		StringReader reader = new StringReader(string.toLowerCase());
 		Tokenizer tokenizer = new StandardTokenizer(LUCENE_VERSION, reader);

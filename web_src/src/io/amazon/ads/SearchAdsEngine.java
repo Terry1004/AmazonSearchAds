@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import io.amazon.ads.StaticObjs.Ad;
@@ -125,17 +126,40 @@ public class SearchAdsEngine {
 			logger.debug("adId not found at line " + counter);
 			return null;
 		} else {
-			ad.adId = adJson.getJSONArray("ad_id").getLong(0);
+			JSONArray array = adJson.getJSONArray("ad_id");
+			if (array.isNull(0)) {
+				logger.debug("adId not found at line " + counter);
+				return null;
+			} else {
+				ad.adId = array.getLong(0);
+			}
 		}
 		if (adJson.isNull("campaign_id")) {
 			logger.debug("campaignId not found at line " + counter);
 			return null;
 		} else {
-			ad.campaignId = adJson.getJSONArray("campaign_id").getLong(0);
+			JSONArray array = adJson.getJSONArray("campaign_id");
+			if (array.isNull(0)) {
+				logger.debug("campaignId not found at line " + counter);
+				return null;
+			} else {
+				ad.campaignId = array.getLong(0);
+			}
+		}
+		if (adJson.isNull("title")) {
+			logger.debug("title not found at line " + counter);
+			return null;
+		} else {
+			JSONArray array = adJson.getJSONArray("title");
+			if (array.isNull(0)) {
+				logger.debug("title not found at line " + counter);
+				return null;
+			} else {
+				ad.title = array.getString(0);
+			}
 		}
 		ad.brand = adJson.optJSONArray("brand").optString(0);
 		ad.thumbnail = adJson.optJSONArray("thumbnail").optString(0);
-		ad.title = adJson.optJSONArray("title").optString(0);
 		ad.detail_url = adJson.optJSONArray("detail_url").optString(0);
 		ad.category =  adJson.optJSONArray("category").optString(0);
 		ad.price = adJson.optJSONArray("price").optDouble(0);
