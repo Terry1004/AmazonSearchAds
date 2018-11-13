@@ -68,5 +68,4 @@ public class MysqlEngine {
 	public MysqlConnection getMysqlConnection() {
 		return new MysqlConnection(mysqlDataSource, adsTableName, campaignTableName);
 	}
-	
 }

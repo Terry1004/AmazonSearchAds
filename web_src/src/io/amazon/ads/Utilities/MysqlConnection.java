@@ -38,5 +38,17 @@ public class MysqlConnection {
 		this.adsTableName = adsTableName;
 		this.campaignTableName = campaignTableName;
 	}
-
+	
+	/**
+	 * Close the current connection. Should be enforced after each transaction. Attempting to use a
+	 * <code>MysqlConnection</code> instance on which this method <code>closed</code> has been called 
+	 * will cause an error.
+	 */
+	public void close() {
+		try {
+			mysqlConnection.close();
+		} catch (SQLException e) {
+			logger.error("Error when closing MySQL connection", e);
+		}
+	}
 }
