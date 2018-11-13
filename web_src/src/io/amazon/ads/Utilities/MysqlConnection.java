@@ -55,10 +55,11 @@ public class MysqlConnection {
 	}
 	
 	public void addAd(Ad ad) {
-		// to be completed
+		// to complete
 	}
 	
 	public Ad getAd(Long adId) {
+		// to complete
 		return new Ad();
 	}
 }

@@ -101,22 +101,6 @@ public class SearchAdsEngine {
 		return ads;
 	}
 	
-	public RedisEngine getRedisEngine() {
-		return redisEngine;
-	}
-	
-	public MysqlEngine getMysqlEngine() {
-		return mysqlEngine;
-	}
-	
-	public String getAdsDataFilePath() {
-		return adsDataFilePath;
-	}
-	
-	public String getBudgetDataFilePath() {
-		return budgetDataFilePath;
-	}
-	
 	/**
 	 * Parse a line of a json string into an Ad object. If adId or campaignId is not found, null
 	 * is returned instead. Price is default to 100.
