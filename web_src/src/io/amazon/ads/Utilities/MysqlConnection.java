@@ -19,19 +19,24 @@ public class MysqlConnection {
 	
 	private static final Logger logger = Logger.getLogger(MysqlConnection.class);
 	private Connection mysqlConnection;
-	
+	private String adsTableName;
+	private String campaignTableName;
 	/**
 	 * The constructor of this object. It simply request a Mysql connection from the given data source.
 	 * @param mysqlDataSource The MySQL data source through which one requests a connection.
+	 * @param adsTableName The name of the table storing ads data.
+	 * @param campaignTableName The name of the table storing campaign data.
 	 * @see DataSource
 	 * @see Connection
 	 */
-	public MysqlConnection(DataSource mysqlDataSource) {
+	public MysqlConnection(DataSource mysqlDataSource, String adsTableName, String campaignTableName) {
 		try {
 			mysqlConnection = mysqlDataSource.getConnection();
 		} catch (SQLException e) {
 			logger.error("Error when requesting SQL connection", e);
 		}
+		this.adsTableName = adsTableName;
+		this.campaignTableName = campaignTableName;
 	}
 
 }
