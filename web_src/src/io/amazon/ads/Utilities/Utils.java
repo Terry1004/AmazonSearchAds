@@ -26,8 +26,8 @@ public class Utils {
 	private static final Logger logger = Logger.getLogger(Utils.class);
 	
 	/**
-	 * Split a string title into keywords that are cleaned and stemmed.
-	 * @param title The string to be split into key words
+	 * Split a string into keywords that are tokenized and stemmed with stop words removed.
+	 * @param string The string to be split into key words
 	 * @return A list of keywords obtained from the given <code>title</code>
 	 */
 	public static List<String> splitKeyWords(String string) {
