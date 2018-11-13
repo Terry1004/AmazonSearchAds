@@ -4,6 +4,8 @@ import javax.sql.DataSource;
 
 import org.apache.log4j.Logger;
 
+import io.amazon.ads.StaticObjs.Ad;
+
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -50,5 +52,13 @@ public class MysqlConnection {
 		} catch (SQLException e) {
 			logger.error("Error when closing MySQL connection", e);
 		}
+	}
+	
+	public void addAd(Ad ad) {
+		// to be completed
+	}
+	
+	public Ad getAd(Long adId) {
+		return new Ad();
 	}
 }

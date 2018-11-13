@@ -55,7 +55,7 @@ public class SearchAdsEngine {
 			this.adsDataFilePath = adsDataFilePath;
 			this.budgetDataFilePath = budgetDataFilePath;
 			loadAds();
-//			loadBudget();
+			loadBudget();
 			logger.info("SearchAdsEngine successfully initialized.");
 		} catch (Exception e) {
 			logger.error("SearchAdsEngine fails to be initialized.", e);
@@ -83,14 +83,20 @@ public class SearchAdsEngine {
 	
 	public List<Ad> selectAds(String query) {
 		List<Ad> ads = new ArrayList<>();
-		RedisConnection redisConnection = null;
-		redisConnection = redisEngine.getRedisConnection();
-		redisConnection.addPair("test", "test");
-		redisConnection.addPair("test", query);
-		for (String title: redisConnection.getValues("test")) {
-			Ad ad = new Ad();
-			ad.title = title;
-			ads.add(ad);
+		RedisConnection redisConnection = redisEngine.getRedisConnection();
+		MysqlConnection mysqlConnection = mysqlEngine.getMysqlConnection();
+		try {
+			List<String> keyWords = Utils.splitKeyWords(query);
+			for (String keyWord : keyWords) {
+				for (String stringAdId: redisConnection.getValues(keyWord)) {
+					Long adId = Long.parseLong(stringAdId);
+					ads.add(mysqlConnection.getAd(adId));
+				}
+			}
+		} catch (Exception e) {
+			logger.error("Transaction failed when selecting ads", e);
+		}	finally {
+			mysqlConnection.close();
 		}
 		return ads;
 	}
@@ -173,8 +179,8 @@ public class SearchAdsEngine {
 	 * @see #parseAd(String, int)
 	 */
 	private void loadAds() {
-		MysqlConnection mysqlConnection = mysqlEngine.getMysqlConnection(); // to be used later
 		RedisConnection redisConnection = redisEngine.getRedisConnection();
+		MysqlConnection mysqlConnection = mysqlEngine.getMysqlConnection();
 		try (BufferedReader brAd = new BufferedReader(new FileReader(adsDataFilePath))) {
 			String line;
 			int counter = 0;
@@ -182,13 +188,20 @@ public class SearchAdsEngine {
 				if (!line.equals("[") && !line.equals("]")) {
 					Ad ad = parseAd(line, counter);
 					if (ad != null) {
-						
+						mysqlConnection.addAd(ad);
+						for (String word : ad.keyWords) {
+							redisConnection.addPair(word, Long.toString(ad.adId));
+						}
 					}
 				}
 				counter += 1;
 			}
 		} catch (IOException e) {
-			e.printStackTrace();
+			logger.error("Encounter IO error when loading ads data from file when loading ads", e);
+		} catch (Exception e) {
+			logger.error("Transaction failed when loading ads data", e);
+		} finally {
+			mysqlConnection.close();
 		}
 	}
 	
@@ -196,7 +209,6 @@ public class SearchAdsEngine {
 	 * Load budget data into MySQL server
 	 */
 	private void loadBudget() {
-		
 	}
 
 }

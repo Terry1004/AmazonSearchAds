@@ -46,7 +46,7 @@ public class RedisConnection {
 		try {
 			jedis.rpush(key, value);
 		} catch (JedisException e) {
-			logger.error("Redis Transaction error during selecting ads.", e);
+			logger.error("Redis Transaction error during adding (word, adId) pair.", e);
 		}
 	}
 	
