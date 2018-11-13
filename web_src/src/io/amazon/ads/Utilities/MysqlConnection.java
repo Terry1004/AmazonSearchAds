@@ -7,7 +7,10 @@ import org.apache.log4j.Logger;
 import io.amazon.ads.StaticObjs.Ad;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Arrays;
 
 
 /**
@@ -56,10 +59,79 @@ public class MysqlConnection {
 	
 	public void addAd(Ad ad) {
 		// to complete
+		String sqlString = "INSERT INTO " + adsTableName + " VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		PreparedStatement addAd = null;
+		try {
+			addAd = mysqlConnection.prepareStatement(sqlString);
+			addAd.setLong(1, ad.adId);
+		  	addAd.setLong(2, ad.campaignId);	  
+		  	addAd.setString(3, String.join(", ", ad.keyWords));
+		  	addAd.setDouble(4, ad.bidPrice);
+		  	addAd.setDouble(5, ad.price);
+		  	addAd.setString(6, ad.thumbnail);
+		  	addAd.setString(7, ad.brand);
+		  	addAd.setString(8, ad.detailUrl);
+		  	addAd.setString(9, ad.category);
+		  	addAd.setString(10, ad.title);
+		  	addAd.executeUpdate();
+		} catch(SQLException e) {
+			logger.error("SQL error when inserting ad into database with adId: " + ad.adId, e);
+		} catch (Exception e) {
+			logger.error("Non-SQL error when inserting ad into database wit adId " + ad.adId, e);
+		} finally {
+			try {
+				addAd.close();
+			} catch(SQLException e) {
+				logger.error("SQL error when closing SQL statement", e);
+			} catch(Exception e) {
+				logger.error("Non-SQL error when closing SQL statement", e);
+			}
+		}
 	}
 	
 	public Ad getAd(Long adId) {
 		// to complete
-		return new Ad();
+		String sqlString = "SELECT * FROM " + adsTableName + " WHERE adId = " + adId;
+		PreparedStatement selectAd = null;
+		ResultSet resultSet = null;
+   	 	Ad ad = new Ad();
+   	 	try {
+   	 		selectAd = mysqlConnection.prepareStatement(sqlString);
+   	 		resultSet = selectAd.executeQuery();
+   	 		if (resultSet.next()) {
+   	 			ad.adId = resultSet.getLong("adId");
+		       	ad.campaignId = resultSet.getLong("campaignId");
+		       	ad.keyWords = Arrays.asList(resultSet.getString("keyWords").split(","));
+		       	ad.bidPrice = resultSet.getDouble("bidPrice");
+		       	ad.price = resultSet.getDouble("price");
+		       	ad.thumbnail = resultSet.getString("thumbnail");
+		       	ad.brand = resultSet.getString("brand");
+		       	ad.detailUrl = resultSet.getString("detail_url");
+		       	ad.category = resultSet.getString("category");
+		       	ad.title = resultSet.getString("title");
+   	 		} else {
+   	 			logger.error("No record found with adId: " + adId);
+   	 		}
+   	 	} catch (SQLException e) {
+   	 		logger.error("SQL error when retrieving ads info", e);
+   	 	} catch (Exception e) {
+   	 		logger.error("Non-SQL error when retrieving ads info", e);
+   	 	} finally {
+   	 		try {
+   	 			selectAd.close();
+   	 		} catch (SQLException e) {
+   	 			logger.error("SQL error when closing SQL statement", e);
+   	 		} catch(Exception e) {
+   	 			logger.error("Non-SQL error when closing SQL statement", e);
+   	 		}
+   	 		try {
+   	 			resultSet.close();
+   	 		} catch (SQLException e) {
+   	 			logger.error("SQL error when closing SQL result set", e);
+   	 		} catch (Exception e) {
+   	 			logger.error("Non-SQL error when closing SQL result set", e);
+   	 		}
+   	 	}
+		return ad;
 	}
 }

@@ -27,6 +27,8 @@ import io.amazon.ads.Utilities.Utils;
 public class SearchAdsEngine {
 	
 	private static final Logger logger = Logger.getLogger(SearchAdsEngine.class);
+	private static final Double DEFAULT_PRICE = 100.0;
+	private static final Double DEFAULT_BID_PRICE = 100.0;
 	private static SearchAdsEngine instance;
 	private RedisEngine redisEngine;
 	private MysqlEngine mysqlEngine;
@@ -85,6 +87,14 @@ public class SearchAdsEngine {
 		List<Ad> ads = new ArrayList<>();
 		RedisConnection redisConnection = redisEngine.getRedisConnection();
 		MysqlConnection mysqlConnection = mysqlEngine.getMysqlConnection();
+		if (redisConnection == null) {
+			logger.error("Error when attempting to connect to Redis when selecting ads");
+			return ads;
+		}
+		if (mysqlConnection == null) {
+			logger.error("Error when attempting to connect to SQL database when selecting ads");
+			return ads;
+		}
 		try {
 			List<String> keyWords = Utils.splitKeyWords(query);
 			for (String keyWord : keyWords) {
@@ -93,9 +103,7 @@ public class SearchAdsEngine {
 					ads.add(mysqlConnection.getAd(adId));
 				}
 			}
-		} catch (Exception e) {
-			logger.error("Transaction failed when selecting ads", e);
-		}	finally {
+		} finally {
 			mysqlConnection.close();
 		}
 		return ads;
@@ -150,10 +158,10 @@ public class SearchAdsEngine {
 		}
 		ad.brand = adJson.optJSONArray("brand").optString(0);
 		ad.thumbnail = adJson.optJSONArray("thumbnail").optString(0);
-		ad.detail_url = adJson.optJSONArray("detail_url").optString(0);
+		ad.detailUrl = adJson.optJSONArray("detail_url").optString(0);
 		ad.category =  adJson.optJSONArray("category").optString(0);
-		ad.price = adJson.optJSONArray("price").optDouble(0);
-		ad.bidPrice = adJson.optJSONArray("bid_price").optDouble(0);
+		ad.price = adJson.optJSONArray("price").optDouble(0, DEFAULT_PRICE);
+		ad.bidPrice = adJson.optJSONArray("bid_price").optDouble(0, DEFAULT_BID_PRICE);
 		ad.keyWords = Utils.splitKeyWords(ad.title);
 		return ad;
 	}
@@ -165,6 +173,14 @@ public class SearchAdsEngine {
 	private void loadAds() {
 		RedisConnection redisConnection = redisEngine.getRedisConnection();
 		MysqlConnection mysqlConnection = mysqlEngine.getMysqlConnection();
+		if (redisConnection == null) {
+			logger.error("Error when attempting to connect to Redis when selecting ads");
+			return;
+		}
+		if (mysqlConnection == null) {
+			logger.error("Error when attempting to connect to SQL database when selecting ads");
+			return;
+		}
 		try (BufferedReader brAd = new BufferedReader(new FileReader(adsDataFilePath))) {
 			String line;
 			int counter = 0;
@@ -182,8 +198,6 @@ public class SearchAdsEngine {
 			}
 		} catch (IOException e) {
 			logger.error("Encounter IO error when loading ads data from file when loading ads", e);
-		} catch (Exception e) {
-			logger.error("Transaction failed when loading ads data", e);
 		} finally {
 			mysqlConnection.close();
 		}
@@ -193,6 +207,7 @@ public class SearchAdsEngine {
 	 * Load budget data into MySQL server
 	 */
 	private void loadBudget() {
+		// to complete
 	}
 
 }

@@ -24,7 +24,7 @@ public class Ad implements Serializable{
     public double price; 
     public String thumbnail = ""; 
     public String brand = ""; 
-    public String detail_url = ""; 
+    public String detailUrl = ""; 
     public String query = ""; 
     public String category = "";
 }
