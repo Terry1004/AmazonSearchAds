@@ -10,10 +10,11 @@ import org.apache.log4j.Logger;
 import org.json.JSONObject;
 
 import io.amazon.ads.StaticObjs.Ad;
+import io.amazon.ads.Utilities.MysqlConnection;
 import io.amazon.ads.Utilities.MysqlEngine;
 import io.amazon.ads.Utilities.RedisConnection;
 import io.amazon.ads.Utilities.RedisEngine;
-import redis.clients.jedis.exceptions.JedisException;
+import io.amazon.ads.Utilities.Utils;
 
 /**
  * This class is able to handle incoming queries by returning a sorted list of ads information by
@@ -52,7 +53,7 @@ public class SearchAdsEngine {
 			this.mysqlEngine = mysqlEngine;
 			this.adsDataFilePath = adsDataFilePath;
 			this.budgetDataFilePath = budgetDataFilePath;
-//			loadAds();
+			loadAds();
 //			loadBudget();
 			logger.info("SearchAdsEngine successfully initialized.");
 		} catch (Exception e) {
@@ -120,23 +121,26 @@ public class SearchAdsEngine {
 	private Ad parseAd(String line, int counter) {
 		JSONObject adJson = new JSONObject(line);
 		Ad ad = new Ad();
-		if (adJson.isNull("adId")) {
-			logger.debug("adId not found: line " + counter);
+		if (adJson.isNull("ad_id")) {
+			logger.debug("adId not found at line " + counter);
 			return null;
+		} else {
+			ad.adId = adJson.getJSONArray("ad_id").getLong(0);
 		}
-		if (adJson.isNull("campaignId")) {
-			logger.debug("campaignId not found: line " + counter);
+		if (adJson.isNull("campaign_id")) {
+			logger.debug("campaignId not found at line " + counter);
 			return null;
+		} else {
+			ad.campaignId = adJson.getJSONArray("campaign_id").getLong(0);
 		}
-		ad.brand = adJson.getString("brand");
-		ad.thumbnail = adJson.getString("thumbnail");
-		ad.title = adJson.getString("title");
-		ad.detail_url = adJson.getString("detail_url");
-		ad.category =  adJson.getString("category");
-		ad.adId = adJson.getLong("adId");
-		ad.campaignId = adJson.getLong("campaignId");
-		ad.price = adJson.isNull("price") ? 100.0 : adJson.getDouble("price");
-		ad.keyWords = new ArrayList<String>();
+		ad.brand = adJson.optJSONArray("brand").optString(0);
+		ad.thumbnail = adJson.optJSONArray("thumbnail").optString(0);
+		ad.title = adJson.optJSONArray("title").optString(0);
+		ad.detail_url = adJson.optJSONArray("detail_url").optString(0);
+		ad.category =  adJson.optJSONArray("category").optString(0);
+		ad.price = adJson.optJSONArray("price").optDouble(0);
+		ad.bidPrice = adJson.optJSONArray("bid_price").optDouble(0);
+		ad.keyWords = Utils.splitKeyWords(ad.title);
 		return ad;
 	}
 	
@@ -145,14 +149,18 @@ public class SearchAdsEngine {
 	 * @see #parseAd(String, int)
 	 */
 	private void loadAds() {
+		MysqlConnection mysqlConnection = mysqlEngine.getMysqlConnection(); // to be used later
 		try (BufferedReader brAd = new BufferedReader(new FileReader(adsDataFilePath))) {
 			String line;
 			int counter = 0;
 			while ((line = brAd.readLine()) != null) {
-				Ad ad = parseAd(line, counter);
-				if (ad != null) {
-					
+				if (!line.equals("[") && !line.equals("]")) {
+					Ad ad = parseAd(line, counter);
+					if (ad != null) {
+						
+					}
 				}
+				counter += 1;
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
