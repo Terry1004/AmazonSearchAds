@@ -84,7 +84,7 @@ public class SearchAdsEngine {
 	public List<Ad> selectAds(String query) {
 		List<Ad> ads = new ArrayList<>();
 		RedisConnection redisConnection = null;
-		redisConnection = redisEngine.getRedisConn();
+		redisConnection = redisEngine.getRedisConnection();
 		redisConnection.addPair("test", "test");
 		redisConnection.addPair("test", query);
 		for (String title: redisConnection.getValues("test")) {
@@ -174,6 +174,7 @@ public class SearchAdsEngine {
 	 */
 	private void loadAds() {
 		MysqlConnection mysqlConnection = mysqlEngine.getMysqlConnection(); // to be used later
+		RedisConnection redisConnection = redisEngine.getRedisConnection();
 		try (BufferedReader brAd = new BufferedReader(new FileReader(adsDataFilePath))) {
 			String line;
 			int counter = 0;

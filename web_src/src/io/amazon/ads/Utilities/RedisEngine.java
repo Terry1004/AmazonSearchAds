@@ -55,7 +55,7 @@ public class RedisEngine {
 	 * @return RedisConnection object for executing transactions.
 	 * @see RedisConnection
 	 */
-	public RedisConnection getRedisConn() {
+	public RedisConnection getRedisConnection() {
 		return new RedisConnection(jedisPool);
 	}
 	
