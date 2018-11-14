@@ -4,13 +4,16 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import io.amazon.ads.StaticObjs.Ad;
+import io.amazon.ads.StaticObjs.Campaign;
 import io.amazon.ads.Utilities.MysqlConnection;
 import io.amazon.ads.Utilities.MysqlEngine;
 import io.amazon.ads.Utilities.RedisConnection;
@@ -32,32 +35,32 @@ public class SearchAdsEngine {
 	private static SearchAdsEngine instance;
 	private RedisEngine redisEngine;
 	private MysqlEngine mysqlEngine;
-	private String adsDataFilePath = "";
-	private String budgetDataFilePath = "";
+	private String adsDataPath = "";
+	private String campaignDataPath = "";
 	
 	/**
 	 * A protected constructor defined in order to ensure that at most one <code>SearchAdsEngine
 	 * </code> instance can exist and this instance can only be initialized by the static method 
 	 * <code>getInstance</code> from outside of this class. When creating a new instance, ads
-	 * and budget information is also loaded into Redis and MySQL.
+	 * and campaign information is also loaded into Redis and MySQL.
 	 * @param redisEngine The <code>RedisEngine</code> object that provides Redis server access.
 	 * @param mysqlEngine The <code>MysqlEngine</code> object that provides MySQL server access.
-	 * @param adsDataFilePath The path to the file that stores ads data.
-	 * @param budgetDataFilePath The path to the file that stores budget data.
+	 * @param adsDataPath The path to the file that stores ads data.
+	 * @param campaignDataPath The path to the file that stores campaign data.
 	 * @see #getInstance(RedisEngine, MysqlEngine, String, String)
 	 * @see #loadAds()
-	 * @see #loadBudget()
+	 * @see #loadcampaign()
 	 * @see RedisEngine
 	 * @see MysqlEngine
 	 */
-	protected SearchAdsEngine(RedisEngine redisEngine, MysqlEngine mysqlEngine, String adsDataFilePath, String budgetDataFilePath) {
+	protected SearchAdsEngine(RedisEngine redisEngine, MysqlEngine mysqlEngine, String adsDataPath, String campaignDataPath) {
 		try {
 			this.redisEngine = redisEngine;
 			this.mysqlEngine = mysqlEngine;
-			this.adsDataFilePath = adsDataFilePath;
-			this.budgetDataFilePath = budgetDataFilePath;
+			this.adsDataPath = adsDataPath;
+			this.campaignDataPath = campaignDataPath;
 			loadAds();
-			loadBudget();
+			loadcampaign();
 			logger.info("SearchAdsEngine successfully initialized.");
 		} catch (Exception e) {
 			logger.error("SearchAdsEngine fails to be initialized.", e);
@@ -70,15 +73,15 @@ public class SearchAdsEngine {
 	 * @param redisEngine The <code>RedisEngine</code> object that provides Redis server access.
 	 * @param mysqlEngine The <code>MysqlEngine</code> object that provides MySQL server access.
 	 * @param adsDataFilePath The path to the file that stores ads data.
-	 * @param budgetDataFilePath The path to the file that stores budget data.
+	 * @param campaignDataFilePath The path to the file that stores campaign data.
 	 * @return SearchAdsEngine The instance of this SearchAdsEngine class.
 	 * @see RedisEngine
 	 * @see MySQLEngine
 	 * @see #SearchAdsEngine(RedisEngine, MysqlEngine, String, String)
 	 */
-	public static SearchAdsEngine getInstance(RedisEngine redisEngine, MysqlEngine mysqlEngine, String adsDataFilePath, String budgetDataFilePath) {
+	public static SearchAdsEngine getInstance(RedisEngine redisEngine, MysqlEngine mysqlEngine, String adsDataPath, String campaignDataPath) {
 		if (instance == null) {
-			instance = new SearchAdsEngine(redisEngine, mysqlEngine, adsDataFilePath, budgetDataFilePath);
+			instance = new SearchAdsEngine(redisEngine, mysqlEngine, adsDataPath, campaignDataPath);
 		}
 		return instance;
 	}
@@ -88,19 +91,23 @@ public class SearchAdsEngine {
 		RedisConnection redisConnection = redisEngine.getRedisConnection();
 		MysqlConnection mysqlConnection = mysqlEngine.getMysqlConnection();
 		if (redisConnection == null) {
-			logger.error("Error when attempting to connect to Redis when selecting ads");
+			logger.error("Error when attempting to connect to Redis when selecting ads.");
 			return ads;
 		}
 		if (mysqlConnection == null) {
-			logger.error("Error when attempting to connect to SQL database when selecting ads");
+			logger.error("Error when attempting to connect to SQL database when selecting ads.");
 			return ads;
 		}
 		try {
+			Set<Long> selected = new HashSet<>(); // in order to remove duplicate ads
 			List<String> keyWords = Utils.splitKeyWords(query);
 			for (String keyWord : keyWords) {
 				for (String stringAdId: redisConnection.getValues(keyWord)) {
 					Long adId = Long.parseLong(stringAdId);
-					ads.add(mysqlConnection.getAd(adId));
+					if (!selected.contains(adId)) {
+						ads.add(mysqlConnection.getAd(adId));
+						selected.add(adId);
+					}
 				}
 			}
 		} finally {
@@ -121,36 +128,36 @@ public class SearchAdsEngine {
 		JSONObject adJson = new JSONObject(line);
 		Ad ad = new Ad();
 		if (adJson.isNull("ad_id")) {
-			logger.debug("adId not found at line " + counter);
+			logger.debug("adId not found at line " + counter + ".");
 			return null;
 		} else {
 			JSONArray array = adJson.getJSONArray("ad_id");
 			if (array.isNull(0)) {
-				logger.debug("adId not found at line " + counter);
+				logger.debug("adId not found at line " + counter + ".");
 				return null;
 			} else {
 				ad.adId = array.getLong(0);
 			}
 		}
 		if (adJson.isNull("campaign_id")) {
-			logger.debug("campaignId not found at line " + counter);
+			logger.debug("campaignId not found at line " + counter + ".");
 			return null;
 		} else {
 			JSONArray array = adJson.getJSONArray("campaign_id");
 			if (array.isNull(0)) {
-				logger.debug("campaignId not found at line " + counter);
+				logger.debug("campaignId not found at line " + counter + ".");
 				return null;
 			} else {
 				ad.campaignId = array.getLong(0);
 			}
 		}
 		if (adJson.isNull("title")) {
-			logger.debug("title not found at line " + counter);
+			logger.debug("title not found at line " + counter + ".");
 			return null;
 		} else {
 			JSONArray array = adJson.getJSONArray("title");
 			if (array.isNull(0)) {
-				logger.debug("title not found at line " + counter);
+				logger.debug("title not found at line " + counter + ".");
 				return null;
 			} else {
 				ad.title = array.getString(0);
@@ -166,22 +173,42 @@ public class SearchAdsEngine {
 		return ad;
 	}
 	
+	private Campaign parseCampaign(String line, int counter) {
+		JSONObject campaignJson = new JSONObject(line);
+		Campaign campaign = new Campaign();
+		if (campaignJson.isNull("campaign_id")) {
+			logger.debug("campaignId not found at line: " + counter + ".");
+			return null;
+		} else {
+			campaign.campaignId = campaignJson.getLong("campaign_id");
+		}
+		if (campaignJson.isNull("budget")) {
+			logger.debug("budget not found at line; " + counter + ".");
+			return null;
+		} else {
+			campaign.budget = campaignJson.getDouble("budget");
+		}
+		return campaign;
+	}
+	
 	/**
-	 * Load ads data into MySQL and Redis. Ads without adId or campaignId will be ignored.
+	 * Load ads data into MySQL and Redis. Ads without adId or campaignId will be ignored. The file
+	 * is stored in the format that each line is a json except the first and the last which are '['
+	 * and ']' symbols respectively.
 	 * @see #parseAd(String, int)
 	 */
 	private void loadAds() {
 		RedisConnection redisConnection = redisEngine.getRedisConnection();
 		MysqlConnection mysqlConnection = mysqlEngine.getMysqlConnection();
 		if (redisConnection == null) {
-			logger.error("Error when attempting to connect to Redis when selecting ads");
+			logger.error("Error when connecting to connect to Redis when loading ads.");
 			return;
 		}
 		if (mysqlConnection == null) {
-			logger.error("Error when attempting to connect to SQL database when selecting ads");
+			logger.error("Error when connecting to SQL database when loading ads.");
 			return;
 		}
-		try (BufferedReader brAd = new BufferedReader(new FileReader(adsDataFilePath))) {
+		try (BufferedReader brAd = new BufferedReader(new FileReader(adsDataPath))) {
 			String line;
 			int counter = 0;
 			while ((line = brAd.readLine()) != null) {
@@ -197,17 +224,38 @@ public class SearchAdsEngine {
 				counter += 1;
 			}
 		} catch (IOException e) {
-			logger.error("Encounter IO error when loading ads data from file when loading ads", e);
+			logger.error("Encounter IO error when loading ads.", e);
 		} finally {
 			mysqlConnection.close();
 		}
 	}
 	
 	/**
-	 * Load budget data into MySQL server
+	 * Load campaign data into MySQL server
 	 */
-	private void loadBudget() {
-		// to complete
+	private void loadcampaign() {
+		MysqlConnection mysqlConnection = mysqlEngine.getMysqlConnection();
+		if (mysqlConnection == null) {
+			logger.error("Error when attempting to connect to SQL database when loadig campaigns.");
+			return;
+		}
+		try (BufferedReader brAd = new BufferedReader(new FileReader(campaignDataPath))) {
+			String line;
+			int counter = 0;
+			while ((line = brAd.readLine()) != null) {
+				if (!line.equals("[") && !line.equals("]")) {
+					Campaign campaign = parseCampaign(line, counter);
+					if (campaign != null) {
+						mysqlConnection.addCampaign(campaign);
+					}
+				}
+				counter += 1;
+			} 
+		} catch(IOException e) {
+			logger.error("Encounter IO error when loading campaign data from file.", e);
+		} finally {
+			mysqlConnection.close();
+		}
 	}
 
 }

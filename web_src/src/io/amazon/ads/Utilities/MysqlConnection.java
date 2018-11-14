@@ -5,6 +5,7 @@ import javax.sql.DataSource;
 import org.apache.log4j.Logger;
 
 import io.amazon.ads.StaticObjs.Ad;
+import io.amazon.ads.StaticObjs.Campaign;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -38,7 +39,7 @@ public class MysqlConnection {
 		try {
 			mysqlConnection = mysqlDataSource.getConnection();
 		} catch (SQLException e) {
-			logger.error("Error when requesting SQL connection", e);
+			logger.error("Error when requesting SQL connection.", e);
 		}
 		this.adsTableName = adsTableName;
 		this.campaignTableName = campaignTableName;
@@ -53,7 +54,7 @@ public class MysqlConnection {
 		try {
 			mysqlConnection.close();
 		} catch (SQLException e) {
-			logger.error("Error when closing MySQL connection", e);
+			logger.error("Error when closing MySQL connection.", e);
 		}
 	}
 	
@@ -75,18 +76,22 @@ public class MysqlConnection {
 		  	addAd.setString(10, ad.title);
 		  	addAd.executeUpdate();
 		} catch(SQLException e) {
-			logger.error("SQL error when inserting ad into database with adId: " + ad.adId, e);
+			logger.error("SQL error when inserting ad into database with adId: " + ad.adId + ".", e);
 		} catch (Exception e) {
-			logger.error("Non-SQL error when inserting ad into database wit adId " + ad.adId, e);
+			logger.error("Non-SQL error when inserting ad into database wit adId " + ad.adId + ".", e);
 		} finally {
 			try {
 				addAd.close();
 			} catch(SQLException e) {
-				logger.error("SQL error when closing SQL statement", e);
+				logger.error("SQL error when closing SQL statement.", e);
 			} catch(Exception e) {
-				logger.error("Non-SQL error when closing SQL statement", e);
+				logger.error("Non-SQL error when closing SQL statement.", e);
 			}
 		}
+	}
+	
+	public void addCampaign(Campaign campaign) {
+		
 	}
 	
 	public Ad getAd(Long adId) {
@@ -110,26 +115,26 @@ public class MysqlConnection {
 		       	ad.category = resultSet.getString("category");
 		       	ad.title = resultSet.getString("title");
    	 		} else {
-   	 			logger.error("No record found with adId: " + adId);
+   	 			logger.error("No record found with adId: " + adId + ".");
    	 		}
    	 	} catch (SQLException e) {
-   	 		logger.error("SQL error when retrieving ads info", e);
+   	 		logger.error("SQL error when retrieving ads info.", e);
    	 	} catch (Exception e) {
-   	 		logger.error("Non-SQL error when retrieving ads info", e);
+   	 		logger.error("Non-SQL error when retrieving ads info.", e);
    	 	} finally {
    	 		try {
    	 			selectAd.close();
    	 		} catch (SQLException e) {
-   	 			logger.error("SQL error when closing SQL statement", e);
+   	 			logger.error("SQL error when closing SQL statement.", e);
    	 		} catch(Exception e) {
-   	 			logger.error("Non-SQL error when closing SQL statement", e);
+   	 			logger.error("Non-SQL error when closing SQL statement.", e);
    	 		}
    	 		try {
    	 			resultSet.close();
    	 		} catch (SQLException e) {
-   	 			logger.error("SQL error when closing SQL result set", e);
+   	 			logger.error("SQL error when closing SQL result set.", e);
    	 		} catch (Exception e) {
-   	 			logger.error("Non-SQL error when closing SQL result set", e);
+   	 			logger.error("Non-SQL error when closing SQL result set.", e);
    	 		}
    	 	}
 		return ad;
