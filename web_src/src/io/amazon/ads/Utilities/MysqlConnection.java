@@ -59,7 +59,6 @@ public class MysqlConnection {
 	}
 	
 	public void addAd(Ad ad) {
-		// to complete
 		String sqlString = "INSERT INTO " + adsTableName + " VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		PreparedStatement addAd = null;
 		try {
@@ -75,23 +74,41 @@ public class MysqlConnection {
 		  	addAd.setString(9, ad.category);
 		  	addAd.setString(10, ad.title);
 		  	addAd.executeUpdate();
-		} catch(SQLException e) {
+		} catch (SQLException e) {
 			logger.error("SQL error when inserting ad into database with adId: " + ad.adId + ".", e);
 		} catch (Exception e) {
-			logger.error("Non-SQL error when inserting ad into database wit adId " + ad.adId + ".", e);
+			logger.error("Non-SQL error when inserting ad into database with adId " + ad.adId + ".", e);
 		} finally {
 			try {
 				addAd.close();
-			} catch(SQLException e) {
-				logger.error("SQL error when closing SQL statement.", e);
-			} catch(Exception e) {
-				logger.error("Non-SQL error when closing SQL statement.", e);
+			} catch (SQLException e) {
+				logger.error("SQL error when closing SQL statement for inserting ads.", e);
+			} catch (Exception e) {
+				logger.error("Non-SQL error when closing SQL statement for inserting ads.", e);
 			}
 		}
 	}
 	
 	public void addCampaign(Campaign campaign) {
-		
+		String sqlString = "INSERT INTO " + campaignTableName + " VALUES(?, ?)";
+		PreparedStatement addCampaign = null;
+		try {
+			addCampaign = mysqlConnection.prepareStatement(sqlString);
+			addCampaign.setLong(1, campaign.campaignId);
+			addCampaign.setDouble(2, campaign.budget);
+		} catch (SQLException e) {
+			logger.error("SQL error when inserting campaign into database with campaignId: " + campaign.campaignId + ".", e);
+		} catch (Exception e) {
+			logger.error("Non-SQL error when inserting campaign into database with campaignId: " + campaign.campaignId + ".", e);
+		} finally {
+			try {
+				addCampaign.close();
+			} catch (SQLException e) {
+				logger.error("SQL error when closing SQL statement for inserting campaign.", e);
+			} catch (Exception e) {
+				logger.error("Non-SQL error when closing SQL statement for inserting campaign", e);
+			}
+		}
 	}
 	
 	public Ad getAd(Long adId) {
@@ -118,23 +135,23 @@ public class MysqlConnection {
    	 			logger.error("No record found with adId: " + adId + ".");
    	 		}
    	 	} catch (SQLException e) {
-   	 		logger.error("SQL error when retrieving ads info.", e);
+   	 		logger.error("SQL error when retrieving ads.", e);
    	 	} catch (Exception e) {
-   	 		logger.error("Non-SQL error when retrieving ads info.", e);
+   	 		logger.error("Non-SQL error when retrieving ads.", e);
    	 	} finally {
    	 		try {
    	 			selectAd.close();
    	 		} catch (SQLException e) {
-   	 			logger.error("SQL error when closing SQL statement.", e);
+   	 			logger.error("SQL error when closing SQL statement for retrieving ads.", e);
    	 		} catch(Exception e) {
-   	 			logger.error("Non-SQL error when closing SQL statement.", e);
+   	 			logger.error("Non-SQL error when closing SQL statement for retrieving ads.", e);
    	 		}
    	 		try {
    	 			resultSet.close();
    	 		} catch (SQLException e) {
-   	 			logger.error("SQL error when closing SQL result set.", e);
+   	 			logger.error("SQL error when closing SQL result set of retrieved ads.", e);
    	 		} catch (Exception e) {
-   	 			logger.error("Non-SQL error when closing SQL result set.", e);
+   	 			logger.error("Non-SQL error when closing SQL result set of retrieved ads.", e);
    	 		}
    	 	}
 		return ad;
