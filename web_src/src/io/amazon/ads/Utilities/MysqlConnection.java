@@ -27,6 +27,7 @@ public class MysqlConnection {
 	private Connection mysqlConnection;
 	private String adsTableName;
 	private String campaignTableName;
+	
 	/**
 	 * The constructor of this object. It simply request a Mysql connection from the given data source.
 	 * @param mysqlDataSource The MySQL data source through which one requests a connection.
@@ -96,6 +97,7 @@ public class MysqlConnection {
 			addCampaign = mysqlConnection.prepareStatement(sqlString);
 			addCampaign.setLong(1, campaign.campaignId);
 			addCampaign.setDouble(2, campaign.budget);
+			addCampaign.executeUpdate();
 		} catch (SQLException e) {
 			logger.error("SQL error when inserting campaign into database with campaignId: " + campaign.campaignId + ".", e);
 		} catch (Exception e) {
@@ -124,11 +126,11 @@ public class MysqlConnection {
    	 			ad.adId = resultSet.getLong("adId");
 		       	ad.campaignId = resultSet.getLong("campaignId");
 		       	ad.keyWords = Arrays.asList(resultSet.getString("keyWords").split(","));
-		       	ad.bidPrice = resultSet.getDouble("bidPrice");
+		       	ad.bidPrice = resultSet.getDouble("bid");
 		       	ad.price = resultSet.getDouble("price");
 		       	ad.thumbnail = resultSet.getString("thumbnail");
 		       	ad.brand = resultSet.getString("brand");
-		       	ad.detailUrl = resultSet.getString("detail_url");
+		       	ad.detailUrl = resultSet.getString("detailUrl");
 		       	ad.category = resultSet.getString("category");
 		       	ad.title = resultSet.getString("title");
    	 		} else {

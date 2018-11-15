@@ -78,6 +78,10 @@ public class SearchAdsServer extends HttpServlet {
 		for (Ad ad : ads) {
 			String adContent = adTemplate;
 			adContent = adContent.replace("$title$", ad.title);
+			adContent = adContent.replace("$brand$", ad.brand);
+			adContent = adContent.replace("$img$", ad.thumbnail);
+			adContent = adContent.replace("$link$", ad.detailUrl);
+			adContent = adContent.replace("$price$", Double.toString(ad.price));
 			content = content + adContent;
 		}
 		result = result.replace("$list$", content);

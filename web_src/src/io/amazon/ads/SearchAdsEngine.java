@@ -59,8 +59,8 @@ public class SearchAdsEngine {
 			this.mysqlEngine = mysqlEngine;
 			this.adsDataPath = adsDataPath;
 			this.campaignDataPath = campaignDataPath;
-			loadAds();
 			loadcampaign();
+			loadAds();
 			logger.info("SearchAdsEngine successfully initialized.");
 		} catch (Exception e) {
 			logger.error("SearchAdsEngine fails to be initialized.", e);
@@ -223,6 +223,7 @@ public class SearchAdsEngine {
 				}
 				counter += 1;
 			}
+			logger.info("Finish loading ads data");
 		} catch (IOException e) {
 			logger.error("Encounter IO error when loading ads.", e);
 		} finally {
@@ -231,7 +232,7 @@ public class SearchAdsEngine {
 	}
 	
 	/**
-	 * Load campaign data into MySQL server
+	 * Load campaign data into MySQL database
 	 */
 	private void loadcampaign() {
 		MysqlConnection mysqlConnection = mysqlEngine.getMysqlConnection();
@@ -250,7 +251,8 @@ public class SearchAdsEngine {
 					}
 				}
 				counter += 1;
-			} 
+			}
+			logger.info("Finish loading campaign data.");
 		} catch(IOException e) {
 			logger.error("Encounter IO error when loading campaign data from file.", e);
 		} finally {
