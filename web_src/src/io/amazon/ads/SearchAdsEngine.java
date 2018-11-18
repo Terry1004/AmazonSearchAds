@@ -255,11 +255,9 @@ public class SearchAdsEngine {
 			String line;
 			int counter = 0;
 			while ((line = brAd.readLine()) != null) {
-				if (!line.equals("[") && !line.equals("]")) {
-					Campaign campaign = parseCampaign(line, counter);
-					if (campaign != null) {
-						mysqlConnection.addCampaign(campaign);
-					}
+				Campaign campaign = parseCampaign(line, counter);
+				if (campaign != null) {
+					mysqlConnection.addCampaign(campaign);
 				}
 				counter += 1;
 			}
