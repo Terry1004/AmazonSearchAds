@@ -59,6 +59,10 @@ public class MysqlConnection {
 		}
 	}
 	
+	/**
+	 * Add the information stored in an Ad instance into the SQL database. 
+	 * @param ad The Ad object of which the information is to be loaded into database.
+	 */
 	public void addAd(Ad ad) {
 		String sqlString = "INSERT INTO " + adsTableName + " VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		PreparedStatement addAd = null;
@@ -90,6 +94,10 @@ public class MysqlConnection {
 		}
 	}
 	
+	/**
+	 *  Add the information stored in a Campaign instance into the SQL database.
+	 * @param campaign The Campaign object of which the information is to be loaded into the database.
+	 */
 	public void addCampaign(Campaign campaign) {
 		String sqlString = "INSERT INTO " + campaignTableName + " VALUES(?, ?)";
 		PreparedStatement addCampaign = null;
@@ -113,6 +121,13 @@ public class MysqlConnection {
 		}
 	}
 	
+	/**
+	 * Retrieve the information of an ad from the database with given adId. An empty ad is returned if no 
+	 * record with the given adId is found.
+	 * @param adId The adId of the ad to be retrieved from the database.
+	 * @return An Ad instance with the given adId and fields loaded with corresponding information stored
+	 * in the database. An empty Ad instance is returned if no record with the given adId is found.
+	 */
 	public Ad getAd(Long adId) {
 		// to complete
 		String sqlString = "SELECT * FROM " + adsTableName + " WHERE adId = " + adId;

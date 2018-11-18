@@ -59,7 +59,7 @@ public class SearchAdsEngine {
 			this.mysqlEngine = mysqlEngine;
 			this.adsDataPath = adsDataPath;
 			this.campaignDataPath = campaignDataPath;
-			loadcampaign();
+			loadcampaign(); // Load campaign data before ads because of the foreign key constraint in database
 			loadAds();
 			logger.info("SearchAdsEngine successfully initialized.");
 		} catch (Exception e) {
@@ -173,6 +173,14 @@ public class SearchAdsEngine {
 		return ad;
 	}
 	
+	/**
+	 * Pasre a line a json string into a Campaign Object. If campaignId or budget is not found, null is 
+	 * returned instead.
+	 * @param line A json string of a Campaign object.
+	 * @param counter The line number (starting from 0), used for logging.
+	 * @return A campaign object parsed from the json string. Null is retuend if either campaignId or 
+	 * budget is not found.
+	 */
 	private Campaign parseCampaign(String line, int counter) {
 		JSONObject campaignJson = new JSONObject(line);
 		Campaign campaign = new Campaign();
@@ -232,7 +240,10 @@ public class SearchAdsEngine {
 	}
 	
 	/**
-	 * Load campaign data into MySQL database
+	 * Load campaign data into MySQL database. Campaigns without campaignId or budget will be ignored.
+	 * The file is stored in the format that each line is a json except the first and the last which
+	 * are '[' and ']' symbols respectively.
+	 * @see #parseCampaign(String, int)
 	 */
 	private void loadcampaign() {
 		MysqlConnection mysqlConnection = mysqlEngine.getMysqlConnection();
