@@ -49,7 +49,7 @@ public class Utils {
         	tokenStream.reset();
 	        while (tokenStream.incrementToken()) {
 	            String term = charTermAttribute.toString();
-	            if (!term.matches("\\d+") && !(term.length() == 1)) {
+	            if (!term.matches("\\d+") && term.length() > 1) {
 	            	keyWords.add(term);
 	            }
 	            sb.append(term + " ");
