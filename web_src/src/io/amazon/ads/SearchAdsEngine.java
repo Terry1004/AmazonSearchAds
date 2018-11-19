@@ -12,12 +12,12 @@ import org.apache.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import io.amazon.ads.Database.MysqlConnection;
+import io.amazon.ads.Database.MysqlEngine;
+import io.amazon.ads.Database.RedisConnection;
+import io.amazon.ads.Database.RedisEngine;
 import io.amazon.ads.StaticObjs.Ad;
 import io.amazon.ads.StaticObjs.Campaign;
-import io.amazon.ads.Utilities.MysqlConnection;
-import io.amazon.ads.Utilities.MysqlEngine;
-import io.amazon.ads.Utilities.RedisConnection;
-import io.amazon.ads.Utilities.RedisEngine;
 import io.amazon.ads.Utilities.Utils;
 
 /**
@@ -88,7 +88,7 @@ public class SearchAdsEngine {
 	
 	public List<Ad> selectAds(String query) {
 		List<Ad> ads = new ArrayList<>();
-		RedisConnection redisConnection = redisEngine.getRedisConnection();
+		RedisConnection redisConnection = redisEngine.getRedisInvertedIndexConnection();
 		MysqlConnection mysqlConnection = mysqlEngine.getMysqlConnection();
 		if (redisConnection == null) {
 			logger.error("Error when attempting to connect to Redis when selecting ads.");
@@ -206,7 +206,7 @@ public class SearchAdsEngine {
 	 * @see #parseAd(String, int)
 	 */
 	private void loadAds() {
-		RedisConnection redisConnection = redisEngine.getRedisConnection();
+		RedisConnection redisConnection = redisEngine.getRedisInvertedIndexConnection();
 		MysqlConnection mysqlConnection = mysqlEngine.getMysqlConnection();
 		if (redisConnection == null) {
 			logger.error("Error when connecting to connect to Redis when loading ads.");

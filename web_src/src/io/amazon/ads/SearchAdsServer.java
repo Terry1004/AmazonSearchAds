@@ -16,9 +16,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
 
-import io.amazon.ads.Utilities.RedisEngine;
+import io.amazon.ads.Database.MysqlEngine;
+import io.amazon.ads.Database.RedisEngine;
 import io.amazon.ads.StaticObjs.Ad;
-import io.amazon.ads.Utilities.MysqlEngine;
 
 /**
  * The search ads server that returns all ads upon given query.
@@ -57,10 +57,12 @@ public class SearchAdsServer extends HttpServlet {
 	    String uiTemplatePath = application.getInitParameter("uiTemplatePath");
 	    String adTemplatePath = application.getInitParameter("adTemplatePath");
 	    String redisHost = application.getInitParameter("redisHost");
+	    int redisInvertedIndexPort = Integer.parseInt(application.getInitParameter("redisInvertedIndexPort"));
+	    int redisSynonymsPort = Integer.parseInt(application.getInitParameter("redisSynonymsPort"));
 	    String dbSourceUrl = application.getInitParameter("dbSourceUrl");
 	    String adsTableName = application.getInitParameter("adsTableName");
 		String campaignTableName = application.getInitParameter("campaignTableName");
-	    RedisEngine redisEngine = RedisEngine.getInstance(redisHost);
+	    RedisEngine redisEngine = RedisEngine.getInstance(redisHost, redisInvertedIndexPort, redisSynonymsPort);
 	    MysqlEngine mysqlEngine = MysqlEngine.getInstance(dbSourceUrl, adsTableName, campaignTableName);
 	    searchAdsEngine = SearchAdsEngine.getInstance(redisEngine, mysqlEngine, adsDataPath, campaignDataPath);
 	    initTemplates(uiTemplatePath, adTemplatePath);

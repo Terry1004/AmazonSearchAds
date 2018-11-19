@@ -1,4 +1,4 @@
-package io.amazon.ads.Utilities;
+package io.amazon.ads.Database;
 
 import javax.naming.InitialContext;
 import javax.sql.DataSource;

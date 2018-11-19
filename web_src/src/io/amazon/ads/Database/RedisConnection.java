@@ -1,4 +1,4 @@
-package io.amazon.ads.Utilities;
+package io.amazon.ads.Database;
 
 import java.util.ArrayList;
 import java.util.List;
