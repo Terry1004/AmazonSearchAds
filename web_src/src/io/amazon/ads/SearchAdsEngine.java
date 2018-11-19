@@ -94,25 +94,41 @@ public class SearchAdsEngine {
 	
 	public List<Ad> selectAds(String query) {
 		List<Ad> ads = new ArrayList<>();
-		RedisConnection redisConnection = redisEngine.getRedisInvertedIndexConnection();
+		RedisConnection redisInvertedIndexConnection = redisEngine.getRedisInvertedIndexConnection();
+		RedisConnection redisSynonymsConnection = redisEngine.getRedisSynonymsConnection();
 		MysqlConnection mysqlConnection = mysqlEngine.getMysqlConnection();
-		if (redisConnection == null) {
-			logger.error("Error when attempting to connect to Redis when selecting ads.");
+		if (redisInvertedIndexConnection == null) {
+			logger.error("Error when connecting to the redis server storing inverted indices when selecting ads.");
+			return ads;
+		}
+		if (redisSynonymsConnection == null) {
+			logger.error("Error when connecting to the redis server storing synonyms when selecting ads.");
 			return ads;
 		}
 		if (mysqlConnection == null) {
-			logger.error("Error when attempting to connect to SQL database when selecting ads.");
+			logger.error("Error when connecting to SQL database when selecting ads.");
 			return ads;
 		}
 		try {
 			Set<Long> selected = new HashSet<>(); // in order to remove duplicate ads
 			List<String> keyWords = Utils.splitKeyWords(query);
 			for (String keyWord : keyWords) {
-				for (String stringAdId: redisConnection.getValues(keyWord)) {
+				// Load ads containing this key word
+				for (String stringAdId: redisInvertedIndexConnection.getValues(keyWord)) {
 					Long adId = Long.parseLong(stringAdId);
 					if (!selected.contains(adId)) {
 						ads.add(mysqlConnection.getAd(adId));
 						selected.add(adId);
+					}
+				}
+				// Load ads containing synonyms of this key word
+				for (String synonym: redisSynonymsConnection.getValues(keyWord)) {
+					for (String stringAdId: redisInvertedIndexConnection.getValues(synonym)) {
+						Long adId = Long.parseLong(stringAdId);
+						if (!selected.contains(adId)) {
+							ads.add(mysqlConnection.getAd(adId));
+							selected.add(adId);
+						}
 					}
 				}
 			}

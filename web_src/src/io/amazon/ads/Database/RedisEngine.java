@@ -22,8 +22,8 @@ public class RedisEngine {
 	 * instance can exist and this instance can only be initialized by the static method <code>
 	 * getInstance</code> from outside of this class
 	 * @param redisHost The host name of the Redis server. 
-	 * @param redisInvertedIndexPort The port number of the Redis server for caching inverted indices.
-	 * @param redisSynonymsPort The port number of the Redis server for caching synonyms of words.
+	 * @param redisInvertedIndexPort The port number of the Redis server for storing inverted indices.
+	 * @param redisSynonymsPort The port number of the Redis server for storing synonyms of words.
 	 * @see #getInstance(String)
 	 */
 	protected RedisEngine(String redisHost, int redisInvertedIndexPort, int redisSynonymsPort) {
@@ -42,8 +42,8 @@ public class RedisEngine {
 	 * If no <code>RedisEngine</code> instance is initialized, initialize one using the given parameters
 	 * and return it. Otherwise, return the already initialized instance.
 	 * @param redisHost The host name of the Redis server. 
-	 * @param redisInvertedIndexPort The port number of the Redis server for caching inverted indices.
-	 * @param redisSynonymsPort The port number of the Redis server for caching synonyms of words.
+	 * @param redisInvertedIndexPort The port number of the Redis server for storing inverted indices.
+	 * @param redisSynonymsPort The port number of the Redis server for storing synonyms of words.
 	 * @return RedisEngine The instance of this RedisEngine class.
 	 * @see #RedisEngine(String)
 	 */
@@ -57,7 +57,7 @@ public class RedisEngine {
 	/**
 	 * Get a RedisConnection object from the connection pool. It is important to close the connection
 	 * after all transactions are done.
-	 * @return RedisConnection object for executing transactions on redis server caching inverted indices .
+	 * @return RedisConnection object for executing transactions on redis server storing inverted indices .
 	 * @see RedisConnection
 	 */
 	public RedisConnection getRedisInvertedIndexConnection() {
@@ -67,7 +67,7 @@ public class RedisEngine {
 	/**
 	 * Get a RedisConnection object from the connection pool. It is important to close the connection
 	 * after all transactions are done.
-	 * @return RedisConnection object for executing transactions on redis server caching word synonyms.
+	 * @return RedisConnection object for executing transactions on redis server storing word synonyms.
 	 * @see RedisConnection
 	 */
 	public RedisConnection getRedisSynonymsConnection() {
