@@ -18,6 +18,7 @@ import io.amazon.ads.Database.RedisConnection;
 import io.amazon.ads.Database.RedisEngine;
 import io.amazon.ads.StaticObjs.Ad;
 import io.amazon.ads.StaticObjs.Campaign;
+import io.amazon.ads.StaticObjs.Synonym;
 import io.amazon.ads.Utilities.Utils;
 
 /**
@@ -37,6 +38,7 @@ public class SearchAdsEngine {
 	private MysqlEngine mysqlEngine;
 	private String adsDataPath = "";
 	private String campaignDataPath = "";
+	private String synonymsDataPath = "";
 	
 	/**
 	 * A protected constructor defined in order to ensure that at most one <code>SearchAdsEngine
@@ -47,18 +49,21 @@ public class SearchAdsEngine {
 	 * @param mysqlEngine The <code>MysqlEngine</code> object that provides MySQL server access.
 	 * @param adsDataPath The path to the file that stores ads data.
 	 * @param campaignDataPath The path to the file that stores campaign data.
+	 * @param synonymsDataPath The path to the file that stores word synonyms.
 	 * @see #getInstance(RedisEngine, MysqlEngine, String, String)
 	 * @see #loadAds()
 	 * @see #loadcampaign()
 	 * @see RedisEngine
 	 * @see MysqlEngine
 	 */
-	protected SearchAdsEngine(RedisEngine redisEngine, MysqlEngine mysqlEngine, String adsDataPath, String campaignDataPath) {
+	protected SearchAdsEngine(RedisEngine redisEngine, MysqlEngine mysqlEngine, String adsDataPath, String campaignDataPath, String synonymsDataPath) {
 		try {
 			this.redisEngine = redisEngine;
 			this.mysqlEngine = mysqlEngine;
 			this.adsDataPath = adsDataPath;
 			this.campaignDataPath = campaignDataPath;
+			this.synonymsDataPath = synonymsDataPath;
+			loadSynonyms();
 			loadcampaign(); // Load campaign data before ads because of the foreign key constraint in database
 			loadAds();
 			logger.info("SearchAdsEngine successfully initialized.");
@@ -74,14 +79,15 @@ public class SearchAdsEngine {
 	 * @param mysqlEngine The <code>MysqlEngine</code> object that provides MySQL server access.
 	 * @param adsDataFilePath The path to the file that stores ads data.
 	 * @param campaignDataFilePath The path to the file that stores campaign data.
+	 * @param synonymsDataPath The path to the file that stores word synonyms.
 	 * @return SearchAdsEngine The instance of this SearchAdsEngine class.
 	 * @see RedisEngine
 	 * @see MySQLEngine
 	 * @see #SearchAdsEngine(RedisEngine, MysqlEngine, String, String)
 	 */
-	public static SearchAdsEngine getInstance(RedisEngine redisEngine, MysqlEngine mysqlEngine, String adsDataPath, String campaignDataPath) {
+	public static SearchAdsEngine getInstance(RedisEngine redisEngine, MysqlEngine mysqlEngine, String adsDataPath, String campaignDataPath, String synonymsDataPath) {
 		if (instance == null) {
-			instance = new SearchAdsEngine(redisEngine, mysqlEngine, adsDataPath, campaignDataPath);
+			instance = new SearchAdsEngine(redisEngine, mysqlEngine, adsDataPath, campaignDataPath, synonymsDataPath);
 		}
 		return instance;
 	}
@@ -191,12 +197,33 @@ public class SearchAdsEngine {
 			campaign.campaignId = campaignJson.getLong("campaign_id");
 		}
 		if (campaignJson.isNull("budget")) {
-			logger.debug("budget not found at line; " + counter + ".");
+			logger.debug("budget not found at line: " + counter + ".");
 			return null;
 		} else {
 			campaign.budget = campaignJson.getDouble("budget");
 		}
 		return campaign;
+	}
+	
+	private Synonym parseSynonym(String line, int counter) {
+		JSONObject synonymJson = new JSONObject(line);
+		Synonym synonym = new Synonym();
+		if (synonymJson.isNull("word")) {
+			logger.debug("word not found at line: " + counter + ".");
+			return null;
+		} else {
+			synonym.word = synonymJson.getString("word");
+		}
+		if (synonymJson.isNull("synonyms")) {
+			logger.debug("synonyms not found at line: " + counter + ".");
+			return null;
+		} else {
+			JSONArray array = synonymJson.getJSONArray("synonyms");
+			for(int i = 0; i < array.length(); i++){
+			    synonym.synonyms.add(array.getString(i));
+			}
+		}
+		return synonym;
 	}
 	
 	/**
@@ -248,7 +275,7 @@ public class SearchAdsEngine {
 	private void loadcampaign() {
 		MysqlConnection mysqlConnection = mysqlEngine.getMysqlConnection();
 		if (mysqlConnection == null) {
-			logger.error("Error when attempting to connect to SQL database when loadig campaigns.");
+			logger.error("Error when connecting to SQL database when loading campaigns.");
 			return;
 		}
 		try (BufferedReader brAd = new BufferedReader(new FileReader(campaignDataPath))) {
@@ -266,6 +293,30 @@ public class SearchAdsEngine {
 			logger.error("Encounter IO error when loading campaign data from file.", e);
 		} finally {
 			mysqlConnection.close();
+		}
+	}
+	
+	private void loadSynonyms() {
+		RedisConnection redisConnection = redisEngine.getRedisSynonymsConnection();
+		if (redisConnection == null) {
+			logger.error("Error when connecting to redis server when loading synonyms.");
+			return;
+		}
+		try (BufferedReader brAd = new BufferedReader(new FileReader(synonymsDataPath))) {
+			String line;
+			int counter = 0;
+			while ((line = brAd.readLine()) != null) {
+				Synonym synonym = parseSynonym(line, counter);
+				if (synonym != null) {
+					for (String s: synonym.synonyms) {
+						redisConnection.addPair(synonym.word, s);
+					}
+				}
+				counter += 1;
+			}
+			logger.info("Finish loading synonyms data.");
+		} catch(IOException e) {
+			logger.error("Encounter IO error when loading synonyms");
 		}
 	}
 

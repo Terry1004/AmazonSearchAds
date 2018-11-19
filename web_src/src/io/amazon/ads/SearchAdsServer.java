@@ -54,6 +54,7 @@ public class SearchAdsServer extends HttpServlet {
 		ServletContext application = config.getServletContext();
 		String adsDataPath = application.getInitParameter("adsDataPath");
 	    String campaignDataPath = application.getInitParameter("campaignDataPath");
+	    String synonymsDataPath = application.getInitParameter("sysnonymsDataPath");
 	    String uiTemplatePath = application.getInitParameter("uiTemplatePath");
 	    String adTemplatePath = application.getInitParameter("adTemplatePath");
 	    String redisHost = application.getInitParameter("redisHost");
@@ -64,7 +65,7 @@ public class SearchAdsServer extends HttpServlet {
 		String campaignTableName = application.getInitParameter("campaignTableName");
 	    RedisEngine redisEngine = RedisEngine.getInstance(redisHost, redisInvertedIndexPort, redisSynonymsPort);
 	    MysqlEngine mysqlEngine = MysqlEngine.getInstance(dbSourceUrl, adsTableName, campaignTableName);
-	    searchAdsEngine = SearchAdsEngine.getInstance(redisEngine, mysqlEngine, adsDataPath, campaignDataPath);
+	    searchAdsEngine = SearchAdsEngine.getInstance(redisEngine, mysqlEngine, adsDataPath, campaignDataPath, synonymsDataPath);
 	    initTemplates(uiTemplatePath, adTemplatePath);
 	}
 
