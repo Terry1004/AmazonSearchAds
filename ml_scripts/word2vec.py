@@ -47,6 +47,7 @@ def train(corpus_path, sc):
         The trained word2vec model.
     """
     vocab = sc.textFile(corpus_path).map(lambda line: line.split())
+    vocab.cache()
     word2vec = Word2Vec()
     model = word2vec.setLearningRate(LEARNING_RATE).setMinCount(MIN_COUNT).setVectorSize(VECTOR_SIZE).fit(vocab)
     return model
