@@ -49,8 +49,9 @@ public class Utils {
         	tokenStream.reset();
 	        while (tokenStream.incrementToken()) {
 	            String term = charTermAttribute.toString();
-	            
-	            keyWords.add(term);
+	            if (!term.matches("\\d+") && !(term.length() == 1)) {
+	            	keyWords.add(term);
+	            }
 	            sb.append(term + " ");
 	        }
 	        tokenStream.end();
@@ -60,5 +61,10 @@ public class Utils {
 			logger.error("Error when cleaning input string: " + string, e);
 		}
 	return keyWords;
+	}
+	
+	public static void main(String[] args) {
+		String text = "123 456 abc";
+		System.out.println(String.join(",", splitKeyWords(text)));
 	}
 }
