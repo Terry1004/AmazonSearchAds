@@ -62,9 +62,4 @@ public class Utils {
 		}
 	return keyWords;
 	}
-	
-	public static void main(String[] args) {
-		String text = "123 456 abc";
-		System.out.println(String.join(",", splitKeyWords(text)));
-	}
 }
